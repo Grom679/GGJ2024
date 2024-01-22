@@ -1,3 +1,4 @@
+using PuzzleGame.Core;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -13,7 +14,12 @@ namespace PuzzleGame.Quest
 
         public void ActivatePoint()
         {
+           
+        }
 
+        public void DeactivatePoint() 
+        {
+            this.enabled = false;
         }
 
         public void PutQuestItem(QuestItem item)
@@ -24,14 +30,18 @@ namespace PuzzleGame.Quest
 
                 item.UseItem();
 
-                if(_usedItemsNumber == _questItems.Count)
+                if(_usedItemsNumber >= _questItems.Count)
                 {
-                    //To do quest success
+                    GlobalEvents.Instance.OnQuestFinished?.Invoke();
+                }
+                else
+                {
+                    GlobalEvents.Instance.OnPartlyFinished?.Invoke();
                 }
             }
             else
             {
-                //Quest point error action
+                GlobalEvents.Instance.OnQuestError?.Invoke();
             }
         }
 

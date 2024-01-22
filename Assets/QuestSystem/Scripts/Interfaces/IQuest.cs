@@ -4,6 +4,11 @@ using UnityEngine;
 
 namespace PuzzleGame.Quest
 {
+    public enum QuestTypes
+    {
+        Preparation
+    }
+
     public interface IQuest
     {
         public void StartQuest();
