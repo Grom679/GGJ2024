@@ -47,6 +47,8 @@ namespace PuzzleGame.Quest
             Debug.Log("Partly finished");
 
             AudioManager.Instance.PlayPartlyFinished(_currentQuest.QuestType);
+
+            _currentQuest.PartlyFinishQuest();
         }
 
         private void OnQuestError()

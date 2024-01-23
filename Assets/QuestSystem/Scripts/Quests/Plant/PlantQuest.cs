@@ -105,5 +105,15 @@ namespace PuzzleGame.Quest
 
             ChainManager.Instance.FinishActions();
         }
+
+        protected override void RemoveItem(QuestItem item)
+        {
+            
+        }
+
+        protected override void PartlyFinishQuestInnerActions()
+        {
+            
+        }
     }
 }

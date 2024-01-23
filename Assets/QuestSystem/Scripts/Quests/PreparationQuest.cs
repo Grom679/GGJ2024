@@ -69,5 +69,15 @@ namespace PuzzleGame.Quest
         {
             
         }
+
+        protected override void RemoveItem(QuestItem item)
+        {
+            
+        }
+
+        protected override void PartlyFinishQuestInnerActions()
+        {
+            
+        }
     }
 }

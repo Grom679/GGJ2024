@@ -24,6 +24,18 @@ namespace PuzzleGame.Quest
             StartErrorEffect();
         }
 
+        public void PartlyFinishQuest()
+        {
+            PartlyFinishQuestInnerActions();
+        }
+
+        public void DisactivateQuestItem(QuestItem item)
+        {
+            item.DisactivateQuestItem();
+
+            RemoveItem(item);
+        }
+
         public void ActivateQuestItem(QuestItem item)
         {
             item.ActivateQuestItem();
@@ -48,7 +60,11 @@ namespace PuzzleGame.Quest
 
         protected abstract void SartQuestInnerActions(QuestItem item);
 
+        protected abstract void RemoveItem(QuestItem item);
+
         protected abstract void FinishQuestInnerActions();
+
+        protected abstract void PartlyFinishQuestInnerActions();
 
         protected abstract void StartErrorEffect();
     }

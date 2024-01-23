@@ -11,9 +11,12 @@ namespace PuzzleGame.Audio
         public AudioData AudioData => _data;
 
         public AudioSource VOSource => _voSource;
+        public AudioSource SFXSource => _sfxSource;
 
         [SerializeField]
         private AudioSource _voSource;
+        [SerializeField]
+        private AudioSource _sfxSource;
         [SerializeField]
         private AudioData _data;
 
@@ -27,6 +30,18 @@ namespace PuzzleGame.Audio
             {
                 Instance = this;
             }
+        }
+
+        public void PlaySFX(AudioClip clip)
+        {
+            _sfxSource.time = 0f;
+            _sfxSource.clip = clip;
+            _sfxSource.Play();
+        }
+
+        public void StopSFX() 
+        {
+            _sfxSource.Stop();
         }
 
         public void PlayClip(AudioClip clip)

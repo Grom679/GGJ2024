@@ -16,6 +16,7 @@ namespace PuzzleGame.Quest
         Flask,
         FakeFlask,
         Bug,
+        Undercut,
         Picture
     }
 
@@ -50,6 +51,14 @@ namespace PuzzleGame.Quest
             if(!_itemActivated)
             {
                 _itemActivated = true;
+            }
+        }
+
+        public void DisactivateQuestItem()
+        {
+            if (_itemActivated)
+            {
+                _itemActivated = false;
             }
         }
 

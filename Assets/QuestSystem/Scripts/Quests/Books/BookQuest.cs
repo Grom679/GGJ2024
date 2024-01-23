@@ -21,19 +21,26 @@ namespace PuzzleGame.Quest
 
         public void EnterBookWall()
         {
-            ReshuffleBooks();
+            if(QuestIsActive)
+            {
+                ReshuffleBooks();
+            }
         }
 
         public void ExitBookWall() 
         {
-            if(!GrabbedCorrect && _book)
+            if (QuestIsActive) 
             {
-                GlobalEvents.Instance.OnQuestError?.Invoke();
-            }
+                if (!GrabbedCorrect && _book)
+                {
+                    GlobalEvents.Instance.OnQuestError?.Invoke();
+                }
+            } 
         }
 
         protected override void FinishQuestInnerActions()
         {
+            QuestIsActive = false;
             QuestPoint.DeactivatePoint();
         }
 
@@ -110,6 +117,20 @@ namespace PuzzleGame.Quest
             Vector3 tempPosition = obj1.position;
             obj1.position = obj2.position;
             obj2.position = tempPosition;
+        }
+
+        protected override void RemoveItem(QuestItem item)
+        {
+            if(item == _book)
+            {
+                item.ResetItem();
+                _book = null;
+            }
+        }
+
+        protected override void PartlyFinishQuestInnerActions()
+        {
+            
         }
     }
 }

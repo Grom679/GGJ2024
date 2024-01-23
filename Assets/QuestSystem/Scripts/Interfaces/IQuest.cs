@@ -8,7 +8,8 @@ namespace PuzzleGame.Quest
     {
         Preparation,
         Book,
-        Plant
+        Plant,
+        Candle
     }
 
     public interface IQuest
