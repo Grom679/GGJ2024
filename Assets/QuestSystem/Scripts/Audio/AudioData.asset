@@ -22,6 +22,12 @@ MonoBehaviour:
   PrepareCauldron: {fileID: 8300000, guid: 8e3f68519464e6244bb38d3f51eb6f29, type: 3}
   UseThisPortal: {fileID: 8300000, guid: 2b43d00af4f3a704887d65c719d87ac3, type: 3}
   MagicCloset: {fileID: 8300000, guid: 21f699a275b7de04f93e51eb72632889, type: 3}
+  PlantMonologue: {fileID: 8300000, guid: a7978084f78d6ce4dbd5cc520e4e3e23, type: 3}
+  BookIllustration: {fileID: 8300000, guid: 7e9b26834c7765e41948bc31151991f0, type: 3}
+  HaveFun: {fileID: 8300000, guid: 722af25d610909b4abc0d57399539e81, type: 3}
+  GetRidOfThis: {fileID: 8300000, guid: 8fcaf576f631c0d4183b54dd224beaf7, type: 3}
+  UsePhysics: {fileID: 8300000, guid: 48d7e9f4d3ca7414fb8a2fdc2bb1bc10, type: 3}
+  NotThisPlant: {fileID: 8300000, guid: a06607a6bae93f44fb0dcfd9aed2e9f7, type: 3}
   audioDataSpecial:
   - key: 0
     questAudio:
@@ -31,6 +37,11 @@ MonoBehaviour:
       - {fileID: 8300000, guid: 7c0dd485a4c8da74fa0aaf764b82bcb8, type: 3}
       - {fileID: 8300000, guid: 20b72fe7510a98541a96ee37d3566c6b, type: 3}
       - {fileID: 8300000, guid: 616101129ae16bf45910ec0c8f5482f8, type: 3}
+    - questType: 2
+      audios:
+      - {fileID: 8300000, guid: 43187c281a5b6df4a89a2c096ef1314c, type: 3}
+      - {fileID: 8300000, guid: 41d3f4fa94dbe0346b37f26679cd6db8, type: 3}
+      - {fileID: 8300000, guid: e92961e27e139a94792411abc88dcc4e, type: 3}
   - key: 1
     questAudio:
     - questType: 0
@@ -39,6 +50,9 @@ MonoBehaviour:
     - questType: 1
       audios:
       - {fileID: 8300000, guid: b486268e24a0e6544a15a4e9373e9f2a, type: 3}
+    - questType: 2
+      audios:
+      - {fileID: 8300000, guid: c77f0e387be6e7e4e995ac8a9192b0ef, type: 3}
   - key: 2
     questAudio:
     - questType: 0

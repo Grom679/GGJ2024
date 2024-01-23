@@ -31,7 +31,7 @@ public class Test : MonoBehaviour
 
     void Start()
     {
-        //GlobalEvents.Instance.OnChainFinished += ChainFinished;
+        GlobalEvents.Instance.OnChainFinished += ChainFinished;
 
         Scenario.Instance.PlayFirstQuest();
     }

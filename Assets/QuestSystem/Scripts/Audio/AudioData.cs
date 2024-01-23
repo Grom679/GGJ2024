@@ -40,6 +40,12 @@ namespace PuzzleGame.Audio
         public AudioClip PrepareCauldron;
         public AudioClip UseThisPortal;
         public AudioClip MagicCloset;
+        public AudioClip PlantMonologue;
+        public AudioClip BookIllustration;
+        public AudioClip HaveFun;
+        public AudioClip GetRidOfThis;
+        public AudioClip UsePhysics;
+        public AudioClip NotThisPlant;
 
         public List<DataEntity> audioDataSpecial;
     }

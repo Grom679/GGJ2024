@@ -12,6 +12,7 @@ namespace PuzzleGame.Quest
         Book,
         FakeBook,
         Plant,
+        FakePlant,
         Flask,
         FakeFlask,
         Bug,
@@ -29,9 +30,12 @@ namespace PuzzleGame.Quest
         private bool _itemActivated;
         private Vector3 _defaultPosition;
         private Quaternion _defaultRotation;
+        private Transform _defaultParent;
 
         private void Start()
         {
+            _defaultParent = transform.parent;
+
             UpdateDefaultPosition();
         }
 
@@ -75,6 +79,8 @@ namespace PuzzleGame.Quest
             if (_itemActivated)
             {
                 _itemActivated = false;
+
+                transform.parent = _defaultParent;
 
                 transform.position = _defaultPosition;
                 transform.rotation = _defaultRotation;
