@@ -11,26 +11,45 @@ public class Test : MonoBehaviour
 
     public QuestItem _second;
 
+    public bool putFirst;
+
+    public bool activateSecond;
+
+    public bool putSecond;
+
     void Start()
     {
-        ChainManager.Instance.RegisterNewChain();
-
-        ChainManager.Instance.WaitUntil(3f);
-        ChainManager.Instance.WaitUntil(3f);
-        ChainManager.Instance.WaitUntil(3f);
-        ChainManager.Instance.WaitUntil(3f);
-
-        ChainManager.Instance.FinishActions();
-
         GlobalEvents.Instance.OnChainFinished += ChainFinished;
+
+        Scenario.Instance.PlayFirstQuest();
+    }
+
+    private void Update()
+    {
+        if(putFirst)
+        {
+            putFirst = false;
+
+            Scenario.Instance.CurrentQuest.QuestPoint.PutQuestItem(_first);
+        }
+
+        if(activateSecond)
+        {
+            activateSecond = false;
+
+            Scenario.Instance.CurrentQuest.ActivateQuestItem(_second);
+        }
+
+        if (putSecond)
+        {
+            putSecond = false;
+
+            Scenario.Instance.CurrentQuest.QuestPoint.PutQuestItem(_second);
+        }
     }
 
     private void ChainFinished()
     {
-        Scenario.Instance.PlayFirstQuest();
-
         Scenario.Instance.CurrentQuest.ActivateQuestItem(_first);
-        Scenario.Instance.CurrentQuest.QuestPoint.PutQuestItem(_first);
-        Scenario.Instance.CurrentQuest.ActivateQuestItem(_second);
     }
 }

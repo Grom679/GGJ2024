@@ -1,3 +1,4 @@
+using PuzzleGame.Audio;
 using PuzzleGame.Core;
 using System.Collections;
 using System.Collections.Generic;
@@ -43,18 +44,21 @@ namespace PuzzleGame.Quest
 
         private void OnPartlyFinished()
         {
-            Debug.Log("Partly finished");   
+            Debug.Log("Partly finished");
+
+            AudioManager.Instance.PlayPartlyFinished(_currentQuest.QuestType);
         }
 
         private void OnQuestError()
         {
-
+            AudioManager.Instance.PlayRandomErrorAudio(_currentQuest.QuestType);
         }
 
         private void OnQuestFinished()
         {
             _currentIndex++;
 
+            AudioManager.Instance.PlayFinishQuestAudio(_currentQuest.QuestType);
             Debug.Log("finished");
            //Play audio with chain manger
         }

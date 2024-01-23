@@ -49,6 +49,7 @@ namespace PuzzleGame.Quest
         protected abstract void SartQuestInnerActions(QuestItem item);
 
         protected abstract void FinishQuestInnerActions();
+
         protected abstract void StartErrorEffect();
     }
 }

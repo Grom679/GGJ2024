@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc7bd03459adae64da76f133f18f7b25, type: 3}
+  m_Name: AudioData
+  m_EditorClassIdentifier: 
+  ReallyYouWantToPut: {fileID: 8300000, guid: f769e3bfd7ee39242b8592078c777b39, type: 3}
+  YouCantDestroy: {fileID: 8300000, guid: 4edca6ad03be6004d9946032e746e6a0, type: 3}
+  OneStepWarn: {fileID: 8300000, guid: b9c53ee678c6d884584f1d62a37c8ed3, type: 3}
+  NeedPotion: {fileID: 8300000, guid: 9f3d318a53e04f8489bb7b531c227f0b, type: 3}
+  WellWellWell: {fileID: 8300000, guid: 5c0a3dbfb4588a0418ae83af7772b3d7, type: 3}
+  NeverLeave: {fileID: 8300000, guid: 169c380afe4dcf049b9cac1175c6f836, type: 3}
+  PinkPonies: {fileID: 8300000, guid: 9e28f2bad748b7249aeaddedf112625b, type: 3}
+  PrepareCauldron: {fileID: 8300000, guid: 8e3f68519464e6244bb38d3f51eb6f29, type: 3}
+  audioDataSpecial:
+  - key: 0
+    questAudio: []
+  - key: 1
+    questAudio:
+    - questType: 0
+      audios:
+      - {fileID: 8300000, guid: 7727ea28bda4aa0478067745343036d5, type: 3}
+  - key: 2
+    questAudio:
+    - questType: 0
+      audios:
+      - {fileID: 8300000, guid: 59057e08302848f4fb614c2fd6fb1108, type: 3}

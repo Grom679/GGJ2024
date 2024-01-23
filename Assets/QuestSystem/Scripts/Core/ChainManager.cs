@@ -1,3 +1,4 @@
+using PuzzleGame.Audio;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -91,6 +92,8 @@ namespace PuzzleGame.Core
 
         private IEnumerator PlayAudioChain(AudioClip clip)
         {
+            AudioManager.Instance.PlayClip(clip);
+
             yield return new WaitForSeconds(clip.length);
 
             Debug.Log("Finished One");
@@ -98,9 +101,11 @@ namespace PuzzleGame.Core
 
         private IEnumerator PlayAudioChain(AudioClip clip, Action action)
         {
+            AudioManager.Instance.PlayClip(clip);
+
             yield return new WaitForSeconds(clip.length);
 
-            action.Invoke();
+            action?.Invoke();
             Debug.Log("Finished One");
         }
 

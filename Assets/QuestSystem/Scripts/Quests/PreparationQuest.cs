@@ -1,3 +1,5 @@
+using PuzzleGame.Audio;
+using PuzzleGame.Core;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -20,13 +22,26 @@ namespace PuzzleGame.Quest
                 if(Vector3.Distance(player.position, QuestPoint.transform.position) <= _middleFireDistance)
                 {
                     _useDistance = false;
-                    Debug.Log("Just one more step.");
+
+                    AudioManager.Instance.PlayClip(AudioManager.Instance.AudioData.OneStepWarn);
                 }
             }
         }
 
         protected override void StartQuestIntroduction()
         {
+            ChainManager.Instance.RegisterNewChain();
+
+            ChainManager.Instance.PlayAudio(AudioManager.Instance.AudioData.WellWellWell);
+            ChainManager.Instance.WaitUntil(1f);
+            ChainManager.Instance.PlayAudio(AudioManager.Instance.AudioData.NeverLeave);
+            ChainManager.Instance.PlayAudio(AudioManager.Instance.AudioData.PinkPonies);
+            ChainManager.Instance.PlayAudio(AudioManager.Instance.AudioData.NeedPotion);
+            ChainManager.Instance.WaitUntil(2f);
+            ChainManager.Instance.PlayAudio(AudioManager.Instance.AudioData.PrepareCauldron);
+
+            ChainManager.Instance.FinishActions();
+
             Debug.Log("Started preporation quest");
             // start chain
         }
@@ -40,11 +55,11 @@ namespace PuzzleGame.Quest
         {
             if(item.ItemType == QuestItemType.Bucket)
             {
-                Debug.Log("Really you want to put it into the ...?");
+                AudioManager.Instance.PlayClip(AudioManager.Instance.AudioData.ReallyYouWantToPut);
             }
             else if (item.ItemType == QuestItemType.Dynamite)
             {
-                Debug.Log("No, you can't just destroy my house.");
+                AudioManager.Instance.PlayClip(AudioManager.Instance.AudioData.YouCantDestroy);
 
                 _useDistance = true;
             }
