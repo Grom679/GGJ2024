@@ -38,6 +38,8 @@ namespace PuzzleGame.Audio
         public AudioClip NeverLeave;
         public AudioClip PinkPonies;
         public AudioClip PrepareCauldron;
+        public AudioClip UseThisPortal;
+        public AudioClip MagicCloset;
 
         public List<DataEntity> audioDataSpecial;
     }

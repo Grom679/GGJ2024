@@ -20,14 +20,25 @@ MonoBehaviour:
   NeverLeave: {fileID: 8300000, guid: 169c380afe4dcf049b9cac1175c6f836, type: 3}
   PinkPonies: {fileID: 8300000, guid: 9e28f2bad748b7249aeaddedf112625b, type: 3}
   PrepareCauldron: {fileID: 8300000, guid: 8e3f68519464e6244bb38d3f51eb6f29, type: 3}
+  UseThisPortal: {fileID: 8300000, guid: 2b43d00af4f3a704887d65c719d87ac3, type: 3}
+  MagicCloset: {fileID: 8300000, guid: 21f699a275b7de04f93e51eb72632889, type: 3}
   audioDataSpecial:
   - key: 0
-    questAudio: []
+    questAudio:
+    - questType: 1
+      audios:
+      - {fileID: 8300000, guid: 9aed3c1e84c13b84ab92ed9255f78884, type: 3}
+      - {fileID: 8300000, guid: 7c0dd485a4c8da74fa0aaf764b82bcb8, type: 3}
+      - {fileID: 8300000, guid: 20b72fe7510a98541a96ee37d3566c6b, type: 3}
+      - {fileID: 8300000, guid: 616101129ae16bf45910ec0c8f5482f8, type: 3}
   - key: 1
     questAudio:
     - questType: 0
       audios:
       - {fileID: 8300000, guid: 7727ea28bda4aa0478067745343036d5, type: 3}
+    - questType: 1
+      audios:
+      - {fileID: 8300000, guid: b486268e24a0e6544a15a4e9373e9f2a, type: 3}
   - key: 2
     questAudio:
     - questType: 0

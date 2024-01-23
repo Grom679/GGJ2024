@@ -10,6 +10,8 @@ namespace PuzzleGame.Audio
         public static AudioManager Instance;
         public AudioData AudioData => _data;
 
+        public AudioSource VOSource => _voSource;
+
         [SerializeField]
         private AudioSource _voSource;
         [SerializeField]

@@ -6,7 +6,8 @@ namespace PuzzleGame.Quest
 {
     public enum QuestTypes
     {
-        Preparation
+        Preparation,
+        Book
     }
 
     public interface IQuest

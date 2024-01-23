@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -31,6 +32,11 @@ namespace PuzzleGame.Quest
 
         private void Start()
         {
+            UpdateDefaultPosition();
+        }
+
+        public void UpdateDefaultPosition()
+        {
             _defaultPosition = transform.position;
             _defaultRotation = transform.rotation;
         }
@@ -45,7 +51,28 @@ namespace PuzzleGame.Quest
 
         public void ResetItem()
         {
-            if(_itemActivated)
+            StartCoroutine(StartHideEffect(ReturnItem));
+        }
+
+        public void UseItem()
+        {
+            StartCoroutine(StartHideEffect(DeleItem));
+        }
+
+        private IEnumerator StartHideEffect(Action action)
+        {
+            yield return new WaitForSeconds(2);
+
+            Debug.LogError("Hided item");
+
+            action?.Invoke();
+
+            //Hide effect
+        }
+
+        private void ReturnItem()
+        {
+            if (_itemActivated)
             {
                 _itemActivated = false;
 
@@ -54,17 +81,9 @@ namespace PuzzleGame.Quest
             }
         }
 
-        public void UseItem()
+        private void DeleItem()
         {
-            StartCoroutine(StartHideEffect());
-        }
-
-        private IEnumerator StartHideEffect()
-        {
-            yield return new WaitForSeconds(2);
-
-            Debug.LogError("Hided item");
-            //Hide effect
+           
         }
     }
 }

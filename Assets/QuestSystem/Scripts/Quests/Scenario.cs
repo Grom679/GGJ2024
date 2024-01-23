@@ -52,6 +52,8 @@ namespace PuzzleGame.Quest
         private void OnQuestError()
         {
             AudioManager.Instance.PlayRandomErrorAudio(_currentQuest.QuestType);
+
+            _currentQuest.MakeErrorEffect();
         }
 
         private void OnQuestFinished()
@@ -59,6 +61,9 @@ namespace PuzzleGame.Quest
             _currentIndex++;
 
             AudioManager.Instance.PlayFinishQuestAudio(_currentQuest.QuestType);
+
+            StartCoroutine(WaitForNext());
+
             Debug.Log("finished");
            //Play audio with chain manger
         }
@@ -71,6 +76,16 @@ namespace PuzzleGame.Quest
         private void OnChainStarted()
         {
 
+        }
+
+        private IEnumerator WaitForNext()
+        {
+            while(AudioManager.Instance.VOSource.isPlaying)
+            {
+                yield return null;
+            }
+
+            PlayQuest();
         }
 
         private void PlayQuest()
