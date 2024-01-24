@@ -15,6 +15,8 @@ namespace PuzzleGame.Quest
 
         [SerializeField]
         private List<SimpleQuest> _quests;
+        [SerializeField]
+        private float _timeToStart;
 
         private SimpleQuest _currentQuest;
 
@@ -27,7 +29,7 @@ namespace PuzzleGame.Quest
             Instance = this;
         }
 
-        private void Start()
+        private void OnEnable()
         {
             GlobalEvents.Instance.OnPartlyFinished += OnPartlyFinished;
 
@@ -40,9 +42,34 @@ namespace PuzzleGame.Quest
             GlobalEvents.Instance.OnChainStarted += OnChainStarted;
         }
 
+        private void OnDisable()
+        {
+            GlobalEvents.Instance.OnPartlyFinished -= OnPartlyFinished;
+
+            GlobalEvents.Instance.OnQuestError -= OnQuestError;
+
+            GlobalEvents.Instance.OnQuestFinished -= OnQuestFinished;
+
+            GlobalEvents.Instance.OnChainFinished -= OnChainFinished;
+
+            GlobalEvents.Instance.OnChainStarted -= OnChainStarted;
+        }
+
+        private void Start()
+        {
+            StartCoroutine(StartScenario());
+        }
+
         public void PlayFirstQuest()
         {
             PlayQuest();
+        }
+
+        private IEnumerator StartScenario()
+        {
+            yield return new WaitForSeconds(_timeToStart);
+
+            PlayFirstQuest();
         }
 
         private void OnPartlyFinished()

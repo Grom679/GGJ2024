@@ -16,11 +16,6 @@ namespace PuzzleGame.Quest
 
         public Transform player;
 
-        private void Start()
-        {
-            Scenario.Instance.PlayFirstQuest();
-        }
-
         private void Update()
         {
             if (_useDistance) 
@@ -38,12 +33,12 @@ namespace PuzzleGame.Quest
         {
             ChainManager.Instance.RegisterNewChain();
 
-            // ChainManager.Instance.PlayAudio(AudioManager.Instance.AudioData.WellWellWell);
-            // ChainManager.Instance.WaitUntil(1f);
-            // ChainManager.Instance.PlayAudio(AudioManager.Instance.AudioData.NeverLeave);
-            // ChainManager.Instance.PlayAudio(AudioManager.Instance.AudioData.PinkPonies);
-            // ChainManager.Instance.PlayAudio(AudioManager.Instance.AudioData.NeedPotion);
-            // ChainManager.Instance.WaitUntil(2f);
+            ChainManager.Instance.PlayAudio(AudioManager.Instance.AudioData.WellWellWell);
+            ChainManager.Instance.WaitUntil(1f);
+            ChainManager.Instance.PlayAudio(AudioManager.Instance.AudioData.NeverLeave);
+            ChainManager.Instance.PlayAudio(AudioManager.Instance.AudioData.PinkPonies);
+            ChainManager.Instance.PlayAudio(AudioManager.Instance.AudioData.NeedPotion);
+            ChainManager.Instance.WaitUntil(2f);
             ChainManager.Instance.PlayAudio(AudioManager.Instance.AudioData.PrepareCauldron);
 
             ChainManager.Instance.FinishActions();
