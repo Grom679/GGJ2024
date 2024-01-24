@@ -12,6 +12,8 @@ namespace PuzzleGame.Quest
 
         private int _usedItemsNumber;
 
+        public List<QuestItemType> QuestItems => _questItems;
+        
         public void ActivatePoint()
         {
            

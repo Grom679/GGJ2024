@@ -1,25 +1,38 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using PuzzleGame.Core;
 using UnityEngine;
+using UnityEngine.Rendering;
 
 public class Player : MonoBehaviour
 {
     public Action<Item> OnPickItem;
     public Action OnDropItem;
     public Action<InteractPoint> OnInteractItem;
+    public Action OnBookQuestChange;
     
     [SerializeField] private Item _pickedItem;
     [SerializeField] private Transform _transformItem;
     [SerializeField] private Transform _root;
-
-    private InteractPoint _interactPoint;
+    [SerializeField] private Volume _monochromeVolume;
     
+    private InteractPoint _interactPoint;
+    private FirstPersonController _firstPersonController;
+
+    private void Awake()
+    {
+        _firstPersonController = GetComponent<FirstPersonController>();
+    }
+
     private void OnEnable()
     {
         OnPickItem += PickItem;
         OnDropItem += DropItem;
         OnInteractItem += IntegrateItem;
+        OnBookQuestChange += MonochomeVolume;
+        // GlobalEvents.Instance.OnChainStarted += DisableMovement;
+        // GlobalEvents.Instance.OnChainFinished += EnableMovement;
     }
 
     private void OnDisable()
@@ -27,6 +40,16 @@ public class Player : MonoBehaviour
         OnPickItem -= PickItem;
         OnDropItem -= DropItem;
         OnInteractItem -= IntegrateItem;
+        OnBookQuestChange -= MonochomeVolume;
+        GlobalEvents.Instance.OnChainStarted -= DisableMovement;
+        GlobalEvents.Instance.OnChainFinished -= EnableMovement;
+    }
+
+    //Debug
+    private void Start()
+    {
+        GlobalEvents.Instance.OnChainStarted += DisableMovement;
+        GlobalEvents.Instance.OnChainFinished += EnableMovement;
     }
 
     private void PickItem(Item item)
@@ -34,11 +57,9 @@ public class Player : MonoBehaviour
         if (_pickedItem == null)
         {
             _pickedItem = item;
-            _pickedItem.OnInteractItem?.Invoke(false);
+            _pickedItem.OnActivateItem?.Invoke();
             _pickedItem.transform.position = _transformItem.position;
             _pickedItem.transform.SetParent(_transformItem);
-           
-            Debug.LogError("pickItem");
         }
     }
     
@@ -47,10 +68,8 @@ public class Player : MonoBehaviour
         if (_pickedItem != null)
         {
             _pickedItem.transform.SetParent(_root);
-            _pickedItem.OnInteractItem?.Invoke(true);
+            _pickedItem.OnDropItem?.Invoke();
             _pickedItem = null;
-
-            Debug.LogError("drop item");
         }
     }
 
@@ -60,11 +79,25 @@ public class Player : MonoBehaviour
         {
             _interactPoint = point;
             _interactPoint.OnInteractItem?.Invoke(_pickedItem);
-            _pickedItem.OnActivateItem?.Invoke();
+            
+            
             _pickedItem = null;
             _interactPoint = null;
-        
-            Debug.LogError("interact item");
         }
+    }
+
+    private void DisableMovement()
+    {
+        _firstPersonController.playerCanMove = false;
+    }
+
+    private void EnableMovement()
+    {
+        _firstPersonController.playerCanMove = true;
+    }
+
+    private void MonochomeVolume()
+    {
+        _monochromeVolume.enabled = !_monochromeVolume.enabled;
     }
 }

@@ -1,0 +1,109 @@
+using System;
+using System.Collections;
+using System.Collections.Generic;
+using PuzzleGame.Core;
+using UnityEngine;
+
+public class PortalManager : MonoBehaviour
+{
+    public Action<Portal> OnTeleport;
+    [SerializeField] private List<Portal> _portals;
+    [SerializeField] private Transform _house;
+    [SerializeField] private Player _player;
+    [SerializeField] private CameraFade _cameraFade;
+    //[SerializeField] private Portal _mainPortal;
+    [SerializeField] private List<PortalEnt> _portalEnts;
+
+    private void Awake()
+    {
+        _portals = new List<Portal>(GetComponentsInChildren<Portal>());
+    }
+
+    private void OnEnable()
+    {
+        OnTeleport += Teleportate;
+    }
+
+    private void OnDisable()
+    {
+        OnTeleport -= Teleportate;
+        GlobalEvents.Instance.OnChainStarted -= DisablePortals;
+        GlobalEvents.Instance.OnChainFinished -= EnablePortals;
+    }
+
+    //Debug
+    private void Start()
+    {
+        GlobalEvents.Instance.OnChainStarted += DisablePortals;
+        GlobalEvents.Instance.OnChainFinished += EnablePortals;
+    }
+
+    private void Teleportate(Portal portal)
+    {
+        StartCoroutine(TeleportateCoroutine(portal));
+    }
+
+    private IEnumerator TeleportateCoroutine(Portal portal)
+    {
+        _cameraFade.Fade();
+        yield return new WaitForSeconds(1f);
+        CheckPortal(portal.PortalEnum);
+        _cameraFade.Fade();
+    }
+
+    public void ChangeMainPortal(PortalEnum portalEnum)
+    {
+        _portals[0].OnChangePortal?.Invoke(portalEnum);
+    }
+
+    private void CheckPortal(PortalEnum portalEnum)
+    {
+        foreach (PortalEnt ent in _portalEnts)
+        {
+            if (portalEnum == ent._portalEnum)
+            {
+                _house.position = ent._transform;
+                _house.eulerAngles = ent._rotate;
+                _player.transform.position = ent._portalPos.position;
+                ent._additionalAction?.Invoke();
+            }
+        }
+    }
+
+    private void DisablePortals()
+    {
+        foreach (Portal portal in _portals)
+        {
+            portal.EnablePortal(false);
+        }
+    }
+
+    private void EnablePortals()
+    {
+        foreach (Portal portal in _portals)
+        {
+            portal.EnablePortal(true);
+        }
+    }
+
+    public void SetAdditionalActionOnPortal(PortalEnum portalEnum, Action action)
+    {
+        foreach (PortalEnt ent in _portalEnts)
+        {
+            if (ent._portalEnum == portalEnum)
+            {
+                ent._additionalAction = action;
+            }
+        }
+    }
+}
+
+[Serializable]
+public class PortalEnt
+{
+    public PortalEnum _portalEnum;
+    public Transform _portalPos;
+    public Vector3 _rotate;
+    public Vector3 _transform;
+    public Action _additionalAction;
+}

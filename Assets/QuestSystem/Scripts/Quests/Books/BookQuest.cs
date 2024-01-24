@@ -16,6 +16,9 @@ namespace PuzzleGame.Quest
         [SerializeField]
         private List<QuestItem> _changingBooks;
 
+        [SerializeField] private Player _player;
+        [SerializeField] private PortalManager _portalManager;
+
         private QuestItem _book;
         private int _swapIndex;
 
@@ -24,6 +27,7 @@ namespace PuzzleGame.Quest
             if(QuestIsActive)
             {
                 ReshuffleBooks();
+                _player.OnBookQuestChange?.Invoke();
             }
         }
 
@@ -35,6 +39,7 @@ namespace PuzzleGame.Quest
                 {
                     GlobalEvents.Instance.OnQuestError?.Invoke();
                 }
+                _player.OnBookQuestChange?.Invoke();
             } 
         }
 
@@ -78,6 +83,10 @@ namespace PuzzleGame.Quest
         {
             QuestIsActive = true;
 
+            _portalManager.ChangeMainPortal(PortalEnum.Library);
+            _portalManager.SetAdditionalActionOnPortal(PortalEnum.Floor, ExitBookWall);
+            _portalManager.SetAdditionalActionOnPortal(PortalEnum.Library, EnterBookWall);
+            
             ChainManager.Instance.RegisterNewChain();
 
             ChainManager.Instance.PlayAudio(AudioManager.Instance.AudioData.UseThisPortal);
