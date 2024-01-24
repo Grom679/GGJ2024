@@ -41,6 +41,8 @@ namespace PuzzleGame.Quest
             }
             else
             {
+                item.ResetItem();
+
                 GlobalEvents.Instance.OnQuestError?.Invoke();
             }
         }

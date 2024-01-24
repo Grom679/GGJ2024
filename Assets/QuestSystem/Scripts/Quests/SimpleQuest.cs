@@ -13,11 +13,19 @@ namespace PuzzleGame.Quest
 
         public bool NeedEffectOnError;
 
+        public bool UseAttemptMechanics => _useAttemptMechanics;
+        public int MaxAttemptCount => _maxAttemptsCount;
+
         [SerializeField]
         private QuestPoint _questPoint;
 
         [SerializeField]
         private QuestTypes _questType;
+
+        [SerializeField]
+        private bool _useAttemptMechanics;
+        [SerializeField]
+        private int _maxAttemptsCount;
 
         public void MakeErrorEffect()
         {

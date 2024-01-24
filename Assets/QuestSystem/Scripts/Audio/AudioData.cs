@@ -46,6 +46,21 @@ namespace PuzzleGame.Audio
         public AudioClip GetRidOfThis;
         public AudioClip UsePhysics;
         public AudioClip NotThisPlant;
+        public AudioClip AdditionalFromTheBook;
+        public AudioClip BurnHouse;
+        public AudioClip HowCuteHeIs;
+        public AudioClip IDidntExpect;
+        public AudioClip LikeThis;
+        public AudioClip OneCandle;
+        public AudioClip StillDisgusting;
+        public AudioClip DestoyingEnough;
+        public AudioClip FindFlask;
+        public AudioClip GetItSorted;
+        public AudioClip GoToLab;
+        public AudioClip IllAddItFor;
+        public AudioClip NextStone;
+        public AudioClip SoThisFlask;
+        public AudioClip YesOfCourse;
 
         public List<DataEntity> audioDataSpecial;
     }

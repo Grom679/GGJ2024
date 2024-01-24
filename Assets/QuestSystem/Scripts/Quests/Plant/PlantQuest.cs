@@ -36,7 +36,7 @@ namespace PuzzleGame.Quest
                 _currentTime += Time.deltaTime;
                 Debug.Log(_currentTime);
 
-                if (Vector3.Distance(_plant.transform.position, QuestPoint.transform.position) >= _minDistance)
+                if (Vector3.Distance(_plant.transform.position, QuestPoint.transform.position) <= _minDistance)
                 {
                     _activatedPlant = false;
 
@@ -104,6 +104,8 @@ namespace PuzzleGame.Quest
             ChainManager.Instance.PlayAudio(AudioManager.Instance.AudioData.HaveFun);
 
             ChainManager.Instance.FinishActions();
+
+            _plant = null;
         }
 
         protected override void RemoveItem(QuestItem item)

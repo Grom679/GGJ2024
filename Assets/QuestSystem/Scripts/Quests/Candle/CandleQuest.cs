@@ -1,3 +1,5 @@
+using PuzzleGame.Audio;
+using PuzzleGame.Core;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -16,7 +18,7 @@ namespace PuzzleGame.Quest
 
         protected override void PartlyFinishQuestInnerActions()
         {
-            StartCoroutine(AppearBug());
+            //StartCoroutine(AppearBug());
         }
 
         protected override void RemoveItem(QuestItem item)
@@ -28,11 +30,11 @@ namespace PuzzleGame.Quest
         {
             if(item.ItemType == QuestItemType.Bug)
             {
-
+                AudioManager.Instance.PlayClip(AudioManager.Instance.AudioData.HowCuteHeIs);
             }
             else if (item.ItemType == QuestItemType.Undercut)
             {
-
+                AudioManager.Instance.PlayClip(AudioManager.Instance.AudioData.BurnHouse);
             }
         }
 
@@ -43,7 +45,19 @@ namespace PuzzleGame.Quest
 
         protected override void StartQuestIntroduction()
         {
-            
+            ChainManager.Instance.RegisterNewChain();
+
+            ChainManager.Instance.PlayAudio(AudioManager.Instance.AudioData.IDidntExpect);
+            ChainManager.Instance.WaitUntil(1f);
+            ChainManager.Instance.PlayAudio(AudioManager.Instance.AudioData.StillDisgusting);
+            ChainManager.Instance.WaitUntil(1f);
+            ChainManager.Instance.PlayAudio(AudioManager.Instance.AudioData.LikeThis);
+            ChainManager.Instance.WaitUntil(1f);
+            ChainManager.Instance.PlayAudio(AudioManager.Instance.AudioData.AdditionalFromTheBook);
+            ChainManager.Instance.WaitUntil(1f);
+            ChainManager.Instance.PlayAudio(AudioManager.Instance.AudioData.OneCandle);
+
+            ChainManager.Instance.FinishActions();
         }
 
         private IEnumerator AppearBug()

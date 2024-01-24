@@ -1,5 +1,6 @@
 using PuzzleGame.Audio;
 using PuzzleGame.Core;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -18,6 +19,8 @@ namespace PuzzleGame.Quest
         private SimpleQuest _currentQuest;
 
         private int _currentIndex = 0;
+
+        private int _attemptsCount;
 
         private void Awake()
         {
@@ -53,6 +56,26 @@ namespace PuzzleGame.Quest
 
         private void OnQuestError()
         {
+            if (_currentQuest.UseAttemptMechanics)
+            {
+                if (_currentQuest.MaxAttemptCount <= _attemptsCount)
+                {
+                    FinishWithAttempts();
+                }
+                else
+                {
+                    _attemptsCount++;
+                    MakeErrorActions();
+                }
+            }
+            else
+            {
+                MakeErrorActions();
+            }
+        }
+
+        private void MakeErrorActions()
+        {
             AudioManager.Instance.PlayRandomErrorAudio(_currentQuest.QuestType);
 
             _currentQuest.MakeErrorEffect();
@@ -64,7 +87,7 @@ namespace PuzzleGame.Quest
 
             AudioManager.Instance.PlayFinishQuestAudio(_currentQuest.QuestType);
 
-            StartCoroutine(WaitForNext());
+            StartCoroutine(WaitForNext(PlayQuest));
 
             Debug.Log("finished");
            //Play audio with chain manger
@@ -80,14 +103,30 @@ namespace PuzzleGame.Quest
 
         }
 
-        private IEnumerator WaitForNext()
+        private void FinishWithAttempts()
+        {
+            _currentIndex++;
+
+            switch (_currentQuest.QuestType)
+            {
+                case QuestTypes.Flask:
+
+                    AudioManager.Instance.PlayClip(AudioManager.Instance.AudioData.IllAddItFor);
+
+                    StartCoroutine(WaitForNext(PlayQuest));
+
+                    break;
+            }
+        }
+
+        private IEnumerator WaitForNext(Action action)
         {
             while(AudioManager.Instance.VOSource.isPlaying)
             {
                 yield return null;
             }
 
-            PlayQuest();
+            action?.Invoke();
         }
 
         private void PlayQuest()
@@ -96,9 +135,11 @@ namespace PuzzleGame.Quest
             {
                 _currentQuest = _quests[_currentIndex];
                 _currentQuest.StartQuest();
+                _attemptsCount = 0;
             }
             else
             {
+                _attemptsCount = 0;
                 Debug.Log("Sceenario Ends");
             }
         }

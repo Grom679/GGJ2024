@@ -28,6 +28,22 @@ MonoBehaviour:
   GetRidOfThis: {fileID: 8300000, guid: 8fcaf576f631c0d4183b54dd224beaf7, type: 3}
   UsePhysics: {fileID: 8300000, guid: 48d7e9f4d3ca7414fb8a2fdc2bb1bc10, type: 3}
   NotThisPlant: {fileID: 8300000, guid: a06607a6bae93f44fb0dcfd9aed2e9f7, type: 3}
+  AdditionalFromTheBook: {fileID: 8300000, guid: 388493eb7e9ec7e4995fce5f4565b333,
+    type: 3}
+  BurnHouse: {fileID: 8300000, guid: 32d19083830b9dd49879f1f5ab5c7b8c, type: 3}
+  HowCuteHeIs: {fileID: 8300000, guid: 9048d7101a7ee254cbef79ab5cbfae13, type: 3}
+  IDidntExpect: {fileID: 8300000, guid: bf8d31574092abc41ab78a2a68b412ea, type: 3}
+  LikeThis: {fileID: 8300000, guid: d39bbd8e152df8a489b4ebcf42eb05b5, type: 3}
+  OneCandle: {fileID: 8300000, guid: 1a83ae97593b7444da6c085a3ac14db7, type: 3}
+  StillDisgusting: {fileID: 8300000, guid: 37ad13521bafa9843805ec71a891aac8, type: 3}
+  DestoyingEnough: {fileID: 8300000, guid: 02c7adc241eea3d49b9f247f0b75f250, type: 3}
+  FindFlask: {fileID: 8300000, guid: 5f1b6f6b93aa3294c9592ea3980b79ed, type: 3}
+  GetItSorted: {fileID: 8300000, guid: d0ef8f783f19ebe489fe38384718d94a, type: 3}
+  GoToLab: {fileID: 8300000, guid: 8927c5a460140b8408a01c3e4dba7e2b, type: 3}
+  IllAddItFor: {fileID: 8300000, guid: 7658aa456ae8e3f478680883b1dc2805, type: 3}
+  NextStone: {fileID: 8300000, guid: c78b491f6de25664f911bfbe46cddb06, type: 3}
+  SoThisFlask: {fileID: 8300000, guid: 9c6bb2939219e3c488ac467d71437fcf, type: 3}
+  YesOfCourse: {fileID: 8300000, guid: 2bba17d0a91668a4f83af4589a057ecb, type: 3}
   audioDataSpecial:
   - key: 0
     questAudio:
@@ -42,6 +58,12 @@ MonoBehaviour:
       - {fileID: 8300000, guid: 43187c281a5b6df4a89a2c096ef1314c, type: 3}
       - {fileID: 8300000, guid: 41d3f4fa94dbe0346b37f26679cd6db8, type: 3}
       - {fileID: 8300000, guid: e92961e27e139a94792411abc88dcc4e, type: 3}
+    - questType: 4
+      audios:
+      - {fileID: 8300000, guid: ca74bd297cbc3a445947885eb64316ac, type: 3}
+      - {fileID: 8300000, guid: c9a041d5afca3004fb0363a3be5d731e, type: 3}
+      - {fileID: 8300000, guid: e50d2e2a92c1a0c44be1734c6f6a5851, type: 3}
+      - {fileID: 8300000, guid: cb8978f4029e20345ac09cb1510a1495, type: 3}
   - key: 1
     questAudio:
     - questType: 0
@@ -53,8 +75,17 @@ MonoBehaviour:
     - questType: 2
       audios:
       - {fileID: 8300000, guid: c77f0e387be6e7e4e995ac8a9192b0ef, type: 3}
+    - questType: 3
+      audios:
+      - {fileID: 8300000, guid: a4663a8591cb54e448a193591f479ba2, type: 3}
+    - questType: 4
+      audios:
+      - {fileID: 8300000, guid: 2bba17d0a91668a4f83af4589a057ecb, type: 3}
   - key: 2
     questAudio:
     - questType: 0
       audios:
       - {fileID: 8300000, guid: 59057e08302848f4fb614c2fd6fb1108, type: 3}
+    - questType: 3
+      audios:
+      - {fileID: 8300000, guid: bec2de140098f744fb57d130b7790f8e, type: 3}

@@ -31,7 +31,7 @@ public class Test : MonoBehaviour
 
     void Start()
     {
-        GlobalEvents.Instance.OnChainFinished += ChainFinished;
+        //GlobalEvents.Instance.OnChainFinished += ChainFinished;
 
         Scenario.Instance.PlayFirstQuest();
     }
@@ -73,14 +73,14 @@ public class Test : MonoBehaviour
             bookQuest.ExitBookWall();
         }
 
-        if(putThird)
+        if (putThird)
         {
             putThird = false;
 
             Scenario.Instance.CurrentQuest.QuestPoint.PutQuestItem(_third);
         }
 
-        if(activateThird)
+        if (activateThird)
         {
             activateThird = false;
 
