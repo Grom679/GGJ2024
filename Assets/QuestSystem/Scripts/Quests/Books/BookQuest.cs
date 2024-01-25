@@ -16,9 +16,6 @@ namespace PuzzleGame.Quest
         [SerializeField]
         private List<QuestItem> _changingBooks;
 
-        [SerializeField] private Player _player;
-        [SerializeField] private PortalManager _portalManager;
-
         private QuestItem _book;
         private int _swapIndex;
 
@@ -27,7 +24,7 @@ namespace PuzzleGame.Quest
             if(QuestIsActive)
             {
                 ReshuffleBooks();
-                _player.OnBookQuestChange?.Invoke();
+                Scenario.Instance.Player.OnBookQuestChange?.Invoke();
             }
         }
 
@@ -39,7 +36,8 @@ namespace PuzzleGame.Quest
                 {
                     GlobalEvents.Instance.OnQuestError?.Invoke();
                 }
-                _player.OnBookQuestChange?.Invoke();
+
+                Scenario.Instance.Player.OnBookQuestChange?.Invoke();
             } 
         }
 
@@ -47,6 +45,8 @@ namespace PuzzleGame.Quest
         {
             QuestIsActive = false;
             QuestPoint.DeactivatePoint();
+
+            DisabledNeededPortals();
         }
 
         protected override void SartQuestInnerActions(QuestItem item)
@@ -83,17 +83,30 @@ namespace PuzzleGame.Quest
         {
             QuestIsActive = true;
 
-            _portalManager.ChangeMainPortal(PortalEnum.Library);
-            _portalManager.SetAdditionalActionOnPortal(PortalEnum.Floor, ExitBookWall);
-            _portalManager.SetAdditionalActionOnPortal(PortalEnum.Library, EnterBookWall);
+            Scenario.Instance.PortalManager.ChangeMainPortal(PortalEnum.Library);
+            Scenario.Instance.PortalManager.SetAdditionalActionOnPortal(PortalEnum.Floor, ExitBookWall);
+            Scenario.Instance.PortalManager.SetAdditionalActionOnPortal(PortalEnum.Library, EnterBookWall);
             
             ChainManager.Instance.RegisterNewChain();
 
             ChainManager.Instance.PlayAudio(AudioManager.Instance.AudioData.UseThisPortal);
             ChainManager.Instance.WaitUntil(1f);
+            ChainManager.Instance.Do(EnableNeededPortals);
             ChainManager.Instance.PlayAudio(AudioManager.Instance.AudioData.MagicCloset);
 
             ChainManager.Instance.FinishActions();
+        }
+
+        private void EnableNeededPortals()
+        {
+            Scenario.Instance.PortalManager.EnablePortal(PortalEnum.Floor, PortalEnum.Library);
+            Scenario.Instance.PortalManager.EnablePortal(PortalEnum.Library, PortalEnum.Floor);
+        }
+
+        private void DisabledNeededPortals()
+        {
+            Scenario.Instance.PortalManager.DisablePortal(PortalEnum.Floor, PortalEnum.Library);
+            Scenario.Instance.PortalManager.DisablePortal(PortalEnum.Library, PortalEnum.Floor);
         }
 
         private void ReshuffleBooks()

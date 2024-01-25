@@ -41,6 +41,11 @@ namespace PuzzleGame.Core
             _finished = true;
         }
 
+        public void Do(Action action, float delay = 0f)
+        {
+            StartCoroutine(DoAction(action, delay));
+        }
+
         public void WaitUntil(float time)
         {
             _actions.Enqueue(PlayWaitChain(time));
@@ -89,6 +94,14 @@ namespace PuzzleGame.Core
 
                 yield return null;
             }
+        }
+
+        private IEnumerator DoAction(Action action, float delay)
+        {
+            yield return new WaitForSeconds(delay);
+
+            action?.Invoke();
+
         }
 
         private IEnumerator PlayAudioChain(AudioClip clip)
