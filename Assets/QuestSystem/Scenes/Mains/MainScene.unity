@@ -372,6 +372,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 548815382}
+    - targetCorrespondingSourceObject: {fileID: 5043021822055357392, guid: 3a9f835c72e0b444081b8230be3553d7,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1622486524}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3a9f835c72e0b444081b8230be3553d7, type: 3}
 --- !u!4 &159844490 stripped
@@ -3437,6 +3441,55 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1585676827}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1622486523
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1622486524}
+  - component: {fileID: 1622486525}
+  m_Layer: 0
+  m_Name: Global Volume (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1622486524
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1622486523}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 159844491}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1622486525
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1622486523}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 172515602e62fb746b5d573b38a5fe58, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IsGlobal: 1
+  priority: 0
+  blendDistance: 0
+  weight: 0
+  sharedProfile: {fileID: 11400000, guid: 90edf9e9505c76f408a8a196a6e1bee8, type: 2}
 --- !u!1 &1647397112
 GameObject:
   m_ObjectHideFlags: 0
@@ -3994,6 +4047,7 @@ MonoBehaviour:
     m_PostInfinity: 2
     m_RotationOrder: 4
   startFadedOut: 0
+  alpha: 0
 --- !u!1 &1830274471
 GameObject:
   m_ObjectHideFlags: 0
@@ -4992,6 +5046,7 @@ MonoBehaviour:
   _minDistance: 3
   _helpPortal: {fileID: 797898248}
   _physics: {fileID: 2119402461}
+  _volume: {fileID: 1622486525}
 --- !u!114 &7086773471959758973
 MonoBehaviour:
   m_ObjectHideFlags: 0
