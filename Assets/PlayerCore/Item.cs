@@ -13,12 +13,25 @@ public class Item : MonoBehaviour
    [SerializeField] private bool _fullDisactivated;
    [SerializeField] private Rigidbody _rigidbody;
    [SerializeField] private QuestItem _questItem;
-   [SerializeField] private InteractPoint _interactPoint;
+   [SerializeField] private Vector3 _tooltipPos;
+   [SerializeField] private GameObject _tooltipPref;
+
+   private TooltipObj _tooltipObj;
+   private Transform _defaultTransform;
 
    private void Awake()
    {
       _rigidbody = GetComponent<Rigidbody>();
       _questItem = GetComponent<QuestItem>();
+      
+      if (_tooltipPref != null)
+      {
+         _tooltipObj = Instantiate(_tooltipPref, transform).GetComponent<TooltipObj>();
+         _tooltipObj.transform.localPosition = _tooltipPos;
+         _tooltipObj.SetText(name);
+         _tooltipObj.gameObject.SetActive(false);
+      }
+
    }
 
    private void OnEnable()
@@ -57,4 +70,17 @@ public class Item : MonoBehaviour
       Scenario.Instance.CurrentQuest.QuestPoint.PutQuestItem(_questItem);
       Destroy(gameObject);
    }
+   
+   public QuestItemType CheckItemType()
+   {
+      return _questItem.ItemType;
+   }
+   public void ShowTooltip(bool enable)
+   {
+      if (_tooltipPref != null)
+      {
+         _tooltipObj.gameObject.SetActive(enable);
+      }
+   }
+
 }

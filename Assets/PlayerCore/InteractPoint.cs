@@ -7,13 +7,8 @@ using UnityEngine;
 public class InteractPoint : MonoBehaviour
 {
    public Action<Item> OnInteractItem;
-
-   [SerializeField] private QuestPoint _questPoint;
-
-   private void Awake()
-   {
-      _questPoint = GetComponent<QuestPoint>();
-   }
+   
+   [SerializeField] private List<QuestItemType> _correctItems;
 
    private void OnEnable()
    {
@@ -27,6 +22,13 @@ public class InteractPoint : MonoBehaviour
    
    private void InteractAction(Item item)
    {
-      item.OnInteractItem?.Invoke();
+      if (_correctItems.Contains(item.CheckItemType()))
+      {
+         item.OnInteractItem?.Invoke();
+      }
+      else
+      {
+         Debug.LogError("wrong " + item.name + " to " + name);
+      }
    }
 }

@@ -36,11 +36,21 @@ public class PlayerInteract : MonoBehaviour
         if (Physics.Raycast(Ray, out hit, _rayLenght, _rayMask))
         {
             item = hit.transform.GetComponent<Item>();
+            if (item != null)
+            {
+                item.ShowTooltip(true);
+            }
             interactPoint = hit.transform.GetComponent<InteractPoint>();
             _portal = hit.transform.GetComponent<Portal>();
+            _player.IncreasePointer();
         }
         else
         {
+            if (item != null)
+            {
+                item.ShowTooltip(false);
+            }
+            _player.DecreasePointer();
             item = null;
             interactPoint = null;
             _portal = null;

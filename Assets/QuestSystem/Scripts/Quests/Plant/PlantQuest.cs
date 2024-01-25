@@ -166,7 +166,7 @@ namespace PuzzleGame.Quest
 
             Scenario.Instance.PortalManager.EnablePortal(PortalEnum.GreenHouse, PortalEnum.Ceiling);
 
-            Scenario.Instance.PortalManager.SetAdditionalActionOnPortal(PortalEnum.Ceiling, () => { _physics.UseInverseGravity = true; });
+            Scenario.Instance.PortalManager.SetAdditionalActionOnPortal(PortalEnum.GreenHouse, PortalEnum.Ceiling, () => { _physics.UseInverseGravity = true; });
         }
 
         private void DisabledNeededPortals()

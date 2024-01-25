@@ -74,8 +74,8 @@ public class Player : MonoBehaviour
             _interactPoint.OnInteractItem?.Invoke(_pickedItem);
             
             
-            _pickedItem = null;
-            _interactPoint = null;
+            // _pickedItem = null;
+            // _interactPoint = null;
         }
     }
 
@@ -92,5 +92,18 @@ public class Player : MonoBehaviour
     private void MonochomeVolume()
     {
         _monochromeVolume.enabled = !_monochromeVolume.enabled;
+    }
+    
+    public void IncreasePointer()
+    {
+        _firstPersonController.crosshairObject.gameObject.transform.localScale = Vector2.one *0.2f;
+        _firstPersonController.crosshairObject.color = Color.red;
+        
+    }
+    
+    public void DecreasePointer()
+    {
+        _firstPersonController.crosshairObject.color = Color.white;
+        _firstPersonController.crosshairObject.gameObject.transform.localScale = Vector2.one * 0.05f;
     }
 }

@@ -7,6 +7,7 @@ public class Portal : MonoBehaviour
 {
     public Action<PortalEnum> OnChangePortal;
     public Action OnActivatePortal;
+    public Action OnAdditionalAction;
     
     [SerializeField] private PortalEnum _portalEnum;
     [SerializeField] private PortalEnum _portalLocation;

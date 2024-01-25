@@ -21,6 +21,7 @@ namespace PuzzleGame.Quest
 
         public void EnterBookWall()
         {
+            Debug.LogError("EnterBookWall");
             if(QuestIsActive)
             {
                 ReshuffleBooks();
@@ -30,6 +31,7 @@ namespace PuzzleGame.Quest
 
         public void ExitBookWall() 
         {
+            Debug.LogError("ExitBookWall");
             if (QuestIsActive) 
             {
                 if (!GrabbedCorrect && _book)
@@ -47,6 +49,8 @@ namespace PuzzleGame.Quest
             QuestPoint.DeactivatePoint();
 
             DisabledNeededPortals();
+            Scenario.Instance.PortalManager.RemoveAdditionalActionOnPortal(PortalEnum.Floor, PortalEnum.Library, EnterBookWall);
+            Scenario.Instance.PortalManager.RemoveAdditionalActionOnPortal(PortalEnum.Library,PortalEnum.Floor, ExitBookWall);
         }
 
         protected override void SartQuestInnerActions(QuestItem item)
@@ -84,8 +88,8 @@ namespace PuzzleGame.Quest
             QuestIsActive = true;
 
             Scenario.Instance.PortalManager.ChangeMainPortal(PortalEnum.Library);
-            Scenario.Instance.PortalManager.SetAdditionalActionOnPortal(PortalEnum.Floor, ExitBookWall);
-            Scenario.Instance.PortalManager.SetAdditionalActionOnPortal(PortalEnum.Library, EnterBookWall);
+            Scenario.Instance.PortalManager.SetAdditionalActionOnPortal(PortalEnum.Floor, PortalEnum.Library, EnterBookWall);
+            Scenario.Instance.PortalManager.SetAdditionalActionOnPortal(PortalEnum.Library,PortalEnum.Floor, ExitBookWall);
             
             ChainManager.Instance.RegisterNewChain();
 

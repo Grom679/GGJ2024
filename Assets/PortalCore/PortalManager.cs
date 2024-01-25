@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using PuzzleGame.Core;
+using PuzzleGame.Quest;
 using UnityEngine;
 
 public class PortalManager : MonoBehaviour
@@ -9,7 +10,6 @@ public class PortalManager : MonoBehaviour
     public Action<Portal> OnTeleport;
     [SerializeField] private List<Portal> _portals;
     [SerializeField] private Transform _house;
-    [SerializeField] private Player _player;
     [SerializeField] private CameraFade _cameraFade;
     //[SerializeField] private Portal _mainPortal;
     [SerializeField] private List<PortalEnt> _portalEnts;
@@ -57,6 +57,7 @@ public class PortalManager : MonoBehaviour
         _cameraFade.Fade();
         yield return new WaitForSeconds(1f);
         CheckPortal(portal.PortalTo);
+        portal.OnAdditionalAction?.Invoke();
         _cameraFade.Fade();
     }
 
@@ -91,10 +92,10 @@ public class PortalManager : MonoBehaviour
         {
             if (portalEnum == ent._portalEnum)
             {
+                Debug.LogError(ent._portalEnum);
                 _house.position = ent._transform;
                 _house.eulerAngles = ent._rotate;
-                _player.transform.position = ent._portalPos.position;
-                ent._additionalAction?.Invoke();
+                Scenario.Instance.Player.transform.position = ent._portalPos.position;
             }
         }
     }
@@ -124,16 +125,18 @@ public class PortalManager : MonoBehaviour
         }
     }
 
-    public void SetAdditionalActionOnPortal(PortalEnum portalEnum, Action action)
+    public void SetAdditionalActionOnPortal(PortalEnum location, PortalEnum portalEnum, Action action)
     {
-        foreach (PortalEnt ent in _portalEnts)
-        {
-            if (ent._portalEnum == portalEnum)
-            {
-                ent._additionalAction = action;
-            }
-        }
+        Portal portal = FindPortal(location, portalEnum);
+        portal.OnAdditionalAction += action;
     }
+    
+    public void RemoveAdditionalActionOnPortal(PortalEnum location, PortalEnum portalEnum, Action action)
+    {
+        Portal portal = FindPortal(location, portalEnum);
+        portal.OnAdditionalAction -= action;
+    }
+
 }
 
 [Serializable]
@@ -143,5 +146,4 @@ public class PortalEnt
     public Transform _portalPos;
     public Vector3 _rotate;
     public Vector3 _transform;
-    public Action _additionalAction;
 }
