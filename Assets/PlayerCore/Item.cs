@@ -10,6 +10,7 @@ public class Item : MonoBehaviour
    public Action OnActivateItem;
    public Action OnDropItem;
 
+   [SerializeField] private bool _fullDisactivated;
    [SerializeField] private Rigidbody _rigidbody;
    [SerializeField] private QuestItem _questItem;
    [SerializeField] private InteractPoint _interactPoint;
@@ -45,9 +46,9 @@ public class Item : MonoBehaviour
    private void Drop()
    {
       Debug.LogError("drop item");
-      _rigidbody.useGravity = true;
+     // _rigidbody.useGravity = true;
       _rigidbody.isKinematic = false;
-      //Scenario.Instance.CurrentQuest.
+      Scenario.Instance.CurrentQuest.DisactivateQuestItem(_questItem, _fullDisactivated);
    }
 
    private void InteractItem()

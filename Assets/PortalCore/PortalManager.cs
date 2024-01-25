@@ -16,7 +16,7 @@ public class PortalManager : MonoBehaviour
 
     private void Awake()
     {
-        _portals = new List<Portal>(GetComponentsInChildren<Portal>());
+        _portals = new List<Portal>(GetComponentsInChildren<Portal>(true));
     }
 
     private void OnEnable()
@@ -38,6 +38,8 @@ public class PortalManager : MonoBehaviour
     public void TeleportTo(PortalEnum location, PortalEnum portalEnum)
     {
         Portal portal = FindPortal(location, portalEnum);
+
+        Debug.Log(portal.gameObject.name);
 
         if(portal != null)
         {

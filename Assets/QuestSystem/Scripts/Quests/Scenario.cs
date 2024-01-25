@@ -124,6 +124,8 @@ namespace PuzzleGame.Quest
 
             StartCoroutine(WaitForNext(PlayQuest));
 
+            _currentQuest.FinishQuest();
+
             Debug.Log("finished");
            //Play audio with chain manger
         }

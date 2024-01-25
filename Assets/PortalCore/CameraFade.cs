@@ -10,7 +10,8 @@ public class CameraFade : MonoBehaviour
     public bool startFadedOut = false;
 
 
-    private float alpha = 0f; 
+    public float alpha = 0f;
+    
     private Texture2D texture;
     private int direction = 0;
     private float time = 0f;

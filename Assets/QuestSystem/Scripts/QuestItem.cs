@@ -42,8 +42,8 @@ namespace PuzzleGame.Quest
 
         public void UpdateDefaultPosition()
         {
-            _defaultPosition = transform.position;
-            _defaultRotation = transform.rotation;
+            _defaultPosition = transform.localPosition;
+            _defaultRotation = transform.localRotation;
         }
 
         public void ActivateQuestItem()
@@ -74,7 +74,7 @@ namespace PuzzleGame.Quest
 
         private IEnumerator StartHideEffect(Action action)
         {
-            yield return new WaitForSeconds(2);
+            yield return new WaitForSeconds(1);
 
             Debug.LogError("Hided item");
 
@@ -87,12 +87,14 @@ namespace PuzzleGame.Quest
         {
             if (_itemActivated)
             {
+                Scenario.Instance.Player.OnDropItem?.Invoke();
+
                 _itemActivated = false;
 
                 transform.parent = _defaultParent;
 
-                transform.position = _defaultPosition;
-                transform.rotation = _defaultRotation;
+                transform.localPosition = _defaultPosition;
+                transform.localRotation = _defaultRotation;
             }
         }
 

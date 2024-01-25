@@ -37,18 +37,24 @@ namespace PuzzleGame.Quest
             PartlyFinishQuestInnerActions();
         }
 
-        public void DisactivateQuestItem(QuestItem item)
+        public void DisactivateQuestItem(QuestItem item, bool full)
         {
-            item.DisactivateQuestItem();
-
+            if(full)
+            {
+                item.DisactivateQuestItem();
+            }
+            
             RemoveItem(item);
         }
 
         public void ActivateQuestItem(QuestItem item)
         {
-            item.ActivateQuestItem();
+            if(!item.ItemActivated)
+            {
+                item.ActivateQuestItem();
 
-            SartQuestInnerActions(item);
+                SartQuestInnerActions(item);
+            }
         }
 
         public void FinishQuest()
