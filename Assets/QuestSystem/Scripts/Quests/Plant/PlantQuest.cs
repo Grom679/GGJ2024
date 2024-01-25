@@ -12,6 +12,10 @@ namespace PuzzleGame.Quest
         private float _timeForError = 30f;
         [SerializeField]
         private float _minDistance = 5f;
+        [SerializeField]
+        private GameObject _helpPortal;
+        [SerializeField]
+        private InversePhysics _physics;
 
         private QuestItem _plant;
 
@@ -19,6 +23,11 @@ namespace PuzzleGame.Quest
         private float _currentTime;
 
         private int _attemptNumber = 0;
+
+        private void Start()
+        {
+            _physics.enabled = false;
+        }
 
         private void Update()
         {
@@ -50,6 +59,10 @@ namespace PuzzleGame.Quest
             QuestPoint.DeactivatePoint();
 
             _attemptNumber = 0;
+
+            Scenario.Instance.PortalManager.TeleportTo(PortalEnum.GreenHouse, PortalEnum.Floor);
+
+            DisabledNeededPortals();
         }
 
         protected override void SartQuestInnerActions(QuestItem item)
@@ -61,6 +74,8 @@ namespace PuzzleGame.Quest
                 if (_attemptNumber == 0)
                 {
                     AudioManager.Instance.PlayClip(AudioManager.Instance.AudioData.GetRidOfThis);
+
+                    DisableGreenPortal();
                 }
                 else
                 {
@@ -86,6 +101,12 @@ namespace PuzzleGame.Quest
         {
             //Teleport user turn off teleports
 
+            Scenario.Instance.PortalManager.TeleportTo(PortalEnum.Floor, PortalEnum.GreenHouse);
+
+            _physics.UseInverseGravity = false;
+
+            _physics.enabled = false;
+
             _activatedPlant = false;
 
             _plant.ResetItem();
@@ -95,6 +116,8 @@ namespace PuzzleGame.Quest
 
         protected override void StartQuestIntroduction()
         {
+            Scenario.Instance.PortalManager.ChangeMainPortal(PortalEnum.GreenHouse);
+
             ChainManager.Instance.RegisterNewChain();
 
             ChainManager.Instance.PlayAudio(AudioManager.Instance.AudioData.PlantMonologue);
@@ -102,15 +125,43 @@ namespace PuzzleGame.Quest
             ChainManager.Instance.PlayAudio(AudioManager.Instance.AudioData.BookIllustration);
             ChainManager.Instance.WaitUntil(1f);
             ChainManager.Instance.PlayAudio(AudioManager.Instance.AudioData.HaveFun);
+            ChainManager.Instance.Do(EnableNeededPortals);
 
             ChainManager.Instance.FinishActions();
 
             _plant = null;
         }
 
+        private void EnableNeededPortals()
+        {
+            Scenario.Instance.PortalManager.EnablePortal(PortalEnum.Floor, PortalEnum.GreenHouse);
+            Scenario.Instance.PortalManager.EnablePortal(PortalEnum.GreenHouse, PortalEnum.Floor);
+        }
+
+        private void DisableGreenPortal()
+        {
+            Scenario.Instance.PortalManager.DisablePortal(PortalEnum.GreenHouse, PortalEnum.Floor);
+
+            _helpPortal.SetActive(true);
+
+            Scenario.Instance.PortalManager.EnablePortal(PortalEnum.GreenHouse, PortalEnum.Ceiling);
+
+            Scenario.Instance.PortalManager.SetAdditionalActionOnPortal(PortalEnum.Ceiling, () => { _physics.UseInverseGravity = true; });
+        }
+
+        private void DisabledNeededPortals()
+        {
+            Scenario.Instance.PortalManager.DisablePortal(PortalEnum.Floor, PortalEnum.GreenHouse);
+            Scenario.Instance.PortalManager.DisablePortal(PortalEnum.GreenHouse, PortalEnum.Floor);
+            Scenario.Instance.PortalManager.DisablePortal(PortalEnum.GreenHouse, PortalEnum.Ceiling);
+        }
+
         protected override void RemoveItem(QuestItem item)
         {
-            
+            if(item.ItemType == QuestItemType.Plant)
+            {
+                _physics.enabled = true;
+            }
         }
 
         protected override void PartlyFinishQuestInnerActions()

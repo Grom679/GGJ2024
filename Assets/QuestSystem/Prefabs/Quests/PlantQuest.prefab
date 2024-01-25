@@ -93,5 +93,9 @@ MonoBehaviour:
   NeedEffectOnError: 1
   _questPoint: {fileID: 7086773471511834483}
   _questType: 2
+  _useAttemptMechanics: 0
+  _maxAttemptsCount: 0
   _timeForError: 30
-  _minDistance: 5
+  _minDistance: 1
+  _helpPortal: {fileID: 0}
+  _physics: {fileID: 0}
