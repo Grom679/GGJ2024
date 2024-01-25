@@ -22,6 +22,8 @@ namespace PuzzleGame.Audio
 
         private void Awake()
         {
+            DontDestroyOnLoad(this);
+
             if (Instance != null && Instance != this)
             {
                 Destroy(this);

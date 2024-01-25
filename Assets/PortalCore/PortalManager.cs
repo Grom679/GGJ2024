@@ -27,15 +27,22 @@ public class PortalManager : MonoBehaviour
     private void OnDisable()
     {
         OnTeleport -= Teleportate;
-        GlobalEvents.Instance.OnChainStarted -= DisablePortals;
-        GlobalEvents.Instance.OnChainFinished -= EnablePortals;
     }
 
     //Debug
     private void Start()
     {
-        GlobalEvents.Instance.OnChainStarted += DisablePortals;
-        GlobalEvents.Instance.OnChainFinished += EnablePortals;
+        DisablePortals();
+    }
+
+    public void TeleportTo(PortalEnum location, PortalEnum portalEnum)
+    {
+        Portal portal = FindPortal(location, portalEnum);
+
+        if(portal != null)
+        {
+            Teleportate(portal);
+        }
     }
 
     private void Teleportate(Portal portal)
@@ -47,13 +54,33 @@ public class PortalManager : MonoBehaviour
     {
         _cameraFade.Fade();
         yield return new WaitForSeconds(1f);
-        CheckPortal(portal.PortalEnum);
+        CheckPortal(portal.PortalTo);
         _cameraFade.Fade();
     }
 
     public void ChangeMainPortal(PortalEnum portalEnum)
     {
         _portals[0].OnChangePortal?.Invoke(portalEnum);
+    }
+
+    public void EnablePortal(PortalEnum location, PortalEnum portalEnum)
+    {
+        Portal portal = FindPortal(location, portalEnum);
+
+        if(portal != null)
+        {
+            portal.EnablePortal(true);
+        }
+    }
+
+    public void DisablePortal(PortalEnum location, PortalEnum portalEnum)
+    {
+        Portal portal = FindPortal(location, portalEnum);
+
+        if (portal != null)
+        {
+            portal.EnablePortal(false);
+        }
     }
 
     private void CheckPortal(PortalEnum portalEnum)
@@ -68,6 +95,15 @@ public class PortalManager : MonoBehaviour
                 ent._additionalAction?.Invoke();
             }
         }
+    }
+
+    private Portal FindPortal(PortalEnum location, PortalEnum portalEnum)
+    {
+        List<Portal> portals = _portals.FindAll(x => x.PortalLocation == location);
+
+        Portal portal = portals.Find(x => x.PortalTo == portalEnum);
+
+        return portal;
     }
 
     private void DisablePortals()

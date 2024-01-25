@@ -17,6 +17,7 @@ namespace PuzzleGame.Core
 
         private void Awake()
         {
+            DontDestroyOnLoad(this);
             Instance = this;
         }
 
@@ -38,6 +39,11 @@ namespace PuzzleGame.Core
         public void FinishActions()
         {
             _finished = true;
+        }
+
+        public void Do(Action action, float delay = 0f)
+        {
+            StartCoroutine(DoAction(action, delay));
         }
 
         public void WaitUntil(float time)
@@ -88,6 +94,14 @@ namespace PuzzleGame.Core
 
                 yield return null;
             }
+        }
+
+        private IEnumerator DoAction(Action action, float delay)
+        {
+            yield return new WaitForSeconds(delay);
+
+            action?.Invoke();
+
         }
 
         private IEnumerator PlayAudioChain(AudioClip clip)

@@ -31,8 +31,8 @@ public class Player : MonoBehaviour
         OnDropItem += DropItem;
         OnInteractItem += IntegrateItem;
         OnBookQuestChange += MonochomeVolume;
-        // GlobalEvents.Instance.OnChainStarted += DisableMovement;
-        // GlobalEvents.Instance.OnChainFinished += EnableMovement;
+        GlobalEvents.Instance.OnChainStarted += DisableMovement;
+        GlobalEvents.Instance.OnChainFinished += EnableMovement;
     }
 
     private void OnDisable()
@@ -43,13 +43,6 @@ public class Player : MonoBehaviour
         OnBookQuestChange -= MonochomeVolume;
         GlobalEvents.Instance.OnChainStarted -= DisableMovement;
         GlobalEvents.Instance.OnChainFinished -= EnableMovement;
-    }
-
-    //Debug
-    private void Start()
-    {
-        GlobalEvents.Instance.OnChainStarted += DisableMovement;
-        GlobalEvents.Instance.OnChainFinished += EnableMovement;
     }
 
     private void PickItem(Item item)

@@ -22,8 +22,9 @@ namespace PuzzleGame.Core
 
         private void Awake()
         {
+            DontDestroyOnLoad(this);
+
             Instance = this;
-            Debug.Log("Events");
         }
     }
 }

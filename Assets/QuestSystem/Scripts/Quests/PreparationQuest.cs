@@ -14,18 +14,18 @@ namespace PuzzleGame.Quest
 
         private bool _useDistance;
 
-        public Transform player;
+        private Transform _player;
 
         private void Start()
         {
-            Scenario.Instance.PlayFirstQuest();
+            _player = Scenario.Instance.Player.transform;
         }
 
         private void Update()
         {
             if (_useDistance) 
             {
-                if(Vector3.Distance(player.position, QuestPoint.transform.position) <= _middleFireDistance)
+                if(Vector3.Distance(_player.position, QuestPoint.transform.position) <= _middleFireDistance)
                 {
                     _useDistance = false;
 
@@ -38,12 +38,12 @@ namespace PuzzleGame.Quest
         {
             ChainManager.Instance.RegisterNewChain();
 
-            // ChainManager.Instance.PlayAudio(AudioManager.Instance.AudioData.WellWellWell);
-            // ChainManager.Instance.WaitUntil(1f);
-            // ChainManager.Instance.PlayAudio(AudioManager.Instance.AudioData.NeverLeave);
-            // ChainManager.Instance.PlayAudio(AudioManager.Instance.AudioData.PinkPonies);
-            // ChainManager.Instance.PlayAudio(AudioManager.Instance.AudioData.NeedPotion);
-            // ChainManager.Instance.WaitUntil(2f);
+            //ChainManager.Instance.PlayAudio(AudioManager.Instance.AudioData.WellWellWell);
+            //ChainManager.Instance.WaitUntil(1f);
+            //ChainManager.Instance.PlayAudio(AudioManager.Instance.AudioData.NeverLeave);
+            //ChainManager.Instance.PlayAudio(AudioManager.Instance.AudioData.PinkPonies);
+            //ChainManager.Instance.PlayAudio(AudioManager.Instance.AudioData.NeedPotion);
+            //ChainManager.Instance.WaitUntil(2f);
             ChainManager.Instance.PlayAudio(AudioManager.Instance.AudioData.PrepareCauldron);
 
             ChainManager.Instance.FinishActions();

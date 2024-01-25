@@ -9,10 +9,14 @@ public class Portal : MonoBehaviour
     public Action OnActivatePortal;
     
     [SerializeField] private PortalEnum _portalEnum;
+    [SerializeField] private PortalEnum _portalLocation;
     [SerializeField] private bool _isActivated;
     [SerializeField] private PortalManager _portalManager;
 
-    public PortalEnum PortalEnum => _portalEnum; 
+    public PortalEnum PortalTo => _portalEnum; 
+
+    public PortalEnum PortalLocation => _portalLocation;
+
     private void Awake()
     {
         _portalManager = GetComponentInParent<PortalManager>();
