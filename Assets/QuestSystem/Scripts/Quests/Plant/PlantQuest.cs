@@ -182,6 +182,10 @@ namespace PuzzleGame.Quest
             {
                 _physics.enabled = true;
             }
+            else if(item.ItemType != QuestItemType.Plant && item.ItemType != QuestItemType.FakePlant)
+            {
+                item.ResetItem();
+            }
         }
 
         protected override void PartlyFinishQuestInnerActions()

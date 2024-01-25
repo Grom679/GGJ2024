@@ -6,24 +6,30 @@ using UnityEngine;
 
 public class Item : MonoBehaviour
 {
-   public Action OnInteractItem;
-   public Action OnActivateItem;
-   public Action OnDropItem;
+    public Action OnInteractItem;
+    public Action OnActivateItem;
+    public Action OnDropItem;
 
-   [SerializeField] private bool _fullDisactivated;
-   [SerializeField] private Rigidbody _rigidbody;
-   [SerializeField] private QuestItem _questItem;
-   [SerializeField] private Vector3 _tooltipPos;
-   [SerializeField] private GameObject _tooltipPref;
+    public PortalEnum CurrentPosition { get; set; }
+    public Rigidbody Rigidbody => _rigidbody;
 
-   private TooltipObj _tooltipObj;
-   private Transform _defaultTransform;
+    [SerializeField] private bool _fullDisactivated;
+    [SerializeField] private bool _useGravity = true;
+    [SerializeField] private Rigidbody _rigidbody;
+    [SerializeField] private QuestItem _questItem;
+    [SerializeField] private Vector3 _tooltipPos;
+    [SerializeField] private GameObject _tooltipPref;
+
+    private TooltipObj _tooltipObj;
+    private Transform _defaultTransform;
 
    private void Awake()
    {
       _rigidbody = GetComponent<Rigidbody>();
       _questItem = GetComponent<QuestItem>();
-      
+
+      CurrentPosition = _questItem.BelongsTo;
+
       if (_tooltipPref != null)
       {
          _tooltipObj = Instantiate(_tooltipPref, transform).GetComponent<TooltipObj>();
@@ -59,7 +65,12 @@ public class Item : MonoBehaviour
    private void Drop()
    {
       Debug.LogError("drop item");
-     // _rigidbody.useGravity = true;
+
+      if(_useGravity)
+      {
+          _rigidbody.useGravity = true;
+      }
+      
       _rigidbody.isKinematic = false;
       Scenario.Instance.CurrentQuest.DisactivateQuestItem(_questItem, _fullDisactivated);
    }

@@ -1,3 +1,4 @@
+using PuzzleGame.Core;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -20,13 +21,18 @@ namespace PuzzleGame.Quest
         Picture
     }
 
+    [RequireComponent(typeof(Item))]
     public class QuestItem : MonoBehaviour
     {
         public bool ItemActivated => _itemActivated;
         public QuestItemType ItemType => _itemType;
 
+        public PortalEnum BelongsTo => _belongsTo;
+
         [SerializeField]
         private QuestItemType _itemType;
+        [SerializeField]
+        private PortalEnum _belongsTo;
 
         private bool _itemActivated;
         private Vector3 _defaultPosition;
@@ -88,6 +94,8 @@ namespace PuzzleGame.Quest
             if (_itemActivated)
             {
                 Scenario.Instance.Player.OnDropItem?.Invoke();
+
+                GlobalEvents.Instance.OnResetItem(this);
 
                 _itemActivated = false;
 

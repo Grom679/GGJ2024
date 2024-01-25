@@ -8,6 +8,9 @@ using UnityEngine;
 public class PortalManager : MonoBehaviour
 {
     public Action<Portal> OnTeleport;
+
+    public Action<PortalEnum> OnChangeRoom;
+
     [SerializeField] private List<Portal> _portals;
     [SerializeField] private Transform _house;
     [SerializeField] private CameraFade _cameraFade;
@@ -56,8 +59,12 @@ public class PortalManager : MonoBehaviour
     {
         _cameraFade.Fade();
         yield return new WaitForSeconds(1f);
+
         CheckPortal(portal.PortalTo);
         portal.OnAdditionalAction?.Invoke();
+
+        OnChangeRoom?.Invoke(portal.PortalTo);
+
         _cameraFade.Fade();
     }
 

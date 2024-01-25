@@ -20,6 +20,8 @@ namespace PuzzleGame.Core
 
         public Action OnChainStarted;
 
+        public Action<QuestItem> OnResetItem;
+
         private void Awake()
         {
             DontDestroyOnLoad(this);
