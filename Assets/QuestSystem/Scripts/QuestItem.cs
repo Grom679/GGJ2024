@@ -38,6 +38,7 @@ namespace PuzzleGame.Quest
 
         private bool _itemActivated;
         private Vector3 _defaultPosition;
+        private Vector3 _defaultScale;
         private Quaternion _defaultRotation;
         private Transform _defaultParent;
 
@@ -52,6 +53,7 @@ namespace PuzzleGame.Quest
         {
             _defaultPosition = transform.localPosition;
             _defaultRotation = transform.localRotation;
+            _defaultScale = transform.localScale;
         }
 
         public void ActivateQuestItem()
@@ -105,6 +107,7 @@ namespace PuzzleGame.Quest
 
                 transform.localPosition = _defaultPosition;
                 transform.localRotation = _defaultRotation;
+                transform.localScale = _defaultScale;
             }
         }
 
