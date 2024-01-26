@@ -89,8 +89,6 @@ namespace PuzzleGame.Quest
             Debug.LogError("Hided item");
 
             action?.Invoke();
-
-            //Hide effect
         }
 
         private void ReturnItem()
@@ -108,12 +106,23 @@ namespace PuzzleGame.Quest
                 transform.localPosition = _defaultPosition;
                 transform.localRotation = _defaultRotation;
                 transform.localScale = _defaultScale;
+
+                transform.GetComponent<Rigidbody>().isKinematic = true;
             }
         }
 
         private void DeleItem()
         {
-           
+            if (_itemActivated)
+            {
+                Scenario.Instance.Player.OnDropItem?.Invoke();
+
+                GlobalEvents.Instance.OnResetItem(this);
+
+                ReturnItem();
+
+                gameObject.SetActive(false);
+            }
         }
     }
 }
