@@ -17,6 +17,8 @@ public class PortalManager : MonoBehaviour
     //[SerializeField] private Portal _mainPortal;
     [SerializeField] private List<PortalEnt> _portalEnts;
 
+    private bool _isTeleporting = false;
+
     private void Awake()
     {
         _portals = new List<Portal>(GetComponentsInChildren<Portal>(true));
@@ -52,7 +54,12 @@ public class PortalManager : MonoBehaviour
 
     private void Teleportate(Portal portal)
     {
-        StartCoroutine(TeleportateCoroutine(portal));
+        if (!_isTeleporting)
+        {
+            _isTeleporting = true;
+            StartCoroutine(TeleportateCoroutine(portal));
+        }
+       
     }
 
     private IEnumerator TeleportateCoroutine(Portal portal)
@@ -66,6 +73,8 @@ public class PortalManager : MonoBehaviour
         OnChangeRoom?.Invoke(portal.PortalTo);
 
         _cameraFade.Fade();
+        yield return new WaitForSeconds(0.5f);
+        _isTeleporting = false;
     }
 
     public void ChangeMainPortal(PortalEnum portalEnum)
@@ -102,7 +111,7 @@ public class PortalManager : MonoBehaviour
                 Debug.LogError(ent._portalEnum);
                 _house.position = ent._transform;
                 _house.eulerAngles = ent._rotate;
-                Scenario.Instance.Player.transform.position = ent._portalPos.position;
+                Scenario.Instance.Player.transform.position = ent._portalPos.position + Vector3.up;
             }
         }
     }

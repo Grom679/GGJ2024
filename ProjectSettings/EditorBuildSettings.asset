@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/QuestSystem/Scenes/TestingPrepQuest.unity
     guid: 4d07d213a3c750246b6668cbdab8d9c1
+  - enabled: 0
+    path: Assets/QuestSystem/Scenes/Mains/MainScene 1.unity
+    guid: 355837a458abe05439ac731d28330536
   m_configObjects: {}

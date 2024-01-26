@@ -17,8 +17,6 @@ public class Item : MonoBehaviour
     [SerializeField] private bool _useGravity = true;
     [SerializeField] private Rigidbody _rigidbody;
     [SerializeField] private QuestItem _questItem;
-    [SerializeField] private Vector3 _tooltipPos;
-    [SerializeField] private GameObject _tooltipPref;
 
     private TooltipObj _tooltipObj;
     private Transform _defaultTransform;
@@ -29,15 +27,6 @@ public class Item : MonoBehaviour
       _questItem = GetComponent<QuestItem>();
 
       CurrentPosition = _questItem.BelongsTo;
-
-      if (_tooltipPref != null)
-      {
-         _tooltipObj = Instantiate(_tooltipPref, transform).GetComponent<TooltipObj>();
-         _tooltipObj.transform.localPosition = _tooltipPos;
-         _tooltipObj.SetText(name);
-         _tooltipObj.gameObject.SetActive(false);
-      }
-
    }
 
    private void OnEnable()
@@ -86,12 +75,4 @@ public class Item : MonoBehaviour
    {
       return _questItem.ItemType;
    }
-   public void ShowTooltip(bool enable)
-   {
-      if (_tooltipPref != null)
-      {
-         _tooltipObj.gameObject.SetActive(enable);
-      }
-   }
-
 }
