@@ -3924,11 +3924,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _quests:
-  - {fileID: 1292053028}
   - {fileID: 1274483517}
   - {fileID: 1325922487}
   - {fileID: 6413562372378438431}
   - {fileID: 1664827339671357298}
+  - {fileID: 1292053028}
   - {fileID: 9142803752549293579}
   _portalManager: {fileID: 1829212180}
   _player: {fileID: 159844492}
