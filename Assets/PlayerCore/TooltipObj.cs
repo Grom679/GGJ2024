@@ -13,9 +13,4 @@ public class TooltipObj : MonoBehaviour
     {
         _text.text = tooltipText;
     }
-    
-    private void Update()
-    {
-        transform.LookAt(Scenario.Instance.Player.transform);
-    }
 }

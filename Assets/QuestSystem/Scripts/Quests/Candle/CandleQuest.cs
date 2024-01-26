@@ -56,14 +56,14 @@ namespace PuzzleGame.Quest
 
             ChainManager.Instance.RegisterNewChain();
 
-            ChainManager.Instance.PlayAudio(AudioManager.Instance.AudioData.IDidntExpect);
-            ChainManager.Instance.WaitUntil(1f);
-            ChainManager.Instance.PlayAudio(AudioManager.Instance.AudioData.StillDisgusting);
-            ChainManager.Instance.WaitUntil(1f);
-            ChainManager.Instance.PlayAudio(AudioManager.Instance.AudioData.LikeThis);
-            ChainManager.Instance.WaitUntil(1f);
-            ChainManager.Instance.PlayAudio(AudioManager.Instance.AudioData.AdditionalFromTheBook);
-            ChainManager.Instance.WaitUntil(1f);
+            // ChainManager.Instance.PlayAudio(AudioManager.Instance.AudioData.IDidntExpect);
+            // ChainManager.Instance.WaitUntil(1f);
+            // ChainManager.Instance.PlayAudio(AudioManager.Instance.AudioData.StillDisgusting);
+            // ChainManager.Instance.WaitUntil(1f);
+            // ChainManager.Instance.PlayAudio(AudioManager.Instance.AudioData.LikeThis);
+            // ChainManager.Instance.WaitUntil(1f);
+            // ChainManager.Instance.PlayAudio(AudioManager.Instance.AudioData.AdditionalFromTheBook);
+            // ChainManager.Instance.WaitUntil(1f);
             ChainManager.Instance.PlayAudio(AudioManager.Instance.AudioData.OneCandle);
             ChainManager.Instance.Do(EnableNeededPortals);
 

@@ -21,7 +21,6 @@ namespace PuzzleGame.Quest
 
         public void EnterBookWall()
         {
-            Debug.LogError("EnterBookWall");
             if(QuestIsActive)
             {
                 ReshuffleBooks();
@@ -31,7 +30,6 @@ namespace PuzzleGame.Quest
 
         public void ExitBookWall() 
         {
-            Debug.LogError("ExitBookWall");
             if (QuestIsActive) 
             {
                 if (!GrabbedCorrect && _book)
@@ -93,8 +91,8 @@ namespace PuzzleGame.Quest
             
             ChainManager.Instance.RegisterNewChain();
 
-            ChainManager.Instance.PlayAudio(AudioManager.Instance.AudioData.UseThisPortal);
-            ChainManager.Instance.WaitUntil(1f);
+            // ChainManager.Instance.PlayAudio(AudioManager.Instance.AudioData.UseThisPortal);
+            // ChainManager.Instance.WaitUntil(1f);
             ChainManager.Instance.Do(EnableNeededPortals);
             ChainManager.Instance.PlayAudio(AudioManager.Instance.AudioData.MagicCloset);
 
