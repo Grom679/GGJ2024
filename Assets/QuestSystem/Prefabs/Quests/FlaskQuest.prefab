@@ -49,7 +49,9 @@ MonoBehaviour:
   _questPoint: {fileID: 9221110917097565879}
   _questType: 4
   _useAttemptMechanics: 1
-  _maxAttemptsCount: 4
+  _maxAttemptsCount: 2
+  _player: {fileID: 0}
+  _scaleValue: {x: 0, y: 0, z: 0}
 --- !u!1 &5246912122465260810
 GameObject:
   m_ObjectHideFlags: 0

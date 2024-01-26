@@ -17,10 +17,11 @@ namespace PuzzleGame.Quest
 
         protected override void FinishQuestInnerActions()
         {
+            Scenario.Instance.PortalManager.RemoveAdditionalActionOnPortal(PortalEnum.Floor, PortalEnum.Laboratory, EnterLaboratory);
+            Scenario.Instance.PortalManager.RemoveAdditionalActionOnPortal(PortalEnum.Laboratory, PortalEnum.Floor, ExitLaboratory);
+
             QuestPoint.DeactivatePoint();
             DisabledNeededPortals();
-            Scenario.Instance.PortalManager.RemoveAdditionalActionOnPortal(PortalEnum.Floor, PortalEnum.Laboratory, EnterLaboratory);
-            Scenario.Instance.PortalManager.RemoveAdditionalActionOnPortal(PortalEnum.Laboratory, PortalEnum.Floor, EnterLaboratory);
         }
 
         protected override void PartlyFinishQuestInnerActions()

@@ -51,6 +51,11 @@ namespace PuzzleGame.Quest
 
         protected override void StartQuestIntroduction()
         {
+            foreach (var picture in _pictures)
+            {
+                picture.MakeUngrabble();
+            }
+
             Scenario.Instance.PortalManager.ChangeMainPortal(PortalEnum.Fireplace);
 
             ChainManager.Instance.RegisterNewChain();

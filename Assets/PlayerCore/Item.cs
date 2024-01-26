@@ -10,6 +10,8 @@ public class Item : MonoBehaviour
     public Action OnActivateItem;
     public Action OnDropItem;
 
+    public bool CanBeGrabbed { get; set; } = true;
+
     public PortalEnum CurrentPosition { get; set; }
     public Rigidbody Rigidbody => _rigidbody;
 

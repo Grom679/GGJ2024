@@ -17,8 +17,11 @@ namespace PuzzleGame.Quest
         private Renderer _renderer;
         private Material _createdMaterial;
 
+        private Item _item;
+
         private void Awake()
         {
+            _item = GetComponent<Item>();
             _createdMaterial = new Material(_material);
             _renderer = GetComponent<Renderer>();
         }
@@ -39,12 +42,25 @@ namespace PuzzleGame.Quest
             {
                 //_renderer.material.mainTexture = _revealedTexture;
                 _renderer.material.color = Color.red;
+
+                MakeGrabble();
             }
             else
             {
+                MakeUngrabble();
                 //_renderer.material.mainTexture = _defaultTexture;
                 _renderer.material.color = Color.blue;
             }
+        }
+
+        public void MakeUngrabble()
+        {
+            _item.CanBeGrabbed = false;
+        }
+
+        public void MakeGrabble()
+        {
+            _item.CanBeGrabbed = true;
         }
     }
 }
