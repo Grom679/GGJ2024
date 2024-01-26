@@ -51,9 +51,6 @@ namespace PuzzleGame.Quest
 
                 _volume.weight += _volumeValue * 0.0025f;
 
-                Debug.Log(_volume.weight);
-                Debug.Log(_volumeValue);
-
                 Debug.Log(_currentTime);
 
                 if (Vector3.Distance(_plant.transform.position, QuestPoint.transform.position) <= _minDistance)
@@ -72,6 +69,9 @@ namespace PuzzleGame.Quest
             _attemptNumber = 0;
 
             Scenario.Instance.PortalManager.TeleportTo(PortalEnum.GreenHouse, PortalEnum.Floor);
+
+            Scenario.Instance.PortalManager.RemoveAdditionalActionOnPortal(PortalEnum.Floor, PortalEnum.GreenHouse, EnterGreenWall);
+            Scenario.Instance.PortalManager.RemoveAdditionalActionOnPortal(PortalEnum.GreenHouse, PortalEnum.Floor, ExitGreenWall);
 
             DisabledNeededPortals();
 
@@ -140,6 +140,9 @@ namespace PuzzleGame.Quest
 
             DisabledNeededPortals();
 
+            Scenario.Instance.PortalManager.SetAdditionalActionOnPortal(PortalEnum.Floor, PortalEnum.GreenHouse, EnterGreenWall);
+            Scenario.Instance.PortalManager.SetAdditionalActionOnPortal(PortalEnum.GreenHouse, PortalEnum.Floor, ExitGreenWall);
+
             ChainManager.Instance.RegisterNewChain();
 
             // ChainManager.Instance.PlayAudio(AudioManager.Instance.AudioData.PlantMonologue);
@@ -147,17 +150,24 @@ namespace PuzzleGame.Quest
             // ChainManager.Instance.PlayAudio(AudioManager.Instance.AudioData.BookIllustration);
             // ChainManager.Instance.WaitUntil(1f);
             ChainManager.Instance.PlayAudio(AudioManager.Instance.AudioData.HaveFun);
-            ChainManager.Instance.Do(EnableNeededPortals);
+
+            ChainManager.Instance.Do(() => {Scenario.Instance.PortalManager.EnablePortal(PortalEnum.Floor, PortalEnum.GreenHouse);});
 
             ChainManager.Instance.FinishActions();
 
             _plant = null;
         }
 
-        private void EnableNeededPortals()
+        public void EnterGreenWall()
         {
-            Scenario.Instance.PortalManager.EnablePortal(PortalEnum.Floor, PortalEnum.GreenHouse);
             Scenario.Instance.PortalManager.EnablePortal(PortalEnum.GreenHouse, PortalEnum.Floor);
+            Scenario.Instance.PortalManager.DisablePortal(PortalEnum.Floor, PortalEnum.GreenHouse);
+        }
+
+        public void ExitGreenWall()
+        {
+            Scenario.Instance.PortalManager.DisablePortal(PortalEnum.GreenHouse, PortalEnum.Floor);
+            Scenario.Instance.PortalManager.EnablePortal(PortalEnum.Floor, PortalEnum.GreenHouse);
         }
 
         private void DisableGreenPortal()

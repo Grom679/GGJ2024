@@ -21,6 +21,9 @@ namespace PuzzleGame.Quest
             QuestPoint.DeactivatePoint();
 
             DisabledNeededPortals();
+
+            Scenario.Instance.PortalManager.RemoveAdditionalActionOnPortal(PortalEnum.Floor, PortalEnum.Ceiling, EnterCeiling);
+            Scenario.Instance.PortalManager.RemoveAdditionalActionOnPortal(PortalEnum.Ceiling, PortalEnum.Floor, ExitCeiling);
         }
 
         protected override void PartlyFinishQuestInnerActions()
@@ -54,6 +57,9 @@ namespace PuzzleGame.Quest
         {
             Scenario.Instance.PortalManager.ChangeMainPortal(PortalEnum.Ceiling);
 
+            Scenario.Instance.PortalManager.SetAdditionalActionOnPortal(PortalEnum.Floor, PortalEnum.Ceiling, EnterCeiling);
+            Scenario.Instance.PortalManager.SetAdditionalActionOnPortal(PortalEnum.Ceiling, PortalEnum.Floor, ExitCeiling);
+
             ChainManager.Instance.RegisterNewChain();
 
             // ChainManager.Instance.PlayAudio(AudioManager.Instance.AudioData.IDidntExpect);
@@ -65,15 +71,21 @@ namespace PuzzleGame.Quest
             // ChainManager.Instance.PlayAudio(AudioManager.Instance.AudioData.AdditionalFromTheBook);
             // ChainManager.Instance.WaitUntil(1f);
             ChainManager.Instance.PlayAudio(AudioManager.Instance.AudioData.OneCandle);
-            ChainManager.Instance.Do(EnableNeededPortals);
+            ChainManager.Instance.Do(() => { Scenario.Instance.PortalManager.EnablePortal(PortalEnum.Floor, PortalEnum.Ceiling); });
 
             ChainManager.Instance.FinishActions();
         }
 
-        private void EnableNeededPortals()
+        public void EnterCeiling()
         {
-            Scenario.Instance.PortalManager.EnablePortal(PortalEnum.Floor, PortalEnum.Ceiling);
             Scenario.Instance.PortalManager.EnablePortal(PortalEnum.Ceiling, PortalEnum.Floor);
+            Scenario.Instance.PortalManager.DisablePortal(PortalEnum.Floor, PortalEnum.Ceiling);
+        }
+
+        public void ExitCeiling()
+        {
+            Scenario.Instance.PortalManager.DisablePortal(PortalEnum.Ceiling, PortalEnum.Floor);
+            Scenario.Instance.PortalManager.EnablePortal(PortalEnum.Floor, PortalEnum.Ceiling);
         }
 
         private void DisabledNeededPortals()

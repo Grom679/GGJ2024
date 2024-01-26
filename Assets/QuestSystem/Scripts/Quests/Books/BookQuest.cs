@@ -23,7 +23,14 @@ namespace PuzzleGame.Quest
         {
             if(QuestIsActive)
             {
-                ReshuffleBooks();
+                if(_book == null)
+                {
+                    ReshuffleBooks();
+                }
+
+                Scenario.Instance.PortalManager.EnablePortal(PortalEnum.Library, PortalEnum.Floor);
+                Scenario.Instance.PortalManager.DisablePortal(PortalEnum.Floor, PortalEnum.Library);
+
                 Scenario.Instance.Player.OnBookQuestChange?.Invoke();
             }
         }
@@ -36,6 +43,9 @@ namespace PuzzleGame.Quest
                 {
                     GlobalEvents.Instance.OnQuestError?.Invoke();
                 }
+
+                Scenario.Instance.PortalManager.DisablePortal(PortalEnum.Library, PortalEnum.Floor);
+                Scenario.Instance.PortalManager.EnablePortal(PortalEnum.Floor, PortalEnum.Library);
 
                 Scenario.Instance.Player.OnBookQuestChange?.Invoke();
             } 
@@ -93,16 +103,10 @@ namespace PuzzleGame.Quest
 
             // ChainManager.Instance.PlayAudio(AudioManager.Instance.AudioData.UseThisPortal);
             // ChainManager.Instance.WaitUntil(1f);
-            ChainManager.Instance.Do(EnableNeededPortals);
+            ChainManager.Instance.Do(() => { Scenario.Instance.PortalManager.EnablePortal(PortalEnum.Floor, PortalEnum.Library); });
             ChainManager.Instance.PlayAudio(AudioManager.Instance.AudioData.MagicCloset);
 
             ChainManager.Instance.FinishActions();
-        }
-
-        private void EnableNeededPortals()
-        {
-            Scenario.Instance.PortalManager.EnablePortal(PortalEnum.Floor, PortalEnum.Library);
-            Scenario.Instance.PortalManager.EnablePortal(PortalEnum.Library, PortalEnum.Floor);
         }
 
         private void DisabledNeededPortals()

@@ -4,6 +4,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Numerics;
 using UnityEngine;
+using static UnityEditor.Experimental.GraphView.GraphView;
 
 namespace PuzzleGame.Quest
 {
@@ -15,6 +16,9 @@ namespace PuzzleGame.Quest
         protected override void FinishQuestInnerActions()
         {
             QuestPoint.DeactivatePoint();
+
+            Scenario.Instance.PortalManager.RemoveAdditionalActionOnPortal(PortalEnum.Floor, PortalEnum.Fireplace, EnterPicture);
+            Scenario.Instance.PortalManager.RemoveAdditionalActionOnPortal(PortalEnum.Fireplace, PortalEnum.Floor, ExitPicture);
 
             DisabledNeededPortals();
         }
@@ -58,6 +62,9 @@ namespace PuzzleGame.Quest
 
             Scenario.Instance.PortalManager.ChangeMainPortal(PortalEnum.Fireplace);
 
+            Scenario.Instance.PortalManager.SetAdditionalActionOnPortal(PortalEnum.Floor, PortalEnum.Fireplace, EnterPicture);
+            Scenario.Instance.PortalManager.SetAdditionalActionOnPortal(PortalEnum.Fireplace, PortalEnum.Floor, ExitPicture);
+
             ChainManager.Instance.RegisterNewChain();
 
             ChainManager.Instance.PlayAudio(AudioManager.Instance.AudioData.OSmellsDilicious);
@@ -67,15 +74,22 @@ namespace PuzzleGame.Quest
             ChainManager.Instance.PlayAudio(AudioManager.Instance.AudioData.Clean);
             ChainManager.Instance.WaitUntil(1f);
             ChainManager.Instance.PlayAudio(AudioManager.Instance.AudioData.DifferentAngle);
-            ChainManager.Instance.Do(EnableNeededPortals);
+            ChainManager.Instance.Do(() => { Scenario.Instance.PortalManager.EnablePortal(PortalEnum.Floor, PortalEnum.Fireplace); });
 
             ChainManager.Instance.FinishActions();
         }
 
-        private void EnableNeededPortals()
+        private void EnterPicture()
         {
-            Scenario.Instance.PortalManager.EnablePortal(PortalEnum.Floor, PortalEnum.Fireplace);
             Scenario.Instance.PortalManager.EnablePortal(PortalEnum.Fireplace, PortalEnum.Floor);
+            Scenario.Instance.PortalManager.DisablePortal(PortalEnum.Floor, PortalEnum.Fireplace);
+        }
+
+        private void ExitPicture()
+        {
+            Scenario.Instance.PortalManager.DisablePortal(PortalEnum.Fireplace, PortalEnum.Floor);
+            Scenario.Instance.PortalManager.EnablePortal(PortalEnum.Floor, PortalEnum.Fireplace);
+
         }
 
         private void DisabledNeededPortals()
