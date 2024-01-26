@@ -32,14 +32,6 @@ namespace PuzzleGame.Quest
 
         protected override void SartQuestInnerActions(QuestItem item)
         {
-            Debug.LogError(_flask);
-            if(_flask != null)
-            {
-                _flask.ResetItem();
-
-                _flask = null;
-            }
-            
             if(item.ItemType == QuestItemType.FakeFlask)
             {
                 AudioManager.Instance.PlayClip(AudioManager.Instance.AudioData.SoThisFlask);
