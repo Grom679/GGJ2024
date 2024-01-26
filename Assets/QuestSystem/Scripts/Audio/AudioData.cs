@@ -61,6 +61,12 @@ namespace PuzzleGame.Audio
         public AudioClip NextStone;
         public AudioClip SoThisFlask;
         public AudioClip YesOfCourse;
+        public AudioClip AlmoustImpossible;
+        public AudioClip Clean;
+        public AudioClip DifferentAngle;
+        public AudioClip OSmellsDilicious;
+        public AudioClip MyGrandFather;
+
 
         public List<DataEntity> audioDataSpecial;
     }

@@ -138,6 +138,8 @@ namespace PuzzleGame.Quest
         {
             Scenario.Instance.PortalManager.ChangeMainPortal(PortalEnum.GreenHouse);
 
+            DisabledNeededPortals();
+
             ChainManager.Instance.RegisterNewChain();
 
             ChainManager.Instance.PlayAudio(AudioManager.Instance.AudioData.PlantMonologue);
@@ -181,6 +183,10 @@ namespace PuzzleGame.Quest
             if(item.ItemType == QuestItemType.Plant)
             {
                 _physics.enabled = true;
+            }
+            else if(item.ItemType != QuestItemType.Plant && item.ItemType != QuestItemType.FakePlant)
+            {
+                item.ResetItem();
             }
         }
 

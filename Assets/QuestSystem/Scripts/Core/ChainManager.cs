@@ -43,7 +43,7 @@ namespace PuzzleGame.Core
 
         public void Do(Action action, float delay = 0f)
         {
-            StartCoroutine(DoAction(action, delay));
+            _actions.Enqueue(DoAction(action, delay));
         }
 
         public void WaitUntil(float time)

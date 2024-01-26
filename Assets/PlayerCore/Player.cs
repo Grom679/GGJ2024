@@ -11,7 +11,9 @@ public class Player : MonoBehaviour
     public Action OnDropItem;
     public Action<InteractPoint> OnInteractItem;
     public Action OnBookQuestChange;
-    
+
+    public Item PickedItem => _pickedItem;
+
     [SerializeField] private Item _pickedItem;
     [SerializeField] private Transform _transformItem;
     [SerializeField] private Transform _root;

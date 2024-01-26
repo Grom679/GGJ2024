@@ -10,7 +10,8 @@ namespace PuzzleGame.Quest
         Book,
         Plant,
         Candle,
-        Flask
+        Flask,
+        Picture
     }
 
     public interface IQuest
