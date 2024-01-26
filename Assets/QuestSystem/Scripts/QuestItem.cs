@@ -18,7 +18,9 @@ namespace PuzzleGame.Quest
         FakeFlask,
         Bug,
         Undercut,
-        Picture
+        Picture,
+        Glasses,
+        FakePicture
     }
 
     [RequireComponent(typeof(Item))]

@@ -138,6 +138,8 @@ namespace PuzzleGame.Quest
         {
             Scenario.Instance.PortalManager.ChangeMainPortal(PortalEnum.GreenHouse);
 
+            DisabledNeededPortals();
+
             ChainManager.Instance.RegisterNewChain();
 
             ChainManager.Instance.PlayAudio(AudioManager.Instance.AudioData.PlantMonologue);

@@ -79,7 +79,7 @@ public class Item : MonoBehaviour
    {
       Debug.LogError("use item");
       Scenario.Instance.CurrentQuest.QuestPoint.PutQuestItem(_questItem);
-      Destroy(gameObject);
+      //Destroy(gameObject);
    }
    
    public QuestItemType CheckItemType()

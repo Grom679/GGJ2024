@@ -44,6 +44,11 @@ MonoBehaviour:
   NextStone: {fileID: 8300000, guid: c78b491f6de25664f911bfbe46cddb06, type: 3}
   SoThisFlask: {fileID: 8300000, guid: 9c6bb2939219e3c488ac467d71437fcf, type: 3}
   YesOfCourse: {fileID: 8300000, guid: 2bba17d0a91668a4f83af4589a057ecb, type: 3}
+  AlmoustImpossible: {fileID: 8300000, guid: 715e5462fb55ef04fbdf869f5fea107f, type: 3}
+  Clean: {fileID: 8300000, guid: 12fb9df67a6a72340a181ebe9e313b9d, type: 3}
+  DifferentAngle: {fileID: 8300000, guid: 6cf7ee63005e051439d5ef6989bb73b8, type: 3}
+  OSmellsDilicious: {fileID: 8300000, guid: 1d71cff9169c81d4d8ab79ad3136938a, type: 3}
+  MyGrandFather: {fileID: 8300000, guid: 01efcbebd38b16d458d6f20aca50abc3, type: 3}
   audioDataSpecial:
   - key: 0
     questAudio:
@@ -64,6 +69,12 @@ MonoBehaviour:
       - {fileID: 8300000, guid: c9a041d5afca3004fb0363a3be5d731e, type: 3}
       - {fileID: 8300000, guid: e50d2e2a92c1a0c44be1734c6f6a5851, type: 3}
       - {fileID: 8300000, guid: cb8978f4029e20345ac09cb1510a1495, type: 3}
+    - questType: 5
+      audios:
+      - {fileID: 8300000, guid: ca2789582ed003c459b9ae8aecbe6e2f, type: 3}
+      - {fileID: 8300000, guid: 9aebd3539014ecb4d957681c89aa0820, type: 3}
+      - {fileID: 8300000, guid: bdc8d210b926b4d4b8860ced1dee8e9c, type: 3}
+      - {fileID: 8300000, guid: 71451067db177ce4d868ad362f159b32, type: 3}
   - key: 1
     questAudio:
     - questType: 0
@@ -81,6 +92,9 @@ MonoBehaviour:
     - questType: 4
       audios:
       - {fileID: 8300000, guid: 2bba17d0a91668a4f83af4589a057ecb, type: 3}
+    - questType: 5
+      audios:
+      - {fileID: 8300000, guid: 576c653a68fd5cc4b9e85945c0fd3f58, type: 3}
   - key: 2
     questAudio:
     - questType: 0
@@ -89,3 +103,6 @@ MonoBehaviour:
     - questType: 3
       audios:
       - {fileID: 8300000, guid: bec2de140098f744fb57d130b7790f8e, type: 3}
+    - questType: 5
+      audios:
+      - {fileID: 8300000, guid: 7d65ddc47cffac74cb10b768f22d7250, type: 3}
