@@ -11,6 +11,11 @@ namespace PuzzleGame.Quest
         [SerializeField]
         private Transform _bug;
 
+        private void OnEnable()
+        {
+            _bug.gameObject.SetActive(false);
+        }
+
         protected override void FinishQuestInnerActions()
         {
             QuestPoint.DeactivatePoint();
@@ -81,7 +86,13 @@ namespace PuzzleGame.Quest
         {
             float x = 0, y = 0, z = 0;
 
-            while(_bug.localScale.x < 0.5f)
+            _bug.gameObject.SetActive(true);
+
+            Rigidbody rigidbody = _bug.GetComponent<Rigidbody>();
+
+            rigidbody.useGravity = false;
+
+            while (_bug.localScale.x < 0.5f)
             {
                 x += Time.deltaTime * 0.5f;
                 y += Time.deltaTime * 0.5f;
@@ -91,6 +102,8 @@ namespace PuzzleGame.Quest
 
                 yield return null;
             }
+
+            rigidbody.useGravity = true;
 
             //Play sound
         }

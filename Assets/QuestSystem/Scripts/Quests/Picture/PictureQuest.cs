@@ -29,10 +29,7 @@ namespace PuzzleGame.Quest
 
         protected override void RemoveItem(QuestItem item)
         {
-            if (item.ItemType != QuestItemType.Picture && item.ItemType != QuestItemType.FakePicture)
-            {
-                item.ResetItem();
-            }
+            item.ResetItem();
         }
 
         protected override void SartQuestInnerActions(QuestItem item)

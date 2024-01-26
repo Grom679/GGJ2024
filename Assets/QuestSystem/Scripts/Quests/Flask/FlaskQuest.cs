@@ -8,12 +8,19 @@ namespace PuzzleGame.Quest
 {
     public class FlaskQuest : SimpleQuest
     {
+        [SerializeField]
+        private Transform _player;
+        [SerializeField]
+        private Vector3 _scaleValue;
+
         private QuestItem _flask;
 
         protected override void FinishQuestInnerActions()
         {
             QuestPoint.DeactivatePoint();
             DisabledNeededPortals();
+            Scenario.Instance.PortalManager.RemoveAdditionalActionOnPortal(PortalEnum.Floor, PortalEnum.Laboratory, EnterLaboratory);
+            Scenario.Instance.PortalManager.RemoveAdditionalActionOnPortal(PortalEnum.Laboratory, PortalEnum.Floor, EnterLaboratory);
         }
 
         protected override void PartlyFinishQuestInnerActions()
@@ -32,15 +39,7 @@ namespace PuzzleGame.Quest
 
         protected override void SartQuestInnerActions(QuestItem item)
         {
-            Debug.LogError(_flask);
-            if(_flask != null)
-            {
-                _flask.ResetItem();
-
-                _flask = null;
-            }
-            
-            if(item.ItemType == QuestItemType.FakeFlask)
+            if (item.ItemType == QuestItemType.FakeFlask)
             {
                 AudioManager.Instance.PlayClip(AudioManager.Instance.AudioData.SoThisFlask);
             }
@@ -62,7 +61,10 @@ namespace PuzzleGame.Quest
         protected override void StartQuestIntroduction()
         {
             Scenario.Instance.PortalManager.ChangeMainPortal(PortalEnum.Laboratory);
-            
+
+            Scenario.Instance.PortalManager.SetAdditionalActionOnPortal(PortalEnum.Floor, PortalEnum.Laboratory, EnterLaboratory);
+            Scenario.Instance.PortalManager.SetAdditionalActionOnPortal(PortalEnum.Laboratory, PortalEnum.Floor, ExitLaboratory);
+
             ChainManager.Instance.RegisterNewChain();
             //
             // ChainManager.Instance.PlayAudio(AudioManager.Instance.AudioData.NextStone);
@@ -77,6 +79,16 @@ namespace PuzzleGame.Quest
             ChainManager.Instance.FinishActions();
         }
         
+        private void EnterLaboratory()
+        {
+            _player.localScale = _scaleValue;
+        }
+
+        private void ExitLaboratory() 
+        {
+            _player.localScale = Vector3.one;
+        }
+
         private void EnableNeededPortals()
         {
             Scenario.Instance.PortalManager.EnablePortal(PortalEnum.Floor, PortalEnum.Laboratory);

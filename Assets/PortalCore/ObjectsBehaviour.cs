@@ -75,7 +75,7 @@ namespace PuzzleGame.Core
                 {
                     if(room.room == PortalEnum.Floor)
                     {
-                        item.Rigidbody.isKinematic = false;
+                        item.Rigidbody.isKinematic = true;
                         item.Rigidbody.useGravity = true;
                     }
                     else
@@ -99,7 +99,7 @@ namespace PuzzleGame.Core
 
             foreach (Item item in nextRoom.items)
             {
-                item.Rigidbody.isKinematic = false;
+                item.Rigidbody.isKinematic = true;
                 item.Rigidbody.useGravity = true;
             }
         }
