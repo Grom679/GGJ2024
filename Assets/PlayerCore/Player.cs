@@ -49,6 +49,11 @@ public class Player : MonoBehaviour
 
     private void PickItem(Item item)
     {
+        if(!item.CanBeGrabbed)
+        {
+            return;
+        }
+
         if (_pickedItem == null)
         {
             _pickedItem = item;

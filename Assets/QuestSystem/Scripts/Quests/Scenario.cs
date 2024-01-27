@@ -152,6 +152,8 @@ namespace PuzzleGame.Quest
 
                     StartCoroutine(WaitForNext(PlayQuest));
 
+                    _currentQuest.FinishQuest();
+
                     break;
             }
         }
