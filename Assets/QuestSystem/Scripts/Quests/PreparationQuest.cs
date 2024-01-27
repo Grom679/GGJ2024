@@ -20,9 +20,11 @@ namespace PuzzleGame.Quest
         
         [SerializeField] 
         private Item _dynamite;
-
-        [SerializeField] private GameObject _fireEffect;
-        [SerializeField] private GameObject _sound;
+        [SerializeField] 
+        private GameObject _fireEffect;
+        [SerializeField] 
+        
+        private GameObject _sound;
 
         private bool _useDistance;
 
@@ -48,17 +50,18 @@ namespace PuzzleGame.Quest
 
         protected override void StartQuestIntroduction()
         {
+            _dynamite.gameObject.SetActive(false);
             _bucket.MakeGrabble();
             ChainManager.Instance.RegisterNewChain();
 
             ChainManager.Instance.WaitUntil(2f);
             ChainManager.Instance.PlayTimeLine(_director);
-            //ChainManager.Instance.PlayAudio(AudioManager.Instance.AudioData.WellWellWell);
-            //ChainManager.Instance.WaitUntil(1f);
-            //ChainManager.Instance.PlayAudio(AudioManager.Instance.AudioData.NeverLeave);
-            //ChainManager.Instance.PlayAudio(AudioManager.Instance.AudioData.PinkPonies);
-            //ChainManager.Instance.PlayAudio(AudioManager.Instance.AudioData.NeedPotion);
-            //ChainManager.Instance.WaitUntil(2f);
+            ChainManager.Instance.PlayAudio(AudioManager.Instance.AudioData.WellWellWell);
+            ChainManager.Instance.WaitUntil(1f);
+            ChainManager.Instance.PlayAudio(AudioManager.Instance.AudioData.NeverLeave);
+            ChainManager.Instance.PlayAudio(AudioManager.Instance.AudioData.PinkPonies);
+            ChainManager.Instance.PlayAudio(AudioManager.Instance.AudioData.NeedPotion);
+            ChainManager.Instance.WaitUntil(2f);
             ChainManager.Instance.PlayAudio(AudioManager.Instance.AudioData.PrepareCauldron);
 
             ChainManager.Instance.FinishActions();

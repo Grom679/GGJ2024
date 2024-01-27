@@ -51,6 +51,7 @@ MonoBehaviour:
   DifferentAngle: {fileID: 8300000, guid: 6cf7ee63005e051439d5ef6989bb73b8, type: 3}
   OSmellsDilicious: {fileID: 8300000, guid: 1d71cff9169c81d4d8ab79ad3136938a, type: 3}
   MyGrandFather: {fileID: 8300000, guid: 01efcbebd38b16d458d6f20aca50abc3, type: 3}
+  MurmaidScream: {fileID: 8300000, guid: 62976666019017c46919a7dc92b55789, type: 3}
   audioDataSpecial:
   - key: 0
     questAudio:

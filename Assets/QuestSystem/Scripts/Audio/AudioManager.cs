@@ -12,11 +12,14 @@ namespace PuzzleGame.Audio
 
         public AudioSource VOSource => _voSource;
         public AudioSource SFXSource => _sfxSource;
+        public AudioSource BGSource => _bgSource;
 
         [SerializeField]
         private AudioSource _voSource;
         [SerializeField]
         private AudioSource _sfxSource;
+        [SerializeField]
+        private AudioSource _bgSource;
         [SerializeField]
         private AudioData _data;
 

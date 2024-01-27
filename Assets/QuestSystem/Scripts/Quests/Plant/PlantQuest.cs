@@ -149,11 +149,11 @@ namespace PuzzleGame.Quest
 
             ChainManager.Instance.RegisterNewChain();
 
-            //ChainManager.Instance.PlayAudio(AudioManager.Instance.AudioData.PlantMonologue);
-            //ChainManager.Instance.WaitUntil(1f);
-            //ChainManager.Instance.PlayAudio(AudioManager.Instance.AudioData.BookIllustration);
-            //ChainManager.Instance.PlayTimeLine(_director);
-            //ChainManager.Instance.WaitUntil(1f);
+            ChainManager.Instance.PlayAudio(AudioManager.Instance.AudioData.PlantMonologue);
+            ChainManager.Instance.WaitUntil(1f);
+            ChainManager.Instance.PlayAudio(AudioManager.Instance.AudioData.BookIllustration);
+            ChainManager.Instance.PlayTimeLine(_director);
+            ChainManager.Instance.WaitUntil(1f);
             ChainManager.Instance.PlayAudio(AudioManager.Instance.AudioData.HaveFun);
 
             ChainManager.Instance.Do(() => {Scenario.Instance.PortalManager.EnablePortal(PortalEnum.Floor, PortalEnum.GreenHouse);});

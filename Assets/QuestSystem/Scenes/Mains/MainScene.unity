@@ -387,7 +387,7 @@ PrefabInstance:
     - target: {fileID: 4433255413829591616, guid: ec003cfbd0cdfe740943af98bc42ebe1,
         type: 3}
       propertyPath: m_Name
-      value: mf_book_01 (24)
+      value: Book
       objectReference: {fileID: 0}
     - target: {fileID: 4433255413829591616, guid: ec003cfbd0cdfe740943af98bc42ebe1,
         type: 3}
@@ -590,7 +590,7 @@ PrefabInstance:
     - target: {fileID: 4433255413829591616, guid: ec003cfbd0cdfe740943af98bc42ebe1,
         type: 3}
       propertyPath: m_Name
-      value: mf_book_01 (5)
+      value: Book
       objectReference: {fileID: 0}
     - target: {fileID: 4433255413829591616, guid: ec003cfbd0cdfe740943af98bc42ebe1,
         type: 3}
@@ -793,7 +793,7 @@ PrefabInstance:
     - target: {fileID: 4433255413829591616, guid: ec003cfbd0cdfe740943af98bc42ebe1,
         type: 3}
       propertyPath: m_Name
-      value: mf_book_01 (74)
+      value: Book
       objectReference: {fileID: 0}
     - target: {fileID: 4433255413829591616, guid: ec003cfbd0cdfe740943af98bc42ebe1,
         type: 3}
@@ -1420,7 +1420,7 @@ PrefabInstance:
     - target: {fileID: 4433255413829591616, guid: ec003cfbd0cdfe740943af98bc42ebe1,
         type: 3}
       propertyPath: m_Name
-      value: mf_book_01 (70)
+      value: Book
       objectReference: {fileID: 0}
     - target: {fileID: 4433255413829591616, guid: ec003cfbd0cdfe740943af98bc42ebe1,
         type: 3}
@@ -1623,7 +1623,7 @@ PrefabInstance:
     - target: {fileID: 4433255413829591616, guid: ec003cfbd0cdfe740943af98bc42ebe1,
         type: 3}
       propertyPath: m_Name
-      value: mf_book_01 (7)
+      value: Book
       objectReference: {fileID: 0}
     - target: {fileID: 4433255413829591616, guid: ec003cfbd0cdfe740943af98bc42ebe1,
         type: 3}
@@ -1826,7 +1826,7 @@ PrefabInstance:
     - target: {fileID: 4433255413829591616, guid: ec003cfbd0cdfe740943af98bc42ebe1,
         type: 3}
       propertyPath: m_Name
-      value: mf_book_01 (10)
+      value: Book
       objectReference: {fileID: 0}
     - target: {fileID: 4433255413829591616, guid: ec003cfbd0cdfe740943af98bc42ebe1,
         type: 3}
@@ -2044,7 +2044,7 @@ PrefabInstance:
     - target: {fileID: 7202330836708532997, guid: ab8ea0c1c25d20d47a7e4e25e9476164,
         type: 3}
       propertyPath: m_Name
-      value: Flask_4
+      value: Flask
       objectReference: {fileID: 0}
     - target: {fileID: 7202330836708532997, guid: ab8ea0c1c25d20d47a7e4e25e9476164,
         type: 3}
@@ -2565,7 +2565,7 @@ PrefabInstance:
     - target: {fileID: 4433255413829591616, guid: ec003cfbd0cdfe740943af98bc42ebe1,
         type: 3}
       propertyPath: m_Name
-      value: mf_book_01 (56)
+      value: Book
       objectReference: {fileID: 0}
     - target: {fileID: 4433255413829591616, guid: ec003cfbd0cdfe740943af98bc42ebe1,
         type: 3}
@@ -3174,7 +3174,7 @@ PrefabInstance:
     - target: {fileID: 4433255413829591616, guid: ec003cfbd0cdfe740943af98bc42ebe1,
         type: 3}
       propertyPath: m_Name
-      value: mf_book_01 (69)
+      value: Book
       objectReference: {fileID: 0}
     - target: {fileID: 4433255413829591616, guid: ec003cfbd0cdfe740943af98bc42ebe1,
         type: 3}
@@ -3399,7 +3399,7 @@ PrefabInstance:
     - target: {fileID: 1238919316445141935, guid: c4f379a9c8970094cb6516f2a5701c2a,
         type: 3}
       propertyPath: m_Name
-      value: Flask_2
+      value: Flask
       objectReference: {fileID: 0}
     - target: {fileID: 1238919316445141935, guid: c4f379a9c8970094cb6516f2a5701c2a,
         type: 3}
@@ -3588,7 +3588,7 @@ PrefabInstance:
     - target: {fileID: 1913866841032856060, guid: dd1241c59b048584ca237c992efade1b,
         type: 3}
       propertyPath: m_Name
-      value: Flask_5
+      value: Flask
       objectReference: {fileID: 0}
     - target: {fileID: 1913866841032856060, guid: dd1241c59b048584ca237c992efade1b,
         type: 3}
@@ -4027,7 +4027,7 @@ PrefabInstance:
     - target: {fileID: 4325195053762921487, guid: 5e0bd85f9dc8b6746904e5f13075fc15,
         type: 3}
       propertyPath: m_Name
-      value: Flask_3
+      value: Flask
       objectReference: {fileID: 0}
     - target: {fileID: 4325195053762921487, guid: 5e0bd85f9dc8b6746904e5f13075fc15,
         type: 3}
@@ -4537,7 +4537,7 @@ PrefabInstance:
     - target: {fileID: 7162667482330818226, guid: 5e5ca8bd26a707140bf43aab0d5681db,
         type: 3}
       propertyPath: m_Name
-      value: Flask_3
+      value: Flask
       objectReference: {fileID: 0}
     - target: {fileID: 7162667482330818226, guid: 5e5ca8bd26a707140bf43aab0d5681db,
         type: 3}
@@ -4653,7 +4653,7 @@ PrefabInstance:
     - target: {fileID: 4433255413829591616, guid: ec003cfbd0cdfe740943af98bc42ebe1,
         type: 3}
       propertyPath: m_Name
-      value: mf_book_01 (61)
+      value: Book
       objectReference: {fileID: 0}
     - target: {fileID: 4433255413829591616, guid: ec003cfbd0cdfe740943af98bc42ebe1,
         type: 3}
@@ -4865,7 +4865,7 @@ PrefabInstance:
     - target: {fileID: 4325195053762921487, guid: 5e0bd85f9dc8b6746904e5f13075fc15,
         type: 3}
       propertyPath: m_Name
-      value: Flask_3 (1)
+      value: Flask
       objectReference: {fileID: 0}
     - target: {fileID: 4325195053762921487, guid: 5e0bd85f9dc8b6746904e5f13075fc15,
         type: 3}
@@ -5079,7 +5079,7 @@ PrefabInstance:
     - target: {fileID: 4433255413829591616, guid: ec003cfbd0cdfe740943af98bc42ebe1,
         type: 3}
       propertyPath: m_Name
-      value: mf_book_01 (41)
+      value: Book
       objectReference: {fileID: 0}
     - target: {fileID: 4433255413829591616, guid: ec003cfbd0cdfe740943af98bc42ebe1,
         type: 3}
@@ -5237,7 +5237,7 @@ PrefabInstance:
     - target: {fileID: 4325195053762921487, guid: 5e0bd85f9dc8b6746904e5f13075fc15,
         type: 3}
       propertyPath: m_Name
-      value: Flask_3 (1)
+      value: Flask
       objectReference: {fileID: 0}
     - target: {fileID: 4325195053762921487, guid: 5e0bd85f9dc8b6746904e5f13075fc15,
         type: 3}
@@ -5413,7 +5413,7 @@ PrefabInstance:
     - target: {fileID: 4433255413829591616, guid: ec003cfbd0cdfe740943af98bc42ebe1,
         type: 3}
       propertyPath: m_Name
-      value: mf_book_01 (26)
+      value: Book
       objectReference: {fileID: 0}
     - target: {fileID: 4433255413829591616, guid: ec003cfbd0cdfe740943af98bc42ebe1,
         type: 3}
@@ -5734,7 +5734,7 @@ PrefabInstance:
     - target: {fileID: 4325195053762921487, guid: 5e0bd85f9dc8b6746904e5f13075fc15,
         type: 3}
       propertyPath: m_Name
-      value: Flask_3 (1)
+      value: Flask
       objectReference: {fileID: 0}
     - target: {fileID: 4325195053762921487, guid: 5e0bd85f9dc8b6746904e5f13075fc15,
         type: 3}
@@ -5834,6 +5834,124 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d366813614624a644bf8288f71db65c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &266453368
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 266453369}
+  - component: {fileID: 266453371}
+  - component: {fileID: 266453370}
+  m_Layer: 0
+  m_Name: Point Light (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &266453369
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 266453368}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.000000081460335, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.007850491, y: 0.52710676, z: 0.015701069}
+  m_LocalScale: {x: 1.1215037, y: 1.1215037, z: 1.1215037}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 495797619}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &266453370
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 266453368}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Version: 3
+  m_UsePipelineSettings: 1
+  m_AdditionalLightsShadowResolutionTier: 2
+  m_LightLayerMask: 1
+  m_RenderingLayers: 1
+  m_CustomShadowLayers: 0
+  m_ShadowLayerMask: 1
+  m_ShadowRenderingLayers: 1
+  m_LightCookieSize: {x: 1, y: 1}
+  m_LightCookieOffset: {x: 0, y: 0}
+  m_SoftShadowQuality: 0
+--- !u!108 &266453371
+Light:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 266453368}
+  m_Enabled: 1
+  serializedVersion: 10
+  m_Type: 2
+  m_Shape: 0
+  m_Color: {r: 0.5566038, g: 0.29703835, b: 0.17590779, a: 1}
+  m_Intensity: 15
+  m_Range: 2.36
+  m_SpotAngle: 30
+  m_InnerSpotAngle: 21.80208
+  m_CookieSize: 10
+  m_Shadows:
+    m_Type: 0
+    m_Resolution: -1
+    m_CustomResolution: -1
+    m_Strength: 1
+    m_Bias: 0.05
+    m_NormalBias: 0.4
+    m_NearPlane: 0.2
+    m_CullingMatrixOverride:
+      e00: 1
+      e01: 0
+      e02: 0
+      e03: 0
+      e10: 0
+      e11: 1
+      e12: 0
+      e13: 0
+      e20: 0
+      e21: 0
+      e22: 1
+      e23: 0
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
+    m_UseCullingMatrixOverride: 0
+  m_Cookie: {fileID: 0}
+  m_DrawHalo: 0
+  m_Flare: {fileID: 0}
+  m_RenderMode: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RenderingLayerMask: 1
+  m_Lightmapping: 4
+  m_LightShadowCasterMode: 0
+  m_AreaSize: {x: 1, y: 1}
+  m_BounceIntensity: 1
+  m_ColorTemperature: 6570
+  m_UseColorTemperature: 0
+  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_UseBoundingSphereOverride: 0
+  m_UseViewFrustumForShadowCasterCull: 1
+  m_ShadowRadius: 0
+  m_ShadowAngle: 0
 --- !u!1 &272498306
 GameObject:
   m_ObjectHideFlags: 0
@@ -5908,7 +6026,7 @@ PrefabInstance:
     - target: {fileID: 1307442724995581995, guid: f538b078114dfc64f903cf4365767696,
         type: 3}
       propertyPath: m_Name
-      value: Flask_6 (1)
+      value: Flask
       objectReference: {fileID: 0}
     - target: {fileID: 1307442724995581995, guid: f538b078114dfc64f903cf4365767696,
         type: 3}
@@ -6316,7 +6434,7 @@ PrefabInstance:
     - target: {fileID: 4433255413829591616, guid: ec003cfbd0cdfe740943af98bc42ebe1,
         type: 3}
       propertyPath: m_Name
-      value: mf_book_01 (34)
+      value: Book
       objectReference: {fileID: 0}
     - target: {fileID: 4433255413829591616, guid: ec003cfbd0cdfe740943af98bc42ebe1,
         type: 3}
@@ -6602,7 +6720,7 @@ PrefabInstance:
     - target: {fileID: 6155178912782651071, guid: 9b1e2df827d170e4ba68cc95ec1106b3,
         type: 3}
       propertyPath: m_Name
-      value: Flask_6
+      value: Flask
       objectReference: {fileID: 0}
     - target: {fileID: 6155178912782651071, guid: 9b1e2df827d170e4ba68cc95ec1106b3,
         type: 3}
@@ -6778,7 +6896,7 @@ PrefabInstance:
     - target: {fileID: 4433255413829591616, guid: ec003cfbd0cdfe740943af98bc42ebe1,
         type: 3}
       propertyPath: m_Name
-      value: mf_book_01 (16)
+      value: Book
       objectReference: {fileID: 0}
     - target: {fileID: 4433255413829591616, guid: ec003cfbd0cdfe740943af98bc42ebe1,
         type: 3}
@@ -7083,7 +7201,7 @@ PrefabInstance:
     - target: {fileID: 7202330836708532997, guid: ab8ea0c1c25d20d47a7e4e25e9476164,
         type: 3}
       propertyPath: m_Name
-      value: Flask_4
+      value: Flask
       objectReference: {fileID: 0}
     - target: {fileID: 7202330836708532997, guid: ab8ea0c1c25d20d47a7e4e25e9476164,
         type: 3}
@@ -7316,7 +7434,7 @@ PrefabInstance:
     - target: {fileID: 949659358647468468, guid: 3ddf4271573cdb040b2e10dd5e37d537,
         type: 3}
       propertyPath: m_Name
-      value: Flask_4
+      value: Flask
       objectReference: {fileID: 0}
     - target: {fileID: 949659358647468468, guid: 3ddf4271573cdb040b2e10dd5e37d537,
         type: 3}
@@ -7515,7 +7633,7 @@ PrefabInstance:
     - target: {fileID: 1238919316445141935, guid: c4f379a9c8970094cb6516f2a5701c2a,
         type: 3}
       propertyPath: m_Name
-      value: Flask_2
+      value: Flask
       objectReference: {fileID: 0}
     - target: {fileID: 1238919316445141935, guid: c4f379a9c8970094cb6516f2a5701c2a,
         type: 3}
@@ -7711,7 +7829,7 @@ PrefabInstance:
     - target: {fileID: 4433255413829591616, guid: ec003cfbd0cdfe740943af98bc42ebe1,
         type: 3}
       propertyPath: m_Name
-      value: mf_book_01 (38)
+      value: Book
       objectReference: {fileID: 0}
     - target: {fileID: 4433255413829591616, guid: ec003cfbd0cdfe740943af98bc42ebe1,
         type: 3}
@@ -8202,7 +8320,7 @@ PrefabInstance:
     - target: {fileID: 4433255413829591616, guid: ec003cfbd0cdfe740943af98bc42ebe1,
         type: 3}
       propertyPath: m_Name
-      value: mf_book_01 (50)
+      value: Book
       objectReference: {fileID: 0}
     - target: {fileID: 4433255413829591616, guid: ec003cfbd0cdfe740943af98bc42ebe1,
         type: 3}
@@ -8526,7 +8644,7 @@ PrefabInstance:
     - target: {fileID: 6660781607872348479, guid: 0dcecee4bba6452439122cd45fc85f91,
         type: 3}
       propertyPath: m_Name
-      value: Flask_5 (1)
+      value: Flask
       objectReference: {fileID: 0}
     - target: {fileID: 6660781607872348479, guid: 0dcecee4bba6452439122cd45fc85f91,
         type: 3}
@@ -8577,7 +8695,7 @@ PrefabInstance:
     - target: {fileID: 1238919316445141935, guid: c4f379a9c8970094cb6516f2a5701c2a,
         type: 3}
       propertyPath: m_Name
-      value: Flask_2 (1)
+      value: Flask
       objectReference: {fileID: 0}
     - target: {fileID: 1238919316445141935, guid: c4f379a9c8970094cb6516f2a5701c2a,
         type: 3}
@@ -8733,7 +8851,7 @@ PrefabInstance:
     - target: {fileID: 1307442724995581995, guid: f538b078114dfc64f903cf4365767696,
         type: 3}
       propertyPath: m_Name
-      value: Flask_6
+      value: Flask
       objectReference: {fileID: 0}
     - target: {fileID: 1307442724995581995, guid: f538b078114dfc64f903cf4365767696,
         type: 3}
@@ -9087,7 +9205,7 @@ PrefabInstance:
     - target: {fileID: 4433255413829591616, guid: ec003cfbd0cdfe740943af98bc42ebe1,
         type: 3}
       propertyPath: m_Name
-      value: mf_book_01 (45)
+      value: Book
       objectReference: {fileID: 0}
     - target: {fileID: 4433255413829591616, guid: ec003cfbd0cdfe740943af98bc42ebe1,
         type: 3}
@@ -9495,7 +9613,7 @@ PrefabInstance:
     - target: {fileID: 4433255413829591616, guid: ec003cfbd0cdfe740943af98bc42ebe1,
         type: 3}
       propertyPath: m_Name
-      value: mf_book_01 (25)
+      value: Book
       objectReference: {fileID: 0}
     - target: {fileID: 4433255413829591616, guid: ec003cfbd0cdfe740943af98bc42ebe1,
         type: 3}
@@ -9643,7 +9761,7 @@ PrefabInstance:
     - target: {fileID: 1307442724995581995, guid: f538b078114dfc64f903cf4365767696,
         type: 3}
       propertyPath: m_Name
-      value: Flask_6 (1)
+      value: Flask
       objectReference: {fileID: 0}
     - target: {fileID: 1307442724995581995, guid: f538b078114dfc64f903cf4365767696,
         type: 3}
@@ -10028,7 +10146,7 @@ PrefabInstance:
     - target: {fileID: 7272977354626062445, guid: 49ad72650a3fcd9469d688ebc0e554b7,
         type: 3}
       propertyPath: m_Name
-      value: Flask_2
+      value: Flask
       objectReference: {fileID: 0}
     - target: {fileID: 7272977354626062445, guid: 49ad72650a3fcd9469d688ebc0e554b7,
         type: 3}
@@ -10174,7 +10292,7 @@ PrefabInstance:
     - target: {fileID: 7162667482330818226, guid: 5e5ca8bd26a707140bf43aab0d5681db,
         type: 3}
       propertyPath: m_Name
-      value: Flask_3 (1)
+      value: Flask
       objectReference: {fileID: 0}
     - target: {fileID: 7162667482330818226, guid: 5e5ca8bd26a707140bf43aab0d5681db,
         type: 3}
@@ -10245,7 +10363,7 @@ PrefabInstance:
     - target: {fileID: 4325195053762921487, guid: 5e0bd85f9dc8b6746904e5f13075fc15,
         type: 3}
       propertyPath: m_Name
-      value: Flask_3
+      value: Flask
       objectReference: {fileID: 0}
     - target: {fileID: 4325195053762921487, guid: 5e0bd85f9dc8b6746904e5f13075fc15,
         type: 3}
@@ -10386,7 +10504,7 @@ PrefabInstance:
     - target: {fileID: 7539860473014211750, guid: d6ebd1e19a77f1042b90e9ac54acf654,
         type: 3}
       propertyPath: m_Name
-      value: Flask_1
+      value: Flask
       objectReference: {fileID: 0}
     - target: {fileID: 7539860473014211750, guid: d6ebd1e19a77f1042b90e9ac54acf654,
         type: 3}
@@ -10502,7 +10620,7 @@ PrefabInstance:
     - target: {fileID: 4325195053762921487, guid: 5e0bd85f9dc8b6746904e5f13075fc15,
         type: 3}
       propertyPath: m_Name
-      value: Flask_3
+      value: Flask
       objectReference: {fileID: 0}
     - target: {fileID: 4325195053762921487, guid: 5e0bd85f9dc8b6746904e5f13075fc15,
         type: 3}
@@ -10613,7 +10731,7 @@ PrefabInstance:
     - target: {fileID: 1238919316445141935, guid: c4f379a9c8970094cb6516f2a5701c2a,
         type: 3}
       propertyPath: m_Name
-      value: Flask_2
+      value: Flask
       objectReference: {fileID: 0}
     - target: {fileID: 1238919316445141935, guid: c4f379a9c8970094cb6516f2a5701c2a,
         type: 3}
@@ -10896,7 +11014,7 @@ PrefabInstance:
     - target: {fileID: 4433255413829591616, guid: ec003cfbd0cdfe740943af98bc42ebe1,
         type: 3}
       propertyPath: m_Name
-      value: mf_book_01 (12)
+      value: Book
       objectReference: {fileID: 0}
     - target: {fileID: 4433255413829591616, guid: ec003cfbd0cdfe740943af98bc42ebe1,
         type: 3}
@@ -11064,7 +11182,7 @@ PrefabInstance:
     - target: {fileID: 7539860473014211750, guid: d6ebd1e19a77f1042b90e9ac54acf654,
         type: 3}
       propertyPath: m_Name
-      value: Flask_1
+      value: Flask
       objectReference: {fileID: 0}
     - target: {fileID: 7539860473014211750, guid: d6ebd1e19a77f1042b90e9ac54acf654,
         type: 3}
@@ -11274,6 +11392,109 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!1001 &495797618
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1344426824}
+    m_Modifications:
+    - target: {fileID: 100000, guid: 33a9eb33812d0a245999a3128922713e, type: 3}
+      propertyPath: m_Name
+      value: chandelier (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 33a9eb33812d0a245999a3128922713e, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 33a9eb33812d0a245999a3128922713e, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 33a9eb33812d0a245999a3128922713e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 33a9eb33812d0a245999a3128922713e, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.89166015
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 33a9eb33812d0a245999a3128922713e, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.8916601
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 33a9eb33812d0a245999a3128922713e, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.89166003
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 33a9eb33812d0a245999a3128922713e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 33a9eb33812d0a245999a3128922713e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 33a9eb33812d0a245999a3128922713e, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 33a9eb33812d0a245999a3128922713e, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 33a9eb33812d0a245999a3128922713e, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 33a9eb33812d0a245999a3128922713e, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 33a9eb33812d0a245999a3128922713e, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 33a9eb33812d0a245999a3128922713e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 33a9eb33812d0a245999a3128922713e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 33a9eb33812d0a245999a3128922713e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 400000, guid: 33a9eb33812d0a245999a3128922713e,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 266453369}
+    - targetCorrespondingSourceObject: {fileID: 400000, guid: 33a9eb33812d0a245999a3128922713e,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1053742506}
+    - targetCorrespondingSourceObject: {fileID: 400000, guid: 33a9eb33812d0a245999a3128922713e,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1289908173}
+    - targetCorrespondingSourceObject: {fileID: 400000, guid: 33a9eb33812d0a245999a3128922713e,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 892660035}
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 33a9eb33812d0a245999a3128922713e, type: 3}
+--- !u!4 &495797619 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 400000, guid: 33a9eb33812d0a245999a3128922713e,
+    type: 3}
+  m_PrefabInstance: {fileID: 495797618}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &500064015
 GameObject:
   m_ObjectHideFlags: 0
@@ -11340,7 +11561,7 @@ PrefabInstance:
     - target: {fileID: 1307442724995581995, guid: f538b078114dfc64f903cf4365767696,
         type: 3}
       propertyPath: m_Name
-      value: Flask_6 (1)
+      value: Flask
       objectReference: {fileID: 0}
     - target: {fileID: 1307442724995581995, guid: f538b078114dfc64f903cf4365767696,
         type: 3}
@@ -11571,7 +11792,7 @@ PrefabInstance:
     - target: {fileID: 7272977354626062445, guid: 49ad72650a3fcd9469d688ebc0e554b7,
         type: 3}
       propertyPath: m_Name
-      value: Flask_2
+      value: Flask
       objectReference: {fileID: 0}
     - target: {fileID: 7272977354626062445, guid: 49ad72650a3fcd9469d688ebc0e554b7,
         type: 3}
@@ -11992,7 +12213,7 @@ PrefabInstance:
     - target: {fileID: 7202330836708532997, guid: ab8ea0c1c25d20d47a7e4e25e9476164,
         type: 3}
       propertyPath: m_Name
-      value: Flask_4
+      value: Flask
       objectReference: {fileID: 0}
     - target: {fileID: 7202330836708532997, guid: ab8ea0c1c25d20d47a7e4e25e9476164,
         type: 3}
@@ -12136,7 +12357,7 @@ PrefabInstance:
     - target: {fileID: 1307442724995581995, guid: f538b078114dfc64f903cf4365767696,
         type: 3}
       propertyPath: m_Name
-      value: Flask_6
+      value: Flask
       objectReference: {fileID: 0}
     - target: {fileID: 1307442724995581995, guid: f538b078114dfc64f903cf4365767696,
         type: 3}
@@ -12402,7 +12623,7 @@ PrefabInstance:
     - target: {fileID: 6660781607872348479, guid: 0dcecee4bba6452439122cd45fc85f91,
         type: 3}
       propertyPath: m_Name
-      value: Flask_5 (1)
+      value: Flask
       objectReference: {fileID: 0}
     - target: {fileID: 6660781607872348479, guid: 0dcecee4bba6452439122cd45fc85f91,
         type: 3}
@@ -12686,7 +12907,7 @@ PrefabInstance:
     - target: {fileID: 1307442724995581995, guid: f538b078114dfc64f903cf4365767696,
         type: 3}
       propertyPath: m_Name
-      value: Flask_6
+      value: Flask
       objectReference: {fileID: 0}
     - target: {fileID: 1307442724995581995, guid: f538b078114dfc64f903cf4365767696,
         type: 3}
@@ -12989,7 +13210,7 @@ PrefabInstance:
     - target: {fileID: 7272977354626062445, guid: 49ad72650a3fcd9469d688ebc0e554b7,
         type: 3}
       propertyPath: m_Name
-      value: Flask_2 (1)
+      value: Flask
       objectReference: {fileID: 0}
     - target: {fileID: 7272977354626062445, guid: 49ad72650a3fcd9469d688ebc0e554b7,
         type: 3}
@@ -13040,7 +13261,7 @@ PrefabInstance:
     - target: {fileID: 1238919316445141935, guid: c4f379a9c8970094cb6516f2a5701c2a,
         type: 3}
       propertyPath: m_Name
-      value: Flask_2
+      value: Flask
       objectReference: {fileID: 0}
     - target: {fileID: 1238919316445141935, guid: c4f379a9c8970094cb6516f2a5701c2a,
         type: 3}
@@ -13236,7 +13457,7 @@ PrefabInstance:
     - target: {fileID: 4433255413829591616, guid: ec003cfbd0cdfe740943af98bc42ebe1,
         type: 3}
       propertyPath: m_Name
-      value: mf_book_01 (54)
+      value: Book
       objectReference: {fileID: 0}
     - target: {fileID: 4433255413829591616, guid: ec003cfbd0cdfe740943af98bc42ebe1,
         type: 3}
@@ -13394,7 +13615,7 @@ PrefabInstance:
     - target: {fileID: 4325195053762921487, guid: 5e0bd85f9dc8b6746904e5f13075fc15,
         type: 3}
       propertyPath: m_Name
-      value: Flask_3
+      value: Flask
       objectReference: {fileID: 0}
     - target: {fileID: 4325195053762921487, guid: 5e0bd85f9dc8b6746904e5f13075fc15,
         type: 3}
@@ -13564,7 +13785,7 @@ PrefabInstance:
     - target: {fileID: 1238919316445141935, guid: c4f379a9c8970094cb6516f2a5701c2a,
         type: 3}
       propertyPath: m_Name
-      value: Flask_2 (1)
+      value: Flask
       objectReference: {fileID: 0}
     - target: {fileID: 1238919316445141935, guid: c4f379a9c8970094cb6516f2a5701c2a,
         type: 3}
@@ -13730,7 +13951,7 @@ PrefabInstance:
     - target: {fileID: 1913866841032856060, guid: dd1241c59b048584ca237c992efade1b,
         type: 3}
       propertyPath: m_Name
-      value: Flask_5
+      value: Flask
       objectReference: {fileID: 0}
     - target: {fileID: 1913866841032856060, guid: dd1241c59b048584ca237c992efade1b,
         type: 3}
@@ -13936,7 +14157,7 @@ PrefabInstance:
     - target: {fileID: 7272977354626062445, guid: 49ad72650a3fcd9469d688ebc0e554b7,
         type: 3}
       propertyPath: m_Name
-      value: Flask_2 (1)
+      value: Flask
       objectReference: {fileID: 0}
     - target: {fileID: 7272977354626062445, guid: 49ad72650a3fcd9469d688ebc0e554b7,
         type: 3}
@@ -14129,7 +14350,7 @@ PrefabInstance:
     - target: {fileID: 4433255413829591616, guid: ec003cfbd0cdfe740943af98bc42ebe1,
         type: 3}
       propertyPath: m_Name
-      value: mf_book_01 (35)
+      value: Book
       objectReference: {fileID: 0}
     - target: {fileID: 4433255413829591616, guid: ec003cfbd0cdfe740943af98bc42ebe1,
         type: 3}
@@ -14362,7 +14583,7 @@ PrefabInstance:
     - target: {fileID: 6660781607872348479, guid: 0dcecee4bba6452439122cd45fc85f91,
         type: 3}
       propertyPath: m_Name
-      value: Flask_5
+      value: Flask
       objectReference: {fileID: 0}
     - target: {fileID: 6660781607872348479, guid: 0dcecee4bba6452439122cd45fc85f91,
         type: 3}
@@ -14792,7 +15013,7 @@ PrefabInstance:
     - target: {fileID: 7202330836708532997, guid: ab8ea0c1c25d20d47a7e4e25e9476164,
         type: 3}
       propertyPath: m_Name
-      value: Flask_4 (1)
+      value: Flask
       objectReference: {fileID: 0}
     - target: {fileID: 7202330836708532997, guid: ab8ea0c1c25d20d47a7e4e25e9476164,
         type: 3}
@@ -14908,7 +15129,7 @@ PrefabInstance:
     - target: {fileID: 4433255413829591616, guid: ec003cfbd0cdfe740943af98bc42ebe1,
         type: 3}
       propertyPath: m_Name
-      value: mf_book_01 (21)
+      value: Book
       objectReference: {fileID: 0}
     - target: {fileID: 4433255413829591616, guid: ec003cfbd0cdfe740943af98bc42ebe1,
         type: 3}
@@ -15207,7 +15428,7 @@ PrefabInstance:
     - target: {fileID: 4325195053762921487, guid: 5e0bd85f9dc8b6746904e5f13075fc15,
         type: 3}
       propertyPath: m_Name
-      value: Flask_3 (1)
+      value: Flask
       objectReference: {fileID: 0}
     - target: {fileID: 4325195053762921487, guid: 5e0bd85f9dc8b6746904e5f13075fc15,
         type: 3}
@@ -15318,7 +15539,7 @@ PrefabInstance:
     - target: {fileID: 1238919316445141935, guid: c4f379a9c8970094cb6516f2a5701c2a,
         type: 3}
       propertyPath: m_Name
-      value: Flask_2
+      value: Flask
       objectReference: {fileID: 0}
     - target: {fileID: 1238919316445141935, guid: c4f379a9c8970094cb6516f2a5701c2a,
         type: 3}
@@ -15612,7 +15833,7 @@ PrefabInstance:
     - target: {fileID: 7202330836708532997, guid: ab8ea0c1c25d20d47a7e4e25e9476164,
         type: 3}
       propertyPath: m_Name
-      value: Flask_4
+      value: Flask
       objectReference: {fileID: 0}
     - target: {fileID: 7202330836708532997, guid: ab8ea0c1c25d20d47a7e4e25e9476164,
         type: 3}
@@ -16007,7 +16228,7 @@ PrefabInstance:
     - target: {fileID: 4433255413829591616, guid: ec003cfbd0cdfe740943af98bc42ebe1,
         type: 3}
       propertyPath: m_Name
-      value: mf_book_01 (9)
+      value: Book
       objectReference: {fileID: 0}
     - target: {fileID: 4433255413829591616, guid: ec003cfbd0cdfe740943af98bc42ebe1,
         type: 3}
@@ -16324,7 +16545,7 @@ PrefabInstance:
     - target: {fileID: 1238919316445141935, guid: c4f379a9c8970094cb6516f2a5701c2a,
         type: 3}
       propertyPath: m_Name
-      value: Flask_2 (1)
+      value: Flask
       objectReference: {fileID: 0}
     - target: {fileID: 1238919316445141935, guid: c4f379a9c8970094cb6516f2a5701c2a,
         type: 3}
@@ -16565,7 +16786,7 @@ PrefabInstance:
     - target: {fileID: 6660781607872348479, guid: 0dcecee4bba6452439122cd45fc85f91,
         type: 3}
       propertyPath: m_Name
-      value: Flask_5
+      value: Flask
       objectReference: {fileID: 0}
     - target: {fileID: 6660781607872348479, guid: 0dcecee4bba6452439122cd45fc85f91,
         type: 3}
@@ -16936,7 +17157,7 @@ PrefabInstance:
     - target: {fileID: 7539860473014211750, guid: d6ebd1e19a77f1042b90e9ac54acf654,
         type: 3}
       propertyPath: m_Name
-      value: Flask_1
+      value: Flask
       objectReference: {fileID: 0}
     - target: {fileID: 7539860473014211750, guid: d6ebd1e19a77f1042b90e9ac54acf654,
         type: 3}
@@ -17112,7 +17333,7 @@ PrefabInstance:
     - target: {fileID: 7272977354626062445, guid: 49ad72650a3fcd9469d688ebc0e554b7,
         type: 3}
       propertyPath: m_Name
-      value: Flask_2 (1)
+      value: Flask
       objectReference: {fileID: 0}
     - target: {fileID: 7272977354626062445, guid: 49ad72650a3fcd9469d688ebc0e554b7,
         type: 3}
@@ -17228,7 +17449,7 @@ PrefabInstance:
     - target: {fileID: 4433255413829591616, guid: ec003cfbd0cdfe740943af98bc42ebe1,
         type: 3}
       propertyPath: m_Name
-      value: mf_book_01 (42)
+      value: Book
       objectReference: {fileID: 0}
     - target: {fileID: 4433255413829591616, guid: ec003cfbd0cdfe740943af98bc42ebe1,
         type: 3}
@@ -17431,7 +17652,7 @@ PrefabInstance:
     - target: {fileID: 4433255413829591616, guid: ec003cfbd0cdfe740943af98bc42ebe1,
         type: 3}
       propertyPath: m_Name
-      value: mf_book_01 (43)
+      value: Book
       objectReference: {fileID: 0}
     - target: {fileID: 4433255413829591616, guid: ec003cfbd0cdfe740943af98bc42ebe1,
         type: 3}
@@ -17634,7 +17855,7 @@ PrefabInstance:
     - target: {fileID: 4433255413829591616, guid: ec003cfbd0cdfe740943af98bc42ebe1,
         type: 3}
       propertyPath: m_Name
-      value: mf_book_01 (57)
+      value: Book
       objectReference: {fileID: 0}
     - target: {fileID: 4433255413829591616, guid: ec003cfbd0cdfe740943af98bc42ebe1,
         type: 3}
@@ -17977,7 +18198,7 @@ PrefabInstance:
     - target: {fileID: 1238919316445141935, guid: c4f379a9c8970094cb6516f2a5701c2a,
         type: 3}
       propertyPath: m_Name
-      value: Flask_2 (1)
+      value: Flask
       objectReference: {fileID: 0}
     - target: {fileID: 1238919316445141935, guid: c4f379a9c8970094cb6516f2a5701c2a,
         type: 3}
@@ -18173,7 +18394,7 @@ PrefabInstance:
     - target: {fileID: 949659358647468468, guid: 3ddf4271573cdb040b2e10dd5e37d537,
         type: 3}
       propertyPath: m_Name
-      value: Flask_4
+      value: Flask
       objectReference: {fileID: 0}
     - target: {fileID: 949659358647468468, guid: 3ddf4271573cdb040b2e10dd5e37d537,
         type: 3}
@@ -18349,7 +18570,7 @@ PrefabInstance:
     - target: {fileID: 6660781607872348479, guid: 0dcecee4bba6452439122cd45fc85f91,
         type: 3}
       propertyPath: m_Name
-      value: Flask_5 (1)
+      value: Flask
       objectReference: {fileID: 0}
     - target: {fileID: 6660781607872348479, guid: 0dcecee4bba6452439122cd45fc85f91,
         type: 3}
@@ -18480,7 +18701,7 @@ PrefabInstance:
     - target: {fileID: 7202330836708532997, guid: ab8ea0c1c25d20d47a7e4e25e9476164,
         type: 3}
       propertyPath: m_Name
-      value: Flask_4
+      value: Flask
       objectReference: {fileID: 0}
     - target: {fileID: 7202330836708532997, guid: ab8ea0c1c25d20d47a7e4e25e9476164,
         type: 3}
@@ -18744,7 +18965,7 @@ PrefabInstance:
     - target: {fileID: 7202330836708532997, guid: ab8ea0c1c25d20d47a7e4e25e9476164,
         type: 3}
       propertyPath: m_Name
-      value: Flask_4 (1)
+      value: Flask
       objectReference: {fileID: 0}
     - target: {fileID: 7202330836708532997, guid: ab8ea0c1c25d20d47a7e4e25e9476164,
         type: 3}
@@ -19040,7 +19261,7 @@ PrefabInstance:
     - target: {fileID: 7202330836708532997, guid: ab8ea0c1c25d20d47a7e4e25e9476164,
         type: 3}
       propertyPath: m_Name
-      value: Flask_4 (1)
+      value: Flask
       objectReference: {fileID: 0}
     - target: {fileID: 7202330836708532997, guid: ab8ea0c1c25d20d47a7e4e25e9476164,
         type: 3}
@@ -19156,7 +19377,7 @@ PrefabInstance:
     - target: {fileID: 4433255413829591616, guid: ec003cfbd0cdfe740943af98bc42ebe1,
         type: 3}
       propertyPath: m_Name
-      value: mf_book_01 (62)
+      value: Book
       objectReference: {fileID: 0}
     - target: {fileID: 4433255413829591616, guid: ec003cfbd0cdfe740943af98bc42ebe1,
         type: 3}
@@ -19359,7 +19580,7 @@ PrefabInstance:
     - target: {fileID: 4433255413829591616, guid: ec003cfbd0cdfe740943af98bc42ebe1,
         type: 3}
       propertyPath: m_Name
-      value: mf_book_01 (73)
+      value: Book
       objectReference: {fileID: 0}
     - target: {fileID: 4433255413829591616, guid: ec003cfbd0cdfe740943af98bc42ebe1,
         type: 3}
@@ -19576,6 +19797,108 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4370979603318096, guid: 54a3546d849b07943a130fba9e1810f5,
     type: 3}
   m_PrefabInstance: {fileID: 888853834}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &892660034
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 495797619}
+    m_Modifications:
+    - target: {fileID: 1239857801532946, guid: 86d84285ef39db64c986f37878b14861, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1239857801532946, guid: 86d84285ef39db64c986f37878b14861, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1683205079487892, guid: 86d84285ef39db64c986f37878b14861, type: 3}
+      propertyPath: m_Name
+      value: Candle1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1683205079487892, guid: 86d84285ef39db64c986f37878b14861, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1683205079487892, guid: 86d84285ef39db64c986f37878b14861, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4585060622950652, guid: 86d84285ef39db64c986f37878b14861, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.1215037
+      objectReference: {fileID: 0}
+    - target: {fileID: 4585060622950652, guid: 86d84285ef39db64c986f37878b14861, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.1215037
+      objectReference: {fileID: 0}
+    - target: {fileID: 4585060622950652, guid: 86d84285ef39db64c986f37878b14861, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.1215037
+      objectReference: {fileID: 0}
+    - target: {fileID: 4585060622950652, guid: 86d84285ef39db64c986f37878b14861, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.0031401967
+      objectReference: {fileID: 0}
+    - target: {fileID: 4585060622950652, guid: 86d84285ef39db64c986f37878b14861, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.09308481
+      objectReference: {fileID: 0}
+    - target: {fileID: 4585060622950652, guid: 86d84285ef39db64c986f37878b14861, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.0035888576
+      objectReference: {fileID: 0}
+    - target: {fileID: 4585060622950652, guid: 86d84285ef39db64c986f37878b14861, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4585060622950652, guid: 86d84285ef39db64c986f37878b14861, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4585060622950652, guid: 86d84285ef39db64c986f37878b14861, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4585060622950652, guid: 86d84285ef39db64c986f37878b14861, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4585060622950652, guid: 86d84285ef39db64c986f37878b14861, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4585060622950652, guid: 86d84285ef39db64c986f37878b14861, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4585060622950652, guid: 86d84285ef39db64c986f37878b14861, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2984305933219848323, guid: 86d84285ef39db64c986f37878b14861,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2984305933219848323, guid: 86d84285ef39db64c986f37878b14861,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 114967315212073566, guid: 86d84285ef39db64c986f37878b14861, type: 3}
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 86d84285ef39db64c986f37878b14861, type: 3}
+--- !u!4 &892660035 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4585060622950652, guid: 86d84285ef39db64c986f37878b14861,
+    type: 3}
+  m_PrefabInstance: {fileID: 892660034}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &905028316
 PrefabInstance:
@@ -19982,7 +20305,7 @@ PrefabInstance:
     - target: {fileID: 4325195053762921487, guid: 5e0bd85f9dc8b6746904e5f13075fc15,
         type: 3}
       propertyPath: m_Name
-      value: Flask_3 (1)
+      value: Flask
       objectReference: {fileID: 0}
     - target: {fileID: 4325195053762921487, guid: 5e0bd85f9dc8b6746904e5f13075fc15,
         type: 3}
@@ -20756,7 +21079,7 @@ PrefabInstance:
     - target: {fileID: 4433255413829591616, guid: ec003cfbd0cdfe740943af98bc42ebe1,
         type: 3}
       propertyPath: m_Name
-      value: mf_book_01 (46)
+      value: Book
       objectReference: {fileID: 0}
     - target: {fileID: 4433255413829591616, guid: ec003cfbd0cdfe740943af98bc42ebe1,
         type: 3}
@@ -20975,7 +21298,7 @@ PrefabInstance:
     - target: {fileID: 1307442724995581995, guid: f538b078114dfc64f903cf4365767696,
         type: 3}
       propertyPath: m_Name
-      value: Flask_6
+      value: Flask
       objectReference: {fileID: 0}
     - target: {fileID: 1307442724995581995, guid: f538b078114dfc64f903cf4365767696,
         type: 3}
@@ -21249,7 +21572,7 @@ PrefabInstance:
     - target: {fileID: 1913866841032856060, guid: dd1241c59b048584ca237c992efade1b,
         type: 3}
       propertyPath: m_Name
-      value: Flask_5
+      value: Flask
       objectReference: {fileID: 0}
     - target: {fileID: 1913866841032856060, guid: dd1241c59b048584ca237c992efade1b,
         type: 3}
@@ -21543,7 +21866,7 @@ PrefabInstance:
     - target: {fileID: 4433255413829591616, guid: ec003cfbd0cdfe740943af98bc42ebe1,
         type: 3}
       propertyPath: m_Name
-      value: mf_book_01 (52)
+      value: Book
       objectReference: {fileID: 0}
     - target: {fileID: 4433255413829591616, guid: ec003cfbd0cdfe740943af98bc42ebe1,
         type: 3}
@@ -21776,7 +22099,7 @@ PrefabInstance:
     - target: {fileID: 7162667482330818226, guid: 5e5ca8bd26a707140bf43aab0d5681db,
         type: 3}
       propertyPath: m_Name
-      value: Flask_3 (1)
+      value: Flask
       objectReference: {fileID: 0}
     - target: {fileID: 7162667482330818226, guid: 5e5ca8bd26a707140bf43aab0d5681db,
         type: 3}
@@ -21892,7 +22215,7 @@ PrefabInstance:
     - target: {fileID: 4433255413829591616, guid: ec003cfbd0cdfe740943af98bc42ebe1,
         type: 3}
       propertyPath: m_Name
-      value: mf_book_01 (47)
+      value: Book
       objectReference: {fileID: 0}
     - target: {fileID: 4433255413829591616, guid: ec003cfbd0cdfe740943af98bc42ebe1,
         type: 3}
@@ -22095,7 +22418,7 @@ PrefabInstance:
     - target: {fileID: 4433255413829591616, guid: ec003cfbd0cdfe740943af98bc42ebe1,
         type: 3}
       propertyPath: m_Name
-      value: mf_book_01 (6)
+      value: Book
       objectReference: {fileID: 0}
     - target: {fileID: 4433255413829591616, guid: ec003cfbd0cdfe740943af98bc42ebe1,
         type: 3}
@@ -22298,7 +22621,7 @@ PrefabInstance:
     - target: {fileID: 4433255413829591616, guid: ec003cfbd0cdfe740943af98bc42ebe1,
         type: 3}
       propertyPath: m_Name
-      value: mf_book_01 (68)
+      value: Book
       objectReference: {fileID: 0}
     - target: {fileID: 4433255413829591616, guid: ec003cfbd0cdfe740943af98bc42ebe1,
         type: 3}
@@ -22446,7 +22769,7 @@ PrefabInstance:
     - target: {fileID: 1307442724995581995, guid: f538b078114dfc64f903cf4365767696,
         type: 3}
       propertyPath: m_Name
-      value: Flask_6 (1)
+      value: Flask
       objectReference: {fileID: 0}
     - target: {fileID: 1307442724995581995, guid: f538b078114dfc64f903cf4365767696,
         type: 3}
@@ -22662,7 +22985,7 @@ PrefabInstance:
     - target: {fileID: 7272977354626062445, guid: 49ad72650a3fcd9469d688ebc0e554b7,
         type: 3}
       propertyPath: m_Name
-      value: Flask_2 (1)
+      value: Flask
       objectReference: {fileID: 0}
     - target: {fileID: 7272977354626062445, guid: 49ad72650a3fcd9469d688ebc0e554b7,
         type: 3}
@@ -22840,7 +23163,7 @@ PrefabInstance:
     - target: {fileID: 7202330836708532997, guid: ab8ea0c1c25d20d47a7e4e25e9476164,
         type: 3}
       propertyPath: m_Name
-      value: Flask_4 (1)
+      value: Flask
       objectReference: {fileID: 0}
     - target: {fileID: 7202330836708532997, guid: ab8ea0c1c25d20d47a7e4e25e9476164,
         type: 3}
@@ -23009,7 +23332,7 @@ PrefabInstance:
     - target: {fileID: 1238919316445141935, guid: c4f379a9c8970094cb6516f2a5701c2a,
         type: 3}
       propertyPath: m_Name
-      value: Flask_2 (1)
+      value: Flask
       objectReference: {fileID: 0}
     - target: {fileID: 1238919316445141935, guid: c4f379a9c8970094cb6516f2a5701c2a,
         type: 3}
@@ -23220,7 +23543,7 @@ PrefabInstance:
     - target: {fileID: 4433255413829591616, guid: ec003cfbd0cdfe740943af98bc42ebe1,
         type: 3}
       propertyPath: m_Name
-      value: mf_book_01 (29)
+      value: Book
       objectReference: {fileID: 0}
     - target: {fileID: 4433255413829591616, guid: ec003cfbd0cdfe740943af98bc42ebe1,
         type: 3}
@@ -23438,7 +23761,7 @@ PrefabInstance:
     - target: {fileID: 7162667482330818226, guid: 5e5ca8bd26a707140bf43aab0d5681db,
         type: 3}
       propertyPath: m_Name
-      value: Flask_3
+      value: Flask
       objectReference: {fileID: 0}
     - target: {fileID: 7162667482330818226, guid: 5e5ca8bd26a707140bf43aab0d5681db,
         type: 3}
@@ -23569,7 +23892,7 @@ PrefabInstance:
     - target: {fileID: 7272977354626062445, guid: 49ad72650a3fcd9469d688ebc0e554b7,
         type: 3}
       propertyPath: m_Name
-      value: Flask_2 (1)
+      value: Flask
       objectReference: {fileID: 0}
     - target: {fileID: 7272977354626062445, guid: 49ad72650a3fcd9469d688ebc0e554b7,
         type: 3}
@@ -23685,7 +24008,7 @@ PrefabInstance:
     - target: {fileID: 4433255413829591616, guid: ec003cfbd0cdfe740943af98bc42ebe1,
         type: 3}
       propertyPath: m_Name
-      value: mf_book_01 (53)
+      value: Book
       objectReference: {fileID: 0}
     - target: {fileID: 4433255413829591616, guid: ec003cfbd0cdfe740943af98bc42ebe1,
         type: 3}
@@ -23972,7 +24295,7 @@ PrefabInstance:
     - target: {fileID: 949659358647468468, guid: 3ddf4271573cdb040b2e10dd5e37d537,
         type: 3}
       propertyPath: m_Name
-      value: Flask_4
+      value: Flask
       objectReference: {fileID: 0}
     - target: {fileID: 949659358647468468, guid: 3ddf4271573cdb040b2e10dd5e37d537,
         type: 3}
@@ -24133,7 +24456,7 @@ PrefabInstance:
     - target: {fileID: 7162667482330818226, guid: 5e5ca8bd26a707140bf43aab0d5681db,
         type: 3}
       propertyPath: m_Name
-      value: Flask_3
+      value: Flask
       objectReference: {fileID: 0}
     - target: {fileID: 7162667482330818226, guid: 5e5ca8bd26a707140bf43aab0d5681db,
         type: 3}
@@ -24397,7 +24720,7 @@ PrefabInstance:
     - target: {fileID: 6660781607872348479, guid: 0dcecee4bba6452439122cd45fc85f91,
         type: 3}
       propertyPath: m_Name
-      value: Flask_5
+      value: Flask
       objectReference: {fileID: 0}
     - target: {fileID: 6660781607872348479, guid: 0dcecee4bba6452439122cd45fc85f91,
         type: 3}
@@ -24543,7 +24866,7 @@ PrefabInstance:
     - target: {fileID: 6660781607872348479, guid: 0dcecee4bba6452439122cd45fc85f91,
         type: 3}
       propertyPath: m_Name
-      value: Flask_5
+      value: Flask
       objectReference: {fileID: 0}
     - target: {fileID: 6660781607872348479, guid: 0dcecee4bba6452439122cd45fc85f91,
         type: 3}
@@ -24583,6 +24906,108 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d366813614624a644bf8288f71db65c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1001 &1053742505
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 495797619}
+    m_Modifications:
+    - target: {fileID: 1266664356686274, guid: 42612f8b6c0dce8468648f3f08db6d96, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1266664356686274, guid: 42612f8b6c0dce8468648f3f08db6d96, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1370723301690648, guid: 42612f8b6c0dce8468648f3f08db6d96, type: 3}
+      propertyPath: m_Name
+      value: Candle3 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1370723301690648, guid: 42612f8b6c0dce8468648f3f08db6d96, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1370723301690648, guid: 42612f8b6c0dce8468648f3f08db6d96, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4203199286425600, guid: 42612f8b6c0dce8468648f3f08db6d96, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.1215037
+      objectReference: {fileID: 0}
+    - target: {fileID: 4203199286425600, guid: 42612f8b6c0dce8468648f3f08db6d96, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.1215037
+      objectReference: {fileID: 0}
+    - target: {fileID: 4203199286425600, guid: 42612f8b6c0dce8468648f3f08db6d96, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.1215037
+      objectReference: {fileID: 0}
+    - target: {fileID: 4203199286425600, guid: 42612f8b6c0dce8468648f3f08db6d96, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.28441334
+      objectReference: {fileID: 0}
+    - target: {fileID: 4203199286425600, guid: 42612f8b6c0dce8468648f3f08db6d96, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.15925355
+      objectReference: {fileID: 0}
+    - target: {fileID: 4203199286425600, guid: 42612f8b6c0dce8468648f3f08db6d96, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.006504705
+      objectReference: {fileID: 0}
+    - target: {fileID: 4203199286425600, guid: 42612f8b6c0dce8468648f3f08db6d96, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4203199286425600, guid: 42612f8b6c0dce8468648f3f08db6d96, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4203199286425600, guid: 42612f8b6c0dce8468648f3f08db6d96, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4203199286425600, guid: 42612f8b6c0dce8468648f3f08db6d96, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4203199286425600, guid: 42612f8b6c0dce8468648f3f08db6d96, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4203199286425600, guid: 42612f8b6c0dce8468648f3f08db6d96, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4203199286425600, guid: 42612f8b6c0dce8468648f3f08db6d96, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 285475481539583592, guid: 42612f8b6c0dce8468648f3f08db6d96,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 285475481539583592, guid: 42612f8b6c0dce8468648f3f08db6d96,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 114214028963969614, guid: 42612f8b6c0dce8468648f3f08db6d96, type: 3}
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 42612f8b6c0dce8468648f3f08db6d96, type: 3}
+--- !u!4 &1053742506 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4203199286425600, guid: 42612f8b6c0dce8468648f3f08db6d96,
+    type: 3}
+  m_PrefabInstance: {fileID: 1053742505}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1057881415
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -24659,7 +25084,7 @@ PrefabInstance:
     - target: {fileID: 4433255413829591616, guid: ec003cfbd0cdfe740943af98bc42ebe1,
         type: 3}
       propertyPath: m_Name
-      value: mf_book_01 (31)
+      value: Book
       objectReference: {fileID: 0}
     - target: {fileID: 4433255413829591616, guid: ec003cfbd0cdfe740943af98bc42ebe1,
         type: 3}
@@ -24939,7 +25364,7 @@ PrefabInstance:
     - target: {fileID: 4433255413829591616, guid: ec003cfbd0cdfe740943af98bc42ebe1,
         type: 3}
       propertyPath: m_Name
-      value: mf_book_01 (64)
+      value: Book
       objectReference: {fileID: 0}
     - target: {fileID: 4433255413829591616, guid: ec003cfbd0cdfe740943af98bc42ebe1,
         type: 3}
@@ -25142,7 +25567,7 @@ PrefabInstance:
     - target: {fileID: 4433255413829591616, guid: ec003cfbd0cdfe740943af98bc42ebe1,
         type: 3}
       propertyPath: m_Name
-      value: mf_book_01 (48)
+      value: Book
       objectReference: {fileID: 0}
     - target: {fileID: 4433255413829591616, guid: ec003cfbd0cdfe740943af98bc42ebe1,
         type: 3}
@@ -25479,7 +25904,7 @@ PrefabInstance:
     - target: {fileID: 4433255413829591616, guid: ec003cfbd0cdfe740943af98bc42ebe1,
         type: 3}
       propertyPath: m_Name
-      value: mf_book_01 (39)
+      value: Book
       objectReference: {fileID: 0}
     - target: {fileID: 4433255413829591616, guid: ec003cfbd0cdfe740943af98bc42ebe1,
         type: 3}
@@ -25627,7 +26052,7 @@ PrefabInstance:
     - target: {fileID: 1307442724995581995, guid: f538b078114dfc64f903cf4365767696,
         type: 3}
       propertyPath: m_Name
-      value: Flask_6
+      value: Flask
       objectReference: {fileID: 0}
     - target: {fileID: 1307442724995581995, guid: f538b078114dfc64f903cf4365767696,
         type: 3}
@@ -25763,7 +26188,7 @@ PrefabInstance:
     - target: {fileID: 1238919316445141935, guid: c4f379a9c8970094cb6516f2a5701c2a,
         type: 3}
       propertyPath: m_Name
-      value: Flask_2 (1)
+      value: Flask
       objectReference: {fileID: 0}
     - target: {fileID: 1238919316445141935, guid: c4f379a9c8970094cb6516f2a5701c2a,
         type: 3}
@@ -25929,7 +26354,7 @@ PrefabInstance:
     - target: {fileID: 4325195053762921487, guid: 5e0bd85f9dc8b6746904e5f13075fc15,
         type: 3}
       propertyPath: m_Name
-      value: Flask_3 (1)
+      value: Flask
       objectReference: {fileID: 0}
     - target: {fileID: 4325195053762921487, guid: 5e0bd85f9dc8b6746904e5f13075fc15,
         type: 3}
@@ -26341,7 +26766,7 @@ PrefabInstance:
     - target: {fileID: 7162667482330818226, guid: 5e5ca8bd26a707140bf43aab0d5681db,
         type: 3}
       propertyPath: m_Name
-      value: Flask_3
+      value: Flask
       objectReference: {fileID: 0}
     - target: {fileID: 7162667482330818226, guid: 5e5ca8bd26a707140bf43aab0d5681db,
         type: 3}
@@ -26457,7 +26882,7 @@ PrefabInstance:
     - target: {fileID: 4433255413829591616, guid: ec003cfbd0cdfe740943af98bc42ebe1,
         type: 3}
       propertyPath: m_Name
-      value: mf_book_01 (60)
+      value: Book
       objectReference: {fileID: 0}
     - target: {fileID: 4433255413829591616, guid: ec003cfbd0cdfe740943af98bc42ebe1,
         type: 3}
@@ -26605,7 +27030,7 @@ PrefabInstance:
     - target: {fileID: 1307442724995581995, guid: f538b078114dfc64f903cf4365767696,
         type: 3}
       propertyPath: m_Name
-      value: Flask_6 (1)
+      value: Flask
       objectReference: {fileID: 0}
     - target: {fileID: 1307442724995581995, guid: f538b078114dfc64f903cf4365767696,
         type: 3}
@@ -26762,15 +27187,16 @@ MonoBehaviour:
   _quests:
   - {fileID: 1274483517}
   - {fileID: 1325922487}
-  - {fileID: 1292053028}
   - {fileID: 6413562372378438431}
   - {fileID: 1664827339671357298}
+  - {fileID: 1292053028}
   - {fileID: 9142803752549293579}
   _portalManager: {fileID: 1829212180}
   _player: {fileID: 159844492}
   _timeToStart: 0.5
   _instructionMat: {fileID: 2100000, guid: f5486ba6004bdc64fb1d3d82f38e8089, type: 2}
   _director: {fileID: 106766027}
+  _explosion: {fileID: 1676361136}
 --- !u!4 &1121625309
 Transform:
   m_ObjectHideFlags: 0
@@ -26852,7 +27278,7 @@ PrefabInstance:
     - target: {fileID: 4325195053762921487, guid: 5e0bd85f9dc8b6746904e5f13075fc15,
         type: 3}
       propertyPath: m_Name
-      value: Flask_3 (1)
+      value: Flask
       objectReference: {fileID: 0}
     - target: {fileID: 4325195053762921487, guid: 5e0bd85f9dc8b6746904e5f13075fc15,
         type: 3}
@@ -27058,7 +27484,7 @@ PrefabInstance:
     - target: {fileID: 6660781607872348479, guid: 0dcecee4bba6452439122cd45fc85f91,
         type: 3}
       propertyPath: m_Name
-      value: Flask_5 (1)
+      value: Flask
       objectReference: {fileID: 0}
     - target: {fileID: 6660781607872348479, guid: 0dcecee4bba6452439122cd45fc85f91,
         type: 3}
@@ -27170,7 +27596,7 @@ PrefabInstance:
     - target: {fileID: 1913866841032856060, guid: dd1241c59b048584ca237c992efade1b,
         type: 3}
       propertyPath: m_Name
-      value: Flask_5
+      value: Flask
       objectReference: {fileID: 0}
     - target: {fileID: 1913866841032856060, guid: dd1241c59b048584ca237c992efade1b,
         type: 3}
@@ -27410,7 +27836,7 @@ PrefabInstance:
     - target: {fileID: 1307442724995581995, guid: f538b078114dfc64f903cf4365767696,
         type: 3}
       propertyPath: m_Name
-      value: Flask_6 (1)
+      value: Flask
       objectReference: {fileID: 0}
     - target: {fileID: 1307442724995581995, guid: f538b078114dfc64f903cf4365767696,
         type: 3}
@@ -27611,7 +28037,7 @@ PrefabInstance:
     - target: {fileID: 4433255413829591616, guid: ec003cfbd0cdfe740943af98bc42ebe1,
         type: 3}
       propertyPath: m_Name
-      value: mf_book_01 (23)
+      value: Book
       objectReference: {fileID: 0}
     - target: {fileID: 4433255413829591616, guid: ec003cfbd0cdfe740943af98bc42ebe1,
         type: 3}
@@ -27844,7 +28270,7 @@ PrefabInstance:
     - target: {fileID: 7162667482330818226, guid: 5e5ca8bd26a707140bf43aab0d5681db,
         type: 3}
       propertyPath: m_Name
-      value: Flask_3 (1)
+      value: Flask
       objectReference: {fileID: 0}
     - target: {fileID: 7162667482330818226, guid: 5e5ca8bd26a707140bf43aab0d5681db,
         type: 3}
@@ -28183,7 +28609,7 @@ PrefabInstance:
     - target: {fileID: 4433255413829591616, guid: ec003cfbd0cdfe740943af98bc42ebe1,
         type: 3}
       propertyPath: m_Name
-      value: mf_book_01 (33)
+      value: Book
       objectReference: {fileID: 0}
     - target: {fileID: 4433255413829591616, guid: ec003cfbd0cdfe740943af98bc42ebe1,
         type: 3}
@@ -28386,7 +28812,7 @@ PrefabInstance:
     - target: {fileID: 4433255413829591616, guid: ec003cfbd0cdfe740943af98bc42ebe1,
         type: 3}
       propertyPath: m_Name
-      value: mf_book_01 (36)
+      value: Book
       objectReference: {fileID: 0}
     - target: {fileID: 4433255413829591616, guid: ec003cfbd0cdfe740943af98bc42ebe1,
         type: 3}
@@ -28619,7 +29045,7 @@ PrefabInstance:
     - target: {fileID: 6660781607872348479, guid: 0dcecee4bba6452439122cd45fc85f91,
         type: 3}
       propertyPath: m_Name
-      value: Flask_5 (1)
+      value: Flask
       objectReference: {fileID: 0}
     - target: {fileID: 6660781607872348479, guid: 0dcecee4bba6452439122cd45fc85f91,
         type: 3}
@@ -28885,7 +29311,7 @@ PrefabInstance:
     - target: {fileID: 1307442724995581995, guid: f538b078114dfc64f903cf4365767696,
         type: 3}
       propertyPath: m_Name
-      value: Flask_6
+      value: Flask
       objectReference: {fileID: 0}
     - target: {fileID: 1307442724995581995, guid: f538b078114dfc64f903cf4365767696,
         type: 3}
@@ -29086,7 +29512,7 @@ PrefabInstance:
     - target: {fileID: 4433255413829591616, guid: ec003cfbd0cdfe740943af98bc42ebe1,
         type: 3}
       propertyPath: m_Name
-      value: mf_book_01 (65)
+      value: Book
       objectReference: {fileID: 0}
     - target: {fileID: 4433255413829591616, guid: ec003cfbd0cdfe740943af98bc42ebe1,
         type: 3}
@@ -29289,7 +29715,7 @@ PrefabInstance:
     - target: {fileID: 4433255413829591616, guid: ec003cfbd0cdfe740943af98bc42ebe1,
         type: 3}
       propertyPath: m_Name
-      value: mf_book_01 (11)
+      value: Book
       objectReference: {fileID: 0}
     - target: {fileID: 4433255413829591616, guid: ec003cfbd0cdfe740943af98bc42ebe1,
         type: 3}
@@ -29507,7 +29933,7 @@ PrefabInstance:
     - target: {fileID: 7272977354626062445, guid: 49ad72650a3fcd9469d688ebc0e554b7,
         type: 3}
       propertyPath: m_Name
-      value: Flask_2
+      value: Flask
       objectReference: {fileID: 0}
     - target: {fileID: 7272977354626062445, guid: 49ad72650a3fcd9469d688ebc0e554b7,
         type: 3}
@@ -29623,7 +30049,7 @@ PrefabInstance:
     - target: {fileID: 4433255413829591616, guid: ec003cfbd0cdfe740943af98bc42ebe1,
         type: 3}
       propertyPath: m_Name
-      value: mf_book_01 (72)
+      value: Book
       objectReference: {fileID: 0}
     - target: {fileID: 4433255413829591616, guid: ec003cfbd0cdfe740943af98bc42ebe1,
         type: 3}
@@ -29771,7 +30197,7 @@ PrefabInstance:
     - target: {fileID: 1307442724995581995, guid: f538b078114dfc64f903cf4365767696,
         type: 3}
       propertyPath: m_Name
-      value: Flask_6 (1)
+      value: Flask
       objectReference: {fileID: 0}
     - target: {fileID: 1307442724995581995, guid: f538b078114dfc64f903cf4365767696,
         type: 3}
@@ -29937,7 +30363,7 @@ PrefabInstance:
     - target: {fileID: 7539860473014211750, guid: d6ebd1e19a77f1042b90e9ac54acf654,
         type: 3}
       propertyPath: m_Name
-      value: Flask_1
+      value: Flask
       objectReference: {fileID: 0}
     - target: {fileID: 7539860473014211750, guid: d6ebd1e19a77f1042b90e9ac54acf654,
         type: 3}
@@ -30334,7 +30760,7 @@ PrefabInstance:
     - target: {fileID: 7272977354626062445, guid: 49ad72650a3fcd9469d688ebc0e554b7,
         type: 3}
       propertyPath: m_Name
-      value: Flask_2 (1)
+      value: Flask
       objectReference: {fileID: 0}
     - target: {fileID: 7272977354626062445, guid: 49ad72650a3fcd9469d688ebc0e554b7,
         type: 3}
@@ -30480,7 +30906,7 @@ PrefabInstance:
     - target: {fileID: 7162667482330818226, guid: 5e5ca8bd26a707140bf43aab0d5681db,
         type: 3}
       propertyPath: m_Name
-      value: Flask_3 (1)
+      value: Flask
       objectReference: {fileID: 0}
     - target: {fileID: 7162667482330818226, guid: 5e5ca8bd26a707140bf43aab0d5681db,
         type: 3}
@@ -30551,7 +30977,7 @@ PrefabInstance:
     - target: {fileID: 1913866841032856060, guid: dd1241c59b048584ca237c992efade1b,
         type: 3}
       propertyPath: m_Name
-      value: Flask_5
+      value: Flask
       objectReference: {fileID: 0}
     - target: {fileID: 1913866841032856060, guid: dd1241c59b048584ca237c992efade1b,
         type: 3}
@@ -30727,7 +31153,7 @@ PrefabInstance:
     - target: {fileID: 4433255413829591616, guid: ec003cfbd0cdfe740943af98bc42ebe1,
         type: 3}
       propertyPath: m_Name
-      value: mf_book_01 (22)
+      value: Book
       objectReference: {fileID: 0}
     - target: {fileID: 4433255413829591616, guid: ec003cfbd0cdfe740943af98bc42ebe1,
         type: 3}
@@ -31031,7 +31457,7 @@ PrefabInstance:
     - target: {fileID: 4325195053762921487, guid: 5e0bd85f9dc8b6746904e5f13075fc15,
         type: 3}
       propertyPath: m_Name
-      value: Flask_3
+      value: Flask
       objectReference: {fileID: 0}
     - target: {fileID: 4325195053762921487, guid: 5e0bd85f9dc8b6746904e5f13075fc15,
         type: 3}
@@ -31170,6 +31596,108 @@ Transform:
   - {fileID: 2081240905}
   m_Father: {fileID: 936817470}
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
+--- !u!1001 &1289908172
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 495797619}
+    m_Modifications:
+    - target: {fileID: 1233580066405178, guid: 6b93fd896c90c094c8577de7399669b5, type: 3}
+      propertyPath: m_Name
+      value: Candle2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1233580066405178, guid: 6b93fd896c90c094c8577de7399669b5, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1233580066405178, guid: 6b93fd896c90c094c8577de7399669b5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1361831411495512, guid: 6b93fd896c90c094c8577de7399669b5, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1361831411495512, guid: 6b93fd896c90c094c8577de7399669b5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4160908596479848, guid: 6b93fd896c90c094c8577de7399669b5, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.1215037
+      objectReference: {fileID: 0}
+    - target: {fileID: 4160908596479848, guid: 6b93fd896c90c094c8577de7399669b5, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.1215037
+      objectReference: {fileID: 0}
+    - target: {fileID: 4160908596479848, guid: 6b93fd896c90c094c8577de7399669b5, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.1215037
+      objectReference: {fileID: 0}
+    - target: {fileID: 4160908596479848, guid: 6b93fd896c90c094c8577de7399669b5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.29607692
+      objectReference: {fileID: 0}
+    - target: {fileID: 4160908596479848, guid: 6b93fd896c90c094c8577de7399669b5, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.15813199
+      objectReference: {fileID: 0}
+    - target: {fileID: 4160908596479848, guid: 6b93fd896c90c094c8577de7399669b5, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.003588847
+      objectReference: {fileID: 0}
+    - target: {fileID: 4160908596479848, guid: 6b93fd896c90c094c8577de7399669b5, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4160908596479848, guid: 6b93fd896c90c094c8577de7399669b5, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4160908596479848, guid: 6b93fd896c90c094c8577de7399669b5, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4160908596479848, guid: 6b93fd896c90c094c8577de7399669b5, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4160908596479848, guid: 6b93fd896c90c094c8577de7399669b5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4160908596479848, guid: 6b93fd896c90c094c8577de7399669b5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4160908596479848, guid: 6b93fd896c90c094c8577de7399669b5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4590305730831051885, guid: 6b93fd896c90c094c8577de7399669b5,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4590305730831051885, guid: 6b93fd896c90c094c8577de7399669b5,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 114705201235525878, guid: 6b93fd896c90c094c8577de7399669b5, type: 3}
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6b93fd896c90c094c8577de7399669b5, type: 3}
+--- !u!4 &1289908173 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4160908596479848, guid: 6b93fd896c90c094c8577de7399669b5,
+    type: 3}
+  m_PrefabInstance: {fileID: 1289908172}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1292053027
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -31402,7 +31930,7 @@ PrefabInstance:
     - target: {fileID: 7272977354626062445, guid: 49ad72650a3fcd9469d688ebc0e554b7,
         type: 3}
       propertyPath: m_Name
-      value: Flask_2 (1)
+      value: Flask
       objectReference: {fileID: 0}
     - target: {fileID: 7272977354626062445, guid: 49ad72650a3fcd9469d688ebc0e554b7,
         type: 3}
@@ -31518,7 +32046,7 @@ PrefabInstance:
     - target: {fileID: 2012218277732600795, guid: be999fe03c257ec4cb0a3a4b5ca72217,
         type: 3}
       propertyPath: m_Name
-      value: butterfly
+      value: Butterfly
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -31619,7 +32147,7 @@ PrefabInstance:
     - target: {fileID: 4433255413829591616, guid: ec003cfbd0cdfe740943af98bc42ebe1,
         type: 3}
       propertyPath: m_Name
-      value: mf_book_01 (18)
+      value: Book
       objectReference: {fileID: 0}
     - target: {fileID: 4433255413829591616, guid: ec003cfbd0cdfe740943af98bc42ebe1,
         type: 3}
@@ -32270,6 +32798,11 @@ PrefabInstance:
       objectReference: {fileID: 272498308}
     - target: {fileID: 8545980197629097158, guid: 8079e6d7c9cdff945a666dc69f4c34c7,
         type: 3}
+      propertyPath: _handAura
+      value: 
+      objectReference: {fileID: 1907650216}
+    - target: {fileID: 8545980197629097158, guid: 8079e6d7c9cdff945a666dc69f4c34c7,
+        type: 3}
       propertyPath: _questPoint
       value: 
       objectReference: {fileID: 4508029041320808953}
@@ -32447,7 +32980,7 @@ PrefabInstance:
     - target: {fileID: 4325195053762921487, guid: 5e0bd85f9dc8b6746904e5f13075fc15,
         type: 3}
       propertyPath: m_Name
-      value: Flask_3
+      value: Flask
       objectReference: {fileID: 0}
     - target: {fileID: 4325195053762921487, guid: 5e0bd85f9dc8b6746904e5f13075fc15,
         type: 3}
@@ -32623,7 +33156,7 @@ PrefabInstance:
     - target: {fileID: 4433255413829591616, guid: ec003cfbd0cdfe740943af98bc42ebe1,
         type: 3}
       propertyPath: m_Name
-      value: mf_book_01 (17)
+      value: Book
       objectReference: {fileID: 0}
     - target: {fileID: 4433255413829591616, guid: ec003cfbd0cdfe740943af98bc42ebe1,
         type: 3}
@@ -32750,6 +33283,38 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.7985228, y: 0.19736594, z: 0.9722144}
   m_Center: {x: 0.0103505375, y: 0.09868416, z: -0.00000044717717}
+--- !u!1 &1344426823
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1344426824}
+  m_Layer: 7
+  m_Name: PuttedChandelier
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &1344426824
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1344426823}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0.000000081460335, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.489, y: 0.673, z: 1.032}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 495797619}
+  m_Father: {fileID: 2336325010645167446}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1348392479
 GameObject:
   m_ObjectHideFlags: 0
@@ -32945,7 +33510,7 @@ PrefabInstance:
     - target: {fileID: 4433255413829591616, guid: ec003cfbd0cdfe740943af98bc42ebe1,
         type: 3}
       propertyPath: m_Name
-      value: mf_book_01 (37)
+      value: Book
       objectReference: {fileID: 0}
     - target: {fileID: 4433255413829591616, guid: ec003cfbd0cdfe740943af98bc42ebe1,
         type: 3}
@@ -33148,7 +33713,7 @@ PrefabInstance:
     - target: {fileID: 4433255413829591616, guid: ec003cfbd0cdfe740943af98bc42ebe1,
         type: 3}
       propertyPath: m_Name
-      value: mf_book_01 (44)
+      value: Book
       objectReference: {fileID: 0}
     - target: {fileID: 4433255413829591616, guid: ec003cfbd0cdfe740943af98bc42ebe1,
         type: 3}
@@ -33316,6 +33881,7 @@ Transform:
   - {fileID: 700073992}
   - {fileID: 1958949169}
   - {fileID: 4761257371210507001}
+  - {fileID: 1907650215}
   - {fileID: 4508029041320808950}
   - {fileID: 3979672533952994288}
   - {fileID: 8082468456039462209}
@@ -33399,7 +33965,7 @@ PrefabInstance:
     - target: {fileID: 4433255413829591616, guid: ec003cfbd0cdfe740943af98bc42ebe1,
         type: 3}
       propertyPath: m_Name
-      value: mf_book_01 (1)
+      value: Book
       objectReference: {fileID: 0}
     - target: {fileID: 4433255413829591616, guid: ec003cfbd0cdfe740943af98bc42ebe1,
         type: 3}
@@ -33711,7 +34277,7 @@ PrefabInstance:
     - target: {fileID: 7162667482330818226, guid: 5e5ca8bd26a707140bf43aab0d5681db,
         type: 3}
       propertyPath: m_Name
-      value: Flask_3
+      value: Flask
       objectReference: {fileID: 0}
     - target: {fileID: 7162667482330818226, guid: 5e5ca8bd26a707140bf43aab0d5681db,
         type: 3}
@@ -33827,7 +34393,7 @@ PrefabInstance:
     - target: {fileID: 4433255413829591616, guid: ec003cfbd0cdfe740943af98bc42ebe1,
         type: 3}
       propertyPath: m_Name
-      value: mf_book_01 (28)
+      value: Book
       objectReference: {fileID: 0}
     - target: {fileID: 4433255413829591616, guid: ec003cfbd0cdfe740943af98bc42ebe1,
         type: 3}
@@ -34030,7 +34596,7 @@ PrefabInstance:
     - target: {fileID: 4433255413829591616, guid: ec003cfbd0cdfe740943af98bc42ebe1,
         type: 3}
       propertyPath: m_Name
-      value: mf_book_01 (32)
+      value: Book
       objectReference: {fileID: 0}
     - target: {fileID: 4433255413829591616, guid: ec003cfbd0cdfe740943af98bc42ebe1,
         type: 3}
@@ -34263,7 +34829,7 @@ PrefabInstance:
     - target: {fileID: 7202330836708532997, guid: ab8ea0c1c25d20d47a7e4e25e9476164,
         type: 3}
       propertyPath: m_Name
-      value: Flask_4 (1)
+      value: Flask
       objectReference: {fileID: 0}
     - target: {fileID: 7202330836708532997, guid: ab8ea0c1c25d20d47a7e4e25e9476164,
         type: 3}
@@ -34396,7 +34962,7 @@ PrefabInstance:
     - target: {fileID: 1238919316445141935, guid: c4f379a9c8970094cb6516f2a5701c2a,
         type: 3}
       propertyPath: m_Name
-      value: Flask_2 (1)
+      value: Flask
       objectReference: {fileID: 0}
     - target: {fileID: 1238919316445141935, guid: c4f379a9c8970094cb6516f2a5701c2a,
         type: 3}
@@ -34552,7 +35118,7 @@ PrefabInstance:
     - target: {fileID: 1307442724995581995, guid: f538b078114dfc64f903cf4365767696,
         type: 3}
       propertyPath: m_Name
-      value: Flask_6 (1)
+      value: Flask
       objectReference: {fileID: 0}
     - target: {fileID: 1307442724995581995, guid: f538b078114dfc64f903cf4365767696,
         type: 3}
@@ -34698,7 +35264,7 @@ PrefabInstance:
     - target: {fileID: 1307442724995581995, guid: f538b078114dfc64f903cf4365767696,
         type: 3}
       propertyPath: m_Name
-      value: Flask_6
+      value: Flask
       objectReference: {fileID: 0}
     - target: {fileID: 1307442724995581995, guid: f538b078114dfc64f903cf4365767696,
         type: 3}
@@ -35103,7 +35669,7 @@ PrefabInstance:
     - target: {fileID: 7202330836708532997, guid: ab8ea0c1c25d20d47a7e4e25e9476164,
         type: 3}
       propertyPath: m_Name
-      value: Flask_4 (1)
+      value: Flask
       objectReference: {fileID: 0}
     - target: {fileID: 7202330836708532997, guid: ab8ea0c1c25d20d47a7e4e25e9476164,
         type: 3}
@@ -35199,7 +35765,7 @@ PrefabInstance:
     - target: {fileID: 1238919316445141935, guid: c4f379a9c8970094cb6516f2a5701c2a,
         type: 3}
       propertyPath: m_Name
-      value: Flask_2
+      value: Flask
       objectReference: {fileID: 0}
     - target: {fileID: 1238919316445141935, guid: c4f379a9c8970094cb6516f2a5701c2a,
         type: 3}
@@ -35513,7 +36079,7 @@ PrefabInstance:
     - target: {fileID: 4433255413829591616, guid: ec003cfbd0cdfe740943af98bc42ebe1,
         type: 3}
       propertyPath: m_Name
-      value: mf_book_01 (4)
+      value: Book
       objectReference: {fileID: 0}
     - target: {fileID: 4433255413829591616, guid: ec003cfbd0cdfe740943af98bc42ebe1,
         type: 3}
@@ -35701,7 +36267,7 @@ PrefabInstance:
     - target: {fileID: 949659358647468468, guid: 3ddf4271573cdb040b2e10dd5e37d537,
         type: 3}
       propertyPath: m_Name
-      value: Flask_4
+      value: Flask
       objectReference: {fileID: 0}
     - target: {fileID: 949659358647468468, guid: 3ddf4271573cdb040b2e10dd5e37d537,
         type: 3}
@@ -35847,7 +36413,7 @@ PrefabInstance:
     - target: {fileID: 4433255413829591616, guid: ec003cfbd0cdfe740943af98bc42ebe1,
         type: 3}
       propertyPath: m_Name
-      value: mf_book_01 (8)
+      value: Book
       objectReference: {fileID: 0}
     - target: {fileID: 4433255413829591616, guid: ec003cfbd0cdfe740943af98bc42ebe1,
         type: 3}
@@ -36080,7 +36646,7 @@ PrefabInstance:
     - target: {fileID: 6660781607872348479, guid: 0dcecee4bba6452439122cd45fc85f91,
         type: 3}
       propertyPath: m_Name
-      value: Flask_5 (1)
+      value: Flask
       objectReference: {fileID: 0}
     - target: {fileID: 6660781607872348479, guid: 0dcecee4bba6452439122cd45fc85f91,
         type: 3}
@@ -36644,7 +37210,7 @@ PrefabInstance:
     - target: {fileID: 7162667482330818226, guid: 5e5ca8bd26a707140bf43aab0d5681db,
         type: 3}
       propertyPath: m_Name
-      value: Flask_3 (1)
+      value: Flask
       objectReference: {fileID: 0}
     - target: {fileID: 7162667482330818226, guid: 5e5ca8bd26a707140bf43aab0d5681db,
         type: 3}
@@ -36760,7 +37326,7 @@ PrefabInstance:
     - target: {fileID: 4433255413829591616, guid: ec003cfbd0cdfe740943af98bc42ebe1,
         type: 3}
       propertyPath: m_Name
-      value: mf_book_01 (49)
+      value: Book
       objectReference: {fileID: 0}
     - target: {fileID: 4433255413829591616, guid: ec003cfbd0cdfe740943af98bc42ebe1,
         type: 3}
@@ -37070,7 +37636,7 @@ PrefabInstance:
     - target: {fileID: 6660781607872348479, guid: 0dcecee4bba6452439122cd45fc85f91,
         type: 3}
       propertyPath: m_Name
-      value: Flask_5 (1)
+      value: Flask
       objectReference: {fileID: 0}
     - target: {fileID: 6660781607872348479, guid: 0dcecee4bba6452439122cd45fc85f91,
         type: 3}
@@ -37186,7 +37752,7 @@ PrefabInstance:
     - target: {fileID: 4433255413829591616, guid: ec003cfbd0cdfe740943af98bc42ebe1,
         type: 3}
       propertyPath: m_Name
-      value: mf_book_01 (71)
+      value: Book
       objectReference: {fileID: 0}
     - target: {fileID: 4433255413829591616, guid: ec003cfbd0cdfe740943af98bc42ebe1,
         type: 3}
@@ -37404,7 +37970,7 @@ PrefabInstance:
     - target: {fileID: 7272977354626062445, guid: 49ad72650a3fcd9469d688ebc0e554b7,
         type: 3}
       propertyPath: m_Name
-      value: Flask_2
+      value: Flask
       objectReference: {fileID: 0}
     - target: {fileID: 7272977354626062445, guid: 49ad72650a3fcd9469d688ebc0e554b7,
         type: 3}
@@ -37562,7 +38128,7 @@ PrefabInstance:
     - target: {fileID: 1913866841032856060, guid: dd1241c59b048584ca237c992efade1b,
         type: 3}
       propertyPath: m_Name
-      value: Flask_5
+      value: Flask
       objectReference: {fileID: 0}
     - target: {fileID: 1913866841032856060, guid: dd1241c59b048584ca237c992efade1b,
         type: 3}
@@ -37839,7 +38405,7 @@ PrefabInstance:
     - target: {fileID: 7202330836708532997, guid: ab8ea0c1c25d20d47a7e4e25e9476164,
         type: 3}
       propertyPath: m_Name
-      value: Flask_4
+      value: Flask
       objectReference: {fileID: 0}
     - target: {fileID: 7202330836708532997, guid: ab8ea0c1c25d20d47a7e4e25e9476164,
         type: 3}
@@ -37910,7 +38476,7 @@ PrefabInstance:
     - target: {fileID: 6155178912782651071, guid: 9b1e2df827d170e4ba68cc95ec1106b3,
         type: 3}
       propertyPath: m_Name
-      value: Flask_6
+      value: Flask
       objectReference: {fileID: 0}
     - target: {fileID: 6155178912782651071, guid: 9b1e2df827d170e4ba68cc95ec1106b3,
         type: 3}
@@ -38240,7 +38806,7 @@ PrefabInstance:
     - target: {fileID: 7162667482330818226, guid: 5e5ca8bd26a707140bf43aab0d5681db,
         type: 3}
       propertyPath: m_Name
-      value: Flask_3 (1)
+      value: Flask
       objectReference: {fileID: 0}
     - target: {fileID: 7162667482330818226, guid: 5e5ca8bd26a707140bf43aab0d5681db,
         type: 3}
@@ -38733,7 +39299,7 @@ PrefabInstance:
     - target: {fileID: 7162667482330818226, guid: 5e5ca8bd26a707140bf43aab0d5681db,
         type: 3}
       propertyPath: m_Name
-      value: Flask_3 (1)
+      value: Flask
       objectReference: {fileID: 0}
     - target: {fileID: 7162667482330818226, guid: 5e5ca8bd26a707140bf43aab0d5681db,
         type: 3}
@@ -39061,7 +39627,7 @@ PrefabInstance:
     - target: {fileID: 949659358647468468, guid: 3ddf4271573cdb040b2e10dd5e37d537,
         type: 3}
       propertyPath: m_Name
-      value: Flask_4
+      value: Flask
       objectReference: {fileID: 0}
     - target: {fileID: 949659358647468468, guid: 3ddf4271573cdb040b2e10dd5e37d537,
         type: 3}
@@ -39277,7 +39843,7 @@ PrefabInstance:
     - target: {fileID: 7539860473014211750, guid: d6ebd1e19a77f1042b90e9ac54acf654,
         type: 3}
       propertyPath: m_Name
-      value: Flask_1
+      value: Flask
       objectReference: {fileID: 0}
     - target: {fileID: 7539860473014211750, guid: d6ebd1e19a77f1042b90e9ac54acf654,
         type: 3}
@@ -39586,7 +40152,7 @@ PrefabInstance:
     - target: {fileID: 6660781607872348479, guid: 0dcecee4bba6452439122cd45fc85f91,
         type: 3}
       propertyPath: m_Name
-      value: Flask_5
+      value: Flask
       objectReference: {fileID: 0}
     - target: {fileID: 6660781607872348479, guid: 0dcecee4bba6452439122cd45fc85f91,
         type: 3}
@@ -39751,7 +40317,7 @@ PrefabInstance:
     - target: {fileID: 4433255413829591616, guid: ec003cfbd0cdfe740943af98bc42ebe1,
         type: 3}
       propertyPath: m_Name
-      value: mf_book_01 (67)
+      value: Book
       objectReference: {fileID: 0}
     - target: {fileID: 4433255413829591616, guid: ec003cfbd0cdfe740943af98bc42ebe1,
         type: 3}
@@ -39994,7 +40560,7 @@ PrefabInstance:
     - target: {fileID: 4433255413829591616, guid: ec003cfbd0cdfe740943af98bc42ebe1,
         type: 3}
       propertyPath: m_Name
-      value: mf_book_01 (13)
+      value: Book
       objectReference: {fileID: 0}
     - target: {fileID: 4433255413829591616, guid: ec003cfbd0cdfe740943af98bc42ebe1,
         type: 3}
@@ -40152,7 +40718,7 @@ PrefabInstance:
     - target: {fileID: 6155178912782651071, guid: 9b1e2df827d170e4ba68cc95ec1106b3,
         type: 3}
       propertyPath: m_Name
-      value: Flask_6
+      value: Flask
       objectReference: {fileID: 0}
     - target: {fileID: 6155178912782651071, guid: 9b1e2df827d170e4ba68cc95ec1106b3,
         type: 3}
@@ -40452,7 +41018,7 @@ PrefabInstance:
     - target: {fileID: 4433255413829591616, guid: ec003cfbd0cdfe740943af98bc42ebe1,
         type: 3}
       propertyPath: m_Name
-      value: mf_book_01 (40)
+      value: Book
       objectReference: {fileID: 0}
     - target: {fileID: 4433255413829591616, guid: ec003cfbd0cdfe740943af98bc42ebe1,
         type: 3}
@@ -40685,7 +41251,7 @@ PrefabInstance:
     - target: {fileID: 7272977354626062445, guid: 49ad72650a3fcd9469d688ebc0e554b7,
         type: 3}
       propertyPath: m_Name
-      value: Flask_2
+      value: Flask
       objectReference: {fileID: 0}
     - target: {fileID: 7272977354626062445, guid: 49ad72650a3fcd9469d688ebc0e554b7,
         type: 3}
@@ -40736,7 +41302,7 @@ PrefabInstance:
     - target: {fileID: 1238919316445141935, guid: c4f379a9c8970094cb6516f2a5701c2a,
         type: 3}
       propertyPath: m_Name
-      value: Flask_2 (1)
+      value: Flask
       objectReference: {fileID: 0}
     - target: {fileID: 1238919316445141935, guid: c4f379a9c8970094cb6516f2a5701c2a,
         type: 3}
@@ -40871,6 +41437,85 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d366813614624a644bf8288f71db65c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1001 &1676361135
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2264407967562492254, guid: e97385a08d91cd34a82edae42ad5063f,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2264407967562492254, guid: e97385a08d91cd34a82edae42ad5063f,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2264407967562492254, guid: e97385a08d91cd34a82edae42ad5063f,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2264407967562492254, guid: e97385a08d91cd34a82edae42ad5063f,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2264407967562492254, guid: e97385a08d91cd34a82edae42ad5063f,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2264407967562492254, guid: e97385a08d91cd34a82edae42ad5063f,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2264407967562492254, guid: e97385a08d91cd34a82edae42ad5063f,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2264407967562492254, guid: e97385a08d91cd34a82edae42ad5063f,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 2264407967562492254, guid: e97385a08d91cd34a82edae42ad5063f,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2264407967562492254, guid: e97385a08d91cd34a82edae42ad5063f,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6969935845252199685, guid: e97385a08d91cd34a82edae42ad5063f,
+        type: 3}
+      propertyPath: m_Name
+      value: Explosion
+      objectReference: {fileID: 0}
+    - target: {fileID: 6969935845252199685, guid: e97385a08d91cd34a82edae42ad5063f,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e97385a08d91cd34a82edae42ad5063f, type: 3}
+--- !u!1 &1676361136 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6969935845252199685, guid: e97385a08d91cd34a82edae42ad5063f,
+    type: 3}
+  m_PrefabInstance: {fileID: 1676361135}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1677554953
 GameObject:
   m_ObjectHideFlags: 0
@@ -40985,7 +41630,7 @@ PrefabInstance:
     - target: {fileID: 4433255413829591616, guid: ec003cfbd0cdfe740943af98bc42ebe1,
         type: 3}
       propertyPath: m_Name
-      value: mf_book_01 (55)
+      value: Book
       objectReference: {fileID: 0}
     - target: {fileID: 4433255413829591616, guid: ec003cfbd0cdfe740943af98bc42ebe1,
         type: 3}
@@ -41203,7 +41848,7 @@ PrefabInstance:
     - target: {fileID: 7162667482330818226, guid: 5e5ca8bd26a707140bf43aab0d5681db,
         type: 3}
       propertyPath: m_Name
-      value: Flask_3
+      value: Flask
       objectReference: {fileID: 0}
     - target: {fileID: 7162667482330818226, guid: 5e5ca8bd26a707140bf43aab0d5681db,
         type: 3}
@@ -41284,7 +41929,7 @@ PrefabInstance:
     - target: {fileID: 7539860473014211750, guid: d6ebd1e19a77f1042b90e9ac54acf654,
         type: 3}
       propertyPath: m_Name
-      value: Flask_1
+      value: Flask
       objectReference: {fileID: 0}
     - target: {fileID: 7539860473014211750, guid: d6ebd1e19a77f1042b90e9ac54acf654,
         type: 3}
@@ -41430,7 +42075,7 @@ PrefabInstance:
     - target: {fileID: 949659358647468468, guid: 3ddf4271573cdb040b2e10dd5e37d537,
         type: 3}
       propertyPath: m_Name
-      value: Flask_4
+      value: Flask
       objectReference: {fileID: 0}
     - target: {fileID: 949659358647468468, guid: 3ddf4271573cdb040b2e10dd5e37d537,
         type: 3}
@@ -41644,7 +42289,7 @@ PrefabInstance:
     - target: {fileID: 7272977354626062445, guid: 49ad72650a3fcd9469d688ebc0e554b7,
         type: 3}
       propertyPath: m_Name
-      value: Flask_2 (1)
+      value: Flask
       objectReference: {fileID: 0}
     - target: {fileID: 7272977354626062445, guid: 49ad72650a3fcd9469d688ebc0e554b7,
         type: 3}
@@ -41760,7 +42405,7 @@ PrefabInstance:
     - target: {fileID: 4433255413829591616, guid: ec003cfbd0cdfe740943af98bc42ebe1,
         type: 3}
       propertyPath: m_Name
-      value: mf_book_01
+      value: Book
       objectReference: {fileID: 0}
     - target: {fileID: 4433255413829591616, guid: ec003cfbd0cdfe740943af98bc42ebe1,
         type: 3}
@@ -41918,7 +42563,7 @@ PrefabInstance:
     - target: {fileID: 4325195053762921487, guid: 5e0bd85f9dc8b6746904e5f13075fc15,
         type: 3}
       propertyPath: m_Name
-      value: Flask_3 (1)
+      value: Flask
       objectReference: {fileID: 0}
     - target: {fileID: 4325195053762921487, guid: 5e0bd85f9dc8b6746904e5f13075fc15,
         type: 3}
@@ -42183,7 +42828,7 @@ PrefabInstance:
     - target: {fileID: 7162667482330818226, guid: 5e5ca8bd26a707140bf43aab0d5681db,
         type: 3}
       propertyPath: m_Name
-      value: Flask_3
+      value: Flask
       objectReference: {fileID: 0}
     - target: {fileID: 7162667482330818226, guid: 5e5ca8bd26a707140bf43aab0d5681db,
         type: 3}
@@ -42254,7 +42899,7 @@ PrefabInstance:
     - target: {fileID: 6155178912782651071, guid: 9b1e2df827d170e4ba68cc95ec1106b3,
         type: 3}
       propertyPath: m_Name
-      value: Flask_6
+      value: Flask
       objectReference: {fileID: 0}
     - target: {fileID: 6155178912782651071, guid: 9b1e2df827d170e4ba68cc95ec1106b3,
         type: 3}
@@ -42415,7 +43060,7 @@ PrefabInstance:
     - target: {fileID: 949659358647468468, guid: 3ddf4271573cdb040b2e10dd5e37d537,
         type: 3}
       propertyPath: m_Name
-      value: Flask_4
+      value: Flask
       objectReference: {fileID: 0}
     - target: {fileID: 949659358647468468, guid: 3ddf4271573cdb040b2e10dd5e37d537,
         type: 3}
@@ -42818,7 +43463,7 @@ PrefabInstance:
     - target: {fileID: 7272977354626062445, guid: 49ad72650a3fcd9469d688ebc0e554b7,
         type: 3}
       propertyPath: m_Name
-      value: Flask_2
+      value: Flask
       objectReference: {fileID: 0}
     - target: {fileID: 7272977354626062445, guid: 49ad72650a3fcd9469d688ebc0e554b7,
         type: 3}
@@ -43281,7 +43926,7 @@ PrefabInstance:
     - target: {fileID: 7272977354626062445, guid: 49ad72650a3fcd9469d688ebc0e554b7,
         type: 3}
       propertyPath: m_Name
-      value: Flask_2
+      value: Flask
       objectReference: {fileID: 0}
     - target: {fileID: 7272977354626062445, guid: 49ad72650a3fcd9469d688ebc0e554b7,
         type: 3}
@@ -43397,7 +44042,7 @@ PrefabInstance:
     - target: {fileID: 4433255413829591616, guid: ec003cfbd0cdfe740943af98bc42ebe1,
         type: 3}
       propertyPath: m_Name
-      value: mf_book_01 (30)
+      value: Book
       objectReference: {fileID: 0}
     - target: {fileID: 4433255413829591616, guid: ec003cfbd0cdfe740943af98bc42ebe1,
         type: 3}
@@ -44064,7 +44709,7 @@ PrefabInstance:
     - target: {fileID: 6660781607872348479, guid: 0dcecee4bba6452439122cd45fc85f91,
         type: 3}
       propertyPath: m_Name
-      value: Flask_5 (1)
+      value: Flask
       objectReference: {fileID: 0}
     - target: {fileID: 6660781607872348479, guid: 0dcecee4bba6452439122cd45fc85f91,
         type: 3}
@@ -44210,7 +44855,7 @@ PrefabInstance:
     - target: {fileID: 7202330836708532997, guid: ab8ea0c1c25d20d47a7e4e25e9476164,
         type: 3}
       propertyPath: m_Name
-      value: Flask_4 (1)
+      value: Flask
       objectReference: {fileID: 0}
     - target: {fileID: 7202330836708532997, guid: ab8ea0c1c25d20d47a7e4e25e9476164,
         type: 3}
@@ -44356,7 +45001,7 @@ PrefabInstance:
     - target: {fileID: 6660781607872348479, guid: 0dcecee4bba6452439122cd45fc85f91,
         type: 3}
       propertyPath: m_Name
-      value: Flask_5
+      value: Flask
       objectReference: {fileID: 0}
     - target: {fileID: 6660781607872348479, guid: 0dcecee4bba6452439122cd45fc85f91,
         type: 3}
@@ -44574,7 +45219,7 @@ PrefabInstance:
     - target: {fileID: 7202330836708532997, guid: ab8ea0c1c25d20d47a7e4e25e9476164,
         type: 3}
       propertyPath: m_Name
-      value: Flask_4
+      value: Flask
       objectReference: {fileID: 0}
     - target: {fileID: 7202330836708532997, guid: ab8ea0c1c25d20d47a7e4e25e9476164,
         type: 3}
@@ -44690,7 +45335,7 @@ PrefabInstance:
     - target: {fileID: 4433255413829591616, guid: ec003cfbd0cdfe740943af98bc42ebe1,
         type: 3}
       propertyPath: m_Name
-      value: mf_book_01 (63)
+      value: Book
       objectReference: {fileID: 0}
     - target: {fileID: 4433255413829591616, guid: ec003cfbd0cdfe740943af98bc42ebe1,
         type: 3}
@@ -44848,7 +45493,7 @@ PrefabInstance:
     - target: {fileID: 6155178912782651071, guid: 9b1e2df827d170e4ba68cc95ec1106b3,
         type: 3}
       propertyPath: m_Name
-      value: Flask_6
+      value: Flask
       objectReference: {fileID: 0}
     - target: {fileID: 6155178912782651071, guid: 9b1e2df827d170e4ba68cc95ec1106b3,
         type: 3}
@@ -45241,7 +45886,7 @@ PrefabInstance:
     - target: {fileID: 4433255413829591616, guid: ec003cfbd0cdfe740943af98bc42ebe1,
         type: 3}
       propertyPath: m_Name
-      value: mf_book_01 (59)
+      value: Book
       objectReference: {fileID: 0}
     - target: {fileID: 4433255413829591616, guid: ec003cfbd0cdfe740943af98bc42ebe1,
         type: 3}
@@ -45474,7 +46119,7 @@ PrefabInstance:
     - target: {fileID: 7202330836708532997, guid: ab8ea0c1c25d20d47a7e4e25e9476164,
         type: 3}
       propertyPath: m_Name
-      value: Flask_4 (1)
+      value: Flask
       objectReference: {fileID: 0}
     - target: {fileID: 7202330836708532997, guid: ab8ea0c1c25d20d47a7e4e25e9476164,
         type: 3}
@@ -45514,6 +46159,161 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d366813614624a644bf8288f71db65c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1001 &1907650214
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1363968433}
+    m_Modifications:
+    - target: {fileID: 350671579965394600, guid: 892f2be99b5ec134984b5b6f78ee69c2,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 350671579965394600, guid: 892f2be99b5ec134984b5b6f78ee69c2,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 350671579965394600, guid: 892f2be99b5ec134984b5b6f78ee69c2,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 350671579965394600, guid: 892f2be99b5ec134984b5b6f78ee69c2,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.543
+      objectReference: {fileID: 0}
+    - target: {fileID: 350671579965394600, guid: 892f2be99b5ec134984b5b6f78ee69c2,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.971
+      objectReference: {fileID: 0}
+    - target: {fileID: 350671579965394600, guid: 892f2be99b5ec134984b5b6f78ee69c2,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 4.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 350671579965394600, guid: 892f2be99b5ec134984b5b6f78ee69c2,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 350671579965394600, guid: 892f2be99b5ec134984b5b6f78ee69c2,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 350671579965394600, guid: 892f2be99b5ec134984b5b6f78ee69c2,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 350671579965394600, guid: 892f2be99b5ec134984b5b6f78ee69c2,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 350671579965394600, guid: 892f2be99b5ec134984b5b6f78ee69c2,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 350671579965394600, guid: 892f2be99b5ec134984b5b6f78ee69c2,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 350671579965394600, guid: 892f2be99b5ec134984b5b6f78ee69c2,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 571642529808814046, guid: 892f2be99b5ec134984b5b6f78ee69c2,
+        type: 3}
+      propertyPath: InitialModule.startColor.maxColor.a
+      value: 0.047058824
+      objectReference: {fileID: 0}
+    - target: {fileID: 571642529808814046, guid: 892f2be99b5ec134984b5b6f78ee69c2,
+        type: 3}
+      propertyPath: InitialModule.startColor.maxColor.b
+      value: 0.4708251
+      objectReference: {fileID: 0}
+    - target: {fileID: 571642529808814046, guid: 892f2be99b5ec134984b5b6f78ee69c2,
+        type: 3}
+      propertyPath: InitialModule.startColor.maxColor.g
+      value: 0.4811321
+      objectReference: {fileID: 0}
+    - target: {fileID: 571642529808814046, guid: 892f2be99b5ec134984b5b6f78ee69c2,
+        type: 3}
+      propertyPath: InitialModule.startColor.maxColor.r
+      value: 0.46978465
+      objectReference: {fileID: 0}
+    - target: {fileID: 2694398918871978657, guid: 892f2be99b5ec134984b5b6f78ee69c2,
+        type: 3}
+      propertyPath: InitialModule.startColor.maxColor.b
+      value: 0.36470592
+      objectReference: {fileID: 0}
+    - target: {fileID: 2694398918871978657, guid: 892f2be99b5ec134984b5b6f78ee69c2,
+        type: 3}
+      propertyPath: InitialModule.startColor.maxColor.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2694398918871978657, guid: 892f2be99b5ec134984b5b6f78ee69c2,
+        type: 3}
+      propertyPath: InitialModule.startColor.maxColor.r
+      value: 0.4363231
+      objectReference: {fileID: 0}
+    - target: {fileID: 3646163007185244725, guid: 892f2be99b5ec134984b5b6f78ee69c2,
+        type: 3}
+      propertyPath: InitialModule.startColor.maxColor.b
+      value: 0.1214014
+      objectReference: {fileID: 0}
+    - target: {fileID: 3646163007185244725, guid: 892f2be99b5ec134984b5b6f78ee69c2,
+        type: 3}
+      propertyPath: InitialModule.startColor.maxColor.g
+      value: 0.9150943
+      objectReference: {fileID: 0}
+    - target: {fileID: 3646163007185244725, guid: 892f2be99b5ec134984b5b6f78ee69c2,
+        type: 3}
+      propertyPath: InitialModule.startColor.maxColor.r
+      value: 0.09927912
+      objectReference: {fileID: 0}
+    - target: {fileID: 4533549327122330284, guid: 892f2be99b5ec134984b5b6f78ee69c2,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4984183662316168325, guid: 892f2be99b5ec134984b5b6f78ee69c2,
+        type: 3}
+      propertyPath: m_Name
+      value: Hand aura
+      objectReference: {fileID: 0}
+    - target: {fileID: 4984183662316168325, guid: 892f2be99b5ec134984b5b6f78ee69c2,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 892f2be99b5ec134984b5b6f78ee69c2, type: 3}
+--- !u!4 &1907650215 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 350671579965394600, guid: 892f2be99b5ec134984b5b6f78ee69c2,
+    type: 3}
+  m_PrefabInstance: {fileID: 1907650214}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1907650216 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4984183662316168325, guid: 892f2be99b5ec134984b5b6f78ee69c2,
+    type: 3}
+  m_PrefabInstance: {fileID: 1907650214}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1908682489
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -45677,7 +46477,7 @@ PrefabInstance:
     - target: {fileID: 4433255413829591616, guid: ec003cfbd0cdfe740943af98bc42ebe1,
         type: 3}
       propertyPath: m_Name
-      value: mf_book_01 (58)
+      value: Book
       objectReference: {fileID: 0}
     - target: {fileID: 4433255413829591616, guid: ec003cfbd0cdfe740943af98bc42ebe1,
         type: 3}
@@ -46111,7 +46911,7 @@ PrefabInstance:
     - target: {fileID: 6660781607872348479, guid: 0dcecee4bba6452439122cd45fc85f91,
         type: 3}
       propertyPath: m_Name
-      value: Flask_5
+      value: Flask
       objectReference: {fileID: 0}
     - target: {fileID: 6660781607872348479, guid: 0dcecee4bba6452439122cd45fc85f91,
         type: 3}
@@ -46290,7 +47090,7 @@ PrefabInstance:
     - target: {fileID: 4433255413829591616, guid: ec003cfbd0cdfe740943af98bc42ebe1,
         type: 3}
       propertyPath: m_Name
-      value: mf_book_01 (51)
+      value: Book
       objectReference: {fileID: 0}
     - target: {fileID: 4433255413829591616, guid: ec003cfbd0cdfe740943af98bc42ebe1,
         type: 3}
@@ -46448,7 +47248,7 @@ PrefabInstance:
     - target: {fileID: 1913866841032856060, guid: dd1241c59b048584ca237c992efade1b,
         type: 3}
       propertyPath: m_Name
-      value: Flask_5
+      value: Flask
       objectReference: {fileID: 0}
     - target: {fileID: 1913866841032856060, guid: dd1241c59b048584ca237c992efade1b,
         type: 3}
@@ -47237,7 +48037,7 @@ PrefabInstance:
     - target: {fileID: 7539860473014211750, guid: d6ebd1e19a77f1042b90e9ac54acf654,
         type: 3}
       propertyPath: m_Name
-      value: Flask_1
+      value: Flask
       objectReference: {fileID: 0}
     - target: {fileID: 7539860473014211750, guid: d6ebd1e19a77f1042b90e9ac54acf654,
         type: 3}
@@ -47333,7 +48133,7 @@ PrefabInstance:
     - target: {fileID: 1238919316445141935, guid: c4f379a9c8970094cb6516f2a5701c2a,
         type: 3}
       propertyPath: m_Name
-      value: Flask_2
+      value: Flask
       objectReference: {fileID: 0}
     - target: {fileID: 1238919316445141935, guid: c4f379a9c8970094cb6516f2a5701c2a,
         type: 3}
@@ -47776,7 +48576,7 @@ PrefabInstance:
     - target: {fileID: 4433255413829591616, guid: ec003cfbd0cdfe740943af98bc42ebe1,
         type: 3}
       propertyPath: m_Name
-      value: mf_book_01 (20)
+      value: Book
       objectReference: {fileID: 0}
     - target: {fileID: 4433255413829591616, guid: ec003cfbd0cdfe740943af98bc42ebe1,
         type: 3}
@@ -47979,7 +48779,7 @@ PrefabInstance:
     - target: {fileID: 4433255413829591616, guid: ec003cfbd0cdfe740943af98bc42ebe1,
         type: 3}
       propertyPath: m_Name
-      value: mf_book_01 (66)
+      value: Book
       objectReference: {fileID: 0}
     - target: {fileID: 4433255413829591616, guid: ec003cfbd0cdfe740943af98bc42ebe1,
         type: 3}
@@ -48269,7 +49069,7 @@ PrefabInstance:
     - target: {fileID: 6155178912782651071, guid: 9b1e2df827d170e4ba68cc95ec1106b3,
         type: 3}
       propertyPath: m_Name
-      value: Flask_6
+      value: Flask
       objectReference: {fileID: 0}
     - target: {fileID: 6155178912782651071, guid: 9b1e2df827d170e4ba68cc95ec1106b3,
         type: 3}
@@ -48655,7 +49455,7 @@ PrefabInstance:
     - target: {fileID: 4433255413829591616, guid: ec003cfbd0cdfe740943af98bc42ebe1,
         type: 3}
       propertyPath: m_Name
-      value: mf_book_01 (19)
+      value: Book
       objectReference: {fileID: 0}
     - target: {fileID: 4433255413829591616, guid: ec003cfbd0cdfe740943af98bc42ebe1,
         type: 3}
@@ -48885,7 +49685,7 @@ PrefabInstance:
     - target: {fileID: 4433255413829591616, guid: ec003cfbd0cdfe740943af98bc42ebe1,
         type: 3}
       propertyPath: m_Name
-      value: mf_book_01 (75)
+      value: Book
       objectReference: {fileID: 0}
     - target: {fileID: 4433255413829591616, guid: ec003cfbd0cdfe740943af98bc42ebe1,
         type: 3}
@@ -49088,7 +49888,7 @@ PrefabInstance:
     - target: {fileID: 4433255413829591616, guid: ec003cfbd0cdfe740943af98bc42ebe1,
         type: 3}
       propertyPath: m_Name
-      value: mf_book_01 (27)
+      value: Book
       objectReference: {fileID: 0}
     - target: {fileID: 4433255413829591616, guid: ec003cfbd0cdfe740943af98bc42ebe1,
         type: 3}
@@ -49285,7 +50085,7 @@ PrefabInstance:
     - target: {fileID: 6155178912782651071, guid: 9b1e2df827d170e4ba68cc95ec1106b3,
         type: 3}
       propertyPath: m_Name
-      value: Flask_6
+      value: Flask
       objectReference: {fileID: 0}
     - target: {fileID: 6155178912782651071, guid: 9b1e2df827d170e4ba68cc95ec1106b3,
         type: 3}
@@ -49491,7 +50291,7 @@ PrefabInstance:
     - target: {fileID: 7162667482330818226, guid: 5e5ca8bd26a707140bf43aab0d5681db,
         type: 3}
       propertyPath: m_Name
-      value: Flask_3 (1)
+      value: Flask
       objectReference: {fileID: 0}
     - target: {fileID: 7162667482330818226, guid: 5e5ca8bd26a707140bf43aab0d5681db,
         type: 3}
@@ -49562,7 +50362,7 @@ PrefabInstance:
     - target: {fileID: 4325195053762921487, guid: 5e0bd85f9dc8b6746904e5f13075fc15,
         type: 3}
       propertyPath: m_Name
-      value: Flask_3
+      value: Flask
       objectReference: {fileID: 0}
     - target: {fileID: 4325195053762921487, guid: 5e0bd85f9dc8b6746904e5f13075fc15,
         type: 3}
@@ -50205,6 +51005,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7682770838610050045, guid: e38e86b14d0bd0f479da4f914e449b8d,
         type: 3}
+      propertyPath: m_Name
+      value: Plant
+      objectReference: {fileID: 0}
+    - target: {fileID: 7682770838610050045, guid: e38e86b14d0bd0f479da4f914e449b8d,
+        type: 3}
       propertyPath: m_Layer
       value: 6
       objectReference: {fileID: 0}
@@ -50359,7 +51164,7 @@ PrefabInstance:
     - target: {fileID: 949659358647468468, guid: 3ddf4271573cdb040b2e10dd5e37d537,
         type: 3}
       propertyPath: m_Name
-      value: Flask_4
+      value: Flask
       objectReference: {fileID: 0}
     - target: {fileID: 949659358647468468, guid: 3ddf4271573cdb040b2e10dd5e37d537,
         type: 3}
@@ -50614,6 +51419,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8787154715072057617, guid: 19a9dd38c6123c8459abeeb4916f8715,
         type: 3}
+      propertyPath: m_Name
+      value: Plant
+      objectReference: {fileID: 0}
+    - target: {fileID: 8787154715072057617, guid: 19a9dd38c6123c8459abeeb4916f8715,
+        type: 3}
       propertyPath: m_Layer
       value: 6
       objectReference: {fileID: 0}
@@ -50837,7 +51647,7 @@ PrefabInstance:
     - target: {fileID: 1913866841032856060, guid: dd1241c59b048584ca237c992efade1b,
         type: 3}
       propertyPath: m_Name
-      value: Flask_5
+      value: Flask
       objectReference: {fileID: 0}
     - target: {fileID: 1913866841032856060, guid: dd1241c59b048584ca237c992efade1b,
         type: 3}
@@ -51058,7 +51868,7 @@ PrefabInstance:
     - target: {fileID: 9123512972306222419, guid: 59c2de8b626cd394da87cf6fde9f786c,
         type: 3}
       propertyPath: m_Name
-      value: PortretFrame (13)
+      value: Portret
       objectReference: {fileID: 0}
     - target: {fileID: 9123512972306222419, guid: 59c2de8b626cd394da87cf6fde9f786c,
         type: 3}
@@ -51245,6 +52055,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 8422002007465441314}
     m_Modifications:
+    - target: {fileID: 1335927811974035870, guid: 5ed3f169c22336f46bb0032355b0b662,
+        type: 3}
+      propertyPath: m_Name
+      value: Plant
+      objectReference: {fileID: 0}
     - target: {fileID: 1335927811974035870, guid: 5ed3f169c22336f46bb0032355b0b662,
         type: 3}
       propertyPath: m_Layer
@@ -51521,7 +52336,7 @@ PrefabInstance:
     - target: {fileID: 3206416228683793904, guid: c20a35907bb1f4444bc316e61ae60e9d,
         type: 3}
       propertyPath: m_Name
-      value: Flask_1
+      value: Flask
       objectReference: {fileID: 0}
     - target: {fileID: 3206416228683793904, guid: c20a35907bb1f4444bc316e61ae60e9d,
         type: 3}
@@ -51821,7 +52636,7 @@ PrefabInstance:
     - target: {fileID: 8566233979925808252, guid: 147071b36db893c4b86d76a6fdb5a1e5,
         type: 3}
       propertyPath: m_Name
-      value: PortretFrame (6)
+      value: Portret
       objectReference: {fileID: 0}
     - target: {fileID: 8566233979925808252, guid: 147071b36db893c4b86d76a6fdb5a1e5,
         type: 3}
@@ -52238,6 +53053,7 @@ MonoBehaviour:
   _bug: {fileID: 1308227286}
   _director: {fileID: 603832704}
   _texture2D: {fileID: 2800000, guid: 6bf50052ce1f06547a2675c7311f6e62, type: 3}
+  _puttenChandelier: {fileID: 1344426823}
 --- !u!1001 &1717971131094605796
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -52782,7 +53598,7 @@ PrefabInstance:
     - target: {fileID: 1948575514558152791, guid: 7166ea12dc73e12448fa95c5f0d7f2a0,
         type: 3}
       propertyPath: m_Name
-      value: PortretFrame (3)
+      value: Portret
       objectReference: {fileID: 0}
     - target: {fileID: 1948575514558152791, guid: 7166ea12dc73e12448fa95c5f0d7f2a0,
         type: 3}
@@ -53144,7 +53960,7 @@ PrefabInstance:
     - target: {fileID: 124072871606985829, guid: 5484cb73ae93e4344a792b5a271b2980,
         type: 3}
       propertyPath: m_Name
-      value: PortretFrame (5)
+      value: Portret
       objectReference: {fileID: 0}
     - target: {fileID: 124072871606985829, guid: 5484cb73ae93e4344a792b5a271b2980,
         type: 3}
@@ -53432,7 +54248,7 @@ PrefabInstance:
     - target: {fileID: 1307442724995581995, guid: f538b078114dfc64f903cf4365767696,
         type: 3}
       propertyPath: m_Name
-      value: Flask_6
+      value: Flask
       objectReference: {fileID: 0}
     - target: {fileID: 1307442724995581995, guid: f538b078114dfc64f903cf4365767696,
         type: 3}
@@ -53596,6 +54412,7 @@ Transform:
   m_LocalScale: {x: 0.0009697908, y: 0.0018480659, z: 0.00097619387}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 1344426824}
   - {fileID: 8244001596244340922}
   - {fileID: 4694059113013045571}
   - {fileID: 4667271595207210289}
@@ -53787,7 +54604,7 @@ PrefabInstance:
     - target: {fileID: 4629122547334795874, guid: f91ce1de0de1c7841944e6ec83aab36f,
         type: 3}
       propertyPath: m_Name
-      value: PortretFrame (9)
+      value: Portret
       objectReference: {fileID: 0}
     - target: {fileID: 4629122547334795874, guid: f91ce1de0de1c7841944e6ec83aab36f,
         type: 3}
@@ -54060,7 +54877,7 @@ PrefabInstance:
     - target: {fileID: 5686144670677198176, guid: 21e6a1d770d913b4c9e159164f5e3f13,
         type: 3}
       propertyPath: m_Name
-      value: PortretFrame (8)
+      value: Portret
       objectReference: {fileID: 0}
     - target: {fileID: 5686144670677198176, guid: 21e6a1d770d913b4c9e159164f5e3f13,
         type: 3}
@@ -54454,6 +55271,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6336609281432271753, guid: c76821badf2d61f459f8fe29d2388fe3,
         type: 3}
+      propertyPath: m_Name
+      value: Plant
+      objectReference: {fileID: 0}
+    - target: {fileID: 6336609281432271753, guid: c76821badf2d61f459f8fe29d2388fe3,
+        type: 3}
       propertyPath: m_Layer
       value: 6
       objectReference: {fileID: 0}
@@ -54669,7 +55491,7 @@ PrefabInstance:
     - target: {fileID: 6660781607872348479, guid: 0dcecee4bba6452439122cd45fc85f91,
         type: 3}
       propertyPath: m_Name
-      value: Flask_5
+      value: Flask
       objectReference: {fileID: 0}
     - target: {fileID: 6660781607872348479, guid: 0dcecee4bba6452439122cd45fc85f91,
         type: 3}
@@ -54935,7 +55757,7 @@ PrefabInstance:
     - target: {fileID: 7162667482330818226, guid: 5e5ca8bd26a707140bf43aab0d5681db,
         type: 3}
       propertyPath: m_Name
-      value: Flask_3
+      value: Flask
       objectReference: {fileID: 0}
     - target: {fileID: 7162667482330818226, guid: 5e5ca8bd26a707140bf43aab0d5681db,
         type: 3}
@@ -55048,7 +55870,7 @@ PrefabInstance:
     - target: {fileID: 7202330836708532997, guid: ab8ea0c1c25d20d47a7e4e25e9476164,
         type: 3}
       propertyPath: m_Name
-      value: Flask_4
+      value: Flask
       objectReference: {fileID: 0}
     - target: {fileID: 7202330836708532997, guid: ab8ea0c1c25d20d47a7e4e25e9476164,
         type: 3}
@@ -55395,7 +56217,7 @@ PrefabInstance:
     - target: {fileID: 8718981573081225296, guid: 827db0ab9f4c32b4b9f42aeed5280630,
         type: 3}
       propertyPath: m_Name
-      value: PortretFrame (4)
+      value: Portret
       objectReference: {fileID: 0}
     - target: {fileID: 8718981573081225296, guid: 827db0ab9f4c32b4b9f42aeed5280630,
         type: 3}
@@ -55607,6 +56429,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6339942133984669994, guid: 5f472fd5396ecd741b777720aff4c4ba,
         type: 3}
+      propertyPath: m_Name
+      value: Plant
+      objectReference: {fileID: 0}
+    - target: {fileID: 6339942133984669994, guid: 5f472fd5396ecd741b777720aff4c4ba,
+        type: 3}
       propertyPath: m_Layer
       value: 6
       objectReference: {fileID: 0}
@@ -55801,7 +56628,7 @@ PrefabInstance:
     - target: {fileID: 4784872943555725181, guid: c8fad67daad353641b189e815fac568c,
         type: 3}
       propertyPath: m_Name
-      value: PortretFrame (16)
+      value: Portret
       objectReference: {fileID: 0}
     - target: {fileID: 4784872943555725181, guid: c8fad67daad353641b189e815fac568c,
         type: 3}
@@ -56119,7 +56946,7 @@ PrefabInstance:
     - target: {fileID: 5172077757358935720, guid: 492dca10d66993747833b4908b4f5d32,
         type: 3}
       propertyPath: m_Name
-      value: PortretFrame (7)
+      value: Portret
       objectReference: {fileID: 0}
     - target: {fileID: 5172077757358935720, guid: 492dca10d66993747833b4908b4f5d32,
         type: 3}
@@ -57038,7 +57865,7 @@ PrefabInstance:
     - target: {fileID: 6155178912782651071, guid: 9b1e2df827d170e4ba68cc95ec1106b3,
         type: 3}
       propertyPath: m_Name
-      value: Flask_6
+      value: Flask
       objectReference: {fileID: 0}
     - target: {fileID: 6155178912782651071, guid: 9b1e2df827d170e4ba68cc95ec1106b3,
         type: 3}
@@ -57143,7 +57970,7 @@ PrefabInstance:
     - target: {fileID: 1238919316445141935, guid: c4f379a9c8970094cb6516f2a5701c2a,
         type: 3}
       propertyPath: m_Name
-      value: Flask_2
+      value: Flask
       objectReference: {fileID: 0}
     - target: {fileID: 1238919316445141935, guid: c4f379a9c8970094cb6516f2a5701c2a,
         type: 3}
@@ -58396,6 +59223,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6500632499898610034, guid: 3b8f9b22878cc0948b58abe6cfa14dd3,
         type: 3}
+      propertyPath: m_Name
+      value: Plant
+      objectReference: {fileID: 0}
+    - target: {fileID: 6500632499898610034, guid: 3b8f9b22878cc0948b58abe6cfa14dd3,
+        type: 3}
       propertyPath: m_Layer
       value: 6
       objectReference: {fileID: 0}
@@ -58851,6 +59683,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3692580918610739163, guid: 33a4fcd4f8d03e940a89720033dbd68c,
         type: 3}
+      propertyPath: m_Name
+      value: Plant
+      objectReference: {fileID: 0}
+    - target: {fileID: 3692580918610739163, guid: 33a4fcd4f8d03e940a89720033dbd68c,
+        type: 3}
       propertyPath: m_Layer
       value: 6
       objectReference: {fileID: 0}
@@ -59034,6 +59871,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 8422002007465441314}
     m_Modifications:
+    - target: {fileID: 2468832346840723233, guid: 2c6829bf7c5b1a14ca91f5a095ad2a57,
+        type: 3}
+      propertyPath: m_Name
+      value: Plant
+      objectReference: {fileID: 0}
     - target: {fileID: 2468832346840723233, guid: 2c6829bf7c5b1a14ca91f5a095ad2a57,
         type: 3}
       propertyPath: m_Layer
@@ -59315,7 +60157,7 @@ PrefabInstance:
     - target: {fileID: 7841102042375550969, guid: d9b60b11a5b664b49b369b609ec15421,
         type: 3}
       propertyPath: m_Name
-      value: PortretFrame (15)
+      value: Portret
       objectReference: {fileID: 0}
     - target: {fileID: 7841102042375550969, guid: d9b60b11a5b664b49b369b609ec15421,
         type: 3}
@@ -59523,7 +60365,7 @@ PrefabInstance:
     - target: {fileID: 6056508580758063115, guid: a31d0901e41b73e43b245509bb4d448e,
         type: 3}
       propertyPath: m_Name
-      value: PortretFrame (1)
+      value: Portret
       objectReference: {fileID: 0}
     - target: {fileID: 6056508580758063115, guid: a31d0901e41b73e43b245509bb4d448e,
         type: 3}
@@ -60156,6 +60998,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6841472960372894129, guid: 8a419036f53096c4a9ff29ad0ae9db02,
         type: 3}
+      propertyPath: m_Name
+      value: Plant
+      objectReference: {fileID: 0}
+    - target: {fileID: 6841472960372894129, guid: 8a419036f53096c4a9ff29ad0ae9db02,
+        type: 3}
       propertyPath: m_Layer
       value: 6
       objectReference: {fileID: 0}
@@ -60399,7 +61246,7 @@ PrefabInstance:
     - target: {fileID: 2213680680011234320, guid: 4d94416d8f8d9514a9ad956ed7fe40a3,
         type: 3}
       propertyPath: m_Name
-      value: PortretFrame (2)
+      value: Portret
       objectReference: {fileID: 0}
     - target: {fileID: 2213680680011234320, guid: 4d94416d8f8d9514a9ad956ed7fe40a3,
         type: 3}
@@ -60702,7 +61549,7 @@ PrefabInstance:
     - target: {fileID: 4484493951223321092, guid: 56cb35879d2c63a4d92cb01e7262c4f1,
         type: 3}
       propertyPath: m_Name
-      value: PortretFrame (10)
+      value: Portret
       objectReference: {fileID: 0}
     - target: {fileID: 4484493951223321092, guid: 56cb35879d2c63a4d92cb01e7262c4f1,
         type: 3}
@@ -61065,6 +61912,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3788266696221278082, guid: 91eb1207202cc744087ee07b389290d1,
         type: 3}
+      propertyPath: m_Name
+      value: Plant
+      objectReference: {fileID: 0}
+    - target: {fileID: 3788266696221278082, guid: 91eb1207202cc744087ee07b389290d1,
+        type: 3}
       propertyPath: m_Layer
       value: 6
       objectReference: {fileID: 0}
@@ -61317,7 +62169,7 @@ PrefabInstance:
     - target: {fileID: 1378750265995846884, guid: 7e158780f5ad59b488aef83352489650,
         type: 3}
       propertyPath: m_Name
-      value: PortretFrame (14)
+      value: Portret
       objectReference: {fileID: 0}
     - target: {fileID: 1378750265995846884, guid: 7e158780f5ad59b488aef83352489650,
         type: 3}
@@ -61559,6 +62411,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 172862627629377704, guid: 988864c0923710b4795ecc8fe44c2ad8,
         type: 3}
+      propertyPath: m_Name
+      value: Plant
+      objectReference: {fileID: 0}
+    - target: {fileID: 172862627629377704, guid: 988864c0923710b4795ecc8fe44c2ad8,
+        type: 3}
       propertyPath: m_Layer
       value: 6
       objectReference: {fileID: 0}
@@ -61759,7 +62616,7 @@ PrefabInstance:
     - target: {fileID: 1690588506810345595, guid: 41b2c7f99ea098e468397f7d0caa25b9,
         type: 3}
       propertyPath: m_Name
-      value: PortretFrame (11)
+      value: Portret
       objectReference: {fileID: 0}
     - target: {fileID: 1690588506810345595, guid: 41b2c7f99ea098e468397f7d0caa25b9,
         type: 3}
@@ -62379,7 +63236,7 @@ PrefabInstance:
     - target: {fileID: 7539860473014211750, guid: d6ebd1e19a77f1042b90e9ac54acf654,
         type: 3}
       propertyPath: m_Name
-      value: Flask_1
+      value: Flask
       objectReference: {fileID: 0}
     - target: {fileID: 7539860473014211750, guid: d6ebd1e19a77f1042b90e9ac54acf654,
         type: 3}
@@ -62733,7 +63590,7 @@ PrefabInstance:
     - target: {fileID: 7539776812803952195, guid: 15907f08fe37f6847b7497b15c2a943d,
         type: 3}
       propertyPath: m_Name
-      value: PortretFrame
+      value: Portret
       objectReference: {fileID: 0}
     - target: {fileID: 7539776812803952195, guid: 15907f08fe37f6847b7497b15c2a943d,
         type: 3}
@@ -63412,7 +64269,7 @@ PrefabInstance:
     - target: {fileID: 162400151723093144, guid: 97ad586f8d9cca748b67d1bf00ceed0a,
         type: 3}
       propertyPath: m_Name
-      value: PortretFrame (12)
+      value: Portret
       objectReference: {fileID: 0}
     - target: {fileID: 162400151723093144, guid: 97ad586f8d9cca748b67d1bf00ceed0a,
         type: 3}
@@ -63750,7 +64607,7 @@ PrefabInstance:
     - target: {fileID: 7272977354626062445, guid: 49ad72650a3fcd9469d688ebc0e554b7,
         type: 3}
       propertyPath: m_Name
-      value: Flask_2
+      value: Flask
       objectReference: {fileID: 0}
     - target: {fileID: 7272977354626062445, guid: 49ad72650a3fcd9469d688ebc0e554b7,
         type: 3}
@@ -63815,7 +64672,7 @@ PrefabInstance:
     - target: {fileID: 4325195053762921487, guid: 5e0bd85f9dc8b6746904e5f13075fc15,
         type: 3}
       propertyPath: m_Name
-      value: Flask_3
+      value: Flask
       objectReference: {fileID: 0}
     - target: {fileID: 4325195053762921487, guid: 5e0bd85f9dc8b6746904e5f13075fc15,
         type: 3}
@@ -64388,3 +65245,4 @@ SceneRoots:
   - {fileID: 1829212179}
   - {fileID: 2972919718712234385}
   - {fileID: 1708785297}
+  - {fileID: 1676361135}

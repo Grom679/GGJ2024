@@ -15,6 +15,8 @@ namespace PuzzleGame.Quest
         private PlayableDirector _director;
         [SerializeField] 
         private Texture2D _texture2D;
+        [SerializeField] 
+        private GameObject _puttenChandelier;
 
         private void OnEnable()
         {
@@ -33,6 +35,7 @@ namespace PuzzleGame.Quest
 
         protected override void PartlyFinishQuestInnerActions()
         {
+            _puttenChandelier.SetActive(true);
             StartCoroutine(AppearBug());
         }
 
@@ -68,13 +71,13 @@ namespace PuzzleGame.Quest
 
             ChainManager.Instance.RegisterNewChain();
 
-            // ChainManager.Instance.PlayAudio(AudioManager.Instance.AudioData.IDidntExpect);
-            // ChainManager.Instance.WaitUntil(1f);
-            // ChainManager.Instance.PlayAudio(AudioManager.Instance.AudioData.StillDisgusting);
-            // ChainManager.Instance.WaitUntil(1f);
-            // ChainManager.Instance.PlayAudio(AudioManager.Instance.AudioData.LikeThis);
-            // ChainManager.Instance.WaitUntil(1f);
-            // ChainManager.Instance.PlayAudio(AudioManager.Instance.AudioData.AdditionalFromTheBook);
+            ChainManager.Instance.PlayAudio(AudioManager.Instance.AudioData.IDidntExpect);
+            ChainManager.Instance.WaitUntil(1f);
+            ChainManager.Instance.PlayAudio(AudioManager.Instance.AudioData.StillDisgusting);
+            ChainManager.Instance.WaitUntil(1f);
+            ChainManager.Instance.PlayAudio(AudioManager.Instance.AudioData.LikeThis);
+            ChainManager.Instance.WaitUntil(1f);
+            ChainManager.Instance.PlayAudio(AudioManager.Instance.AudioData.AdditionalFromTheBook);
             ChainManager.Instance.PlayTimeLine(_director);
             ChainManager.Instance.WaitUntil(1f);
             ChainManager.Instance.PlayAudio(AudioManager.Instance.AudioData.OneCandle);

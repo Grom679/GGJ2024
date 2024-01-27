@@ -20,6 +20,8 @@ namespace PuzzleGame.Quest
         private PlayableDirector _director;
         [SerializeField] 
         private GameObject _bookObj;
+        [SerializeField] 
+        private GameObject _handAura;
         
 
         private QuestItem _book;
@@ -54,6 +56,7 @@ namespace PuzzleGame.Quest
                 Scenario.Instance.PortalManager.EnablePortal(PortalEnum.Floor, PortalEnum.Library);
 
                 Scenario.Instance.Player.OnBookQuestChange?.Invoke();
+                _handAura.SetActive(true);
             } 
         }
 
@@ -66,6 +69,7 @@ namespace PuzzleGame.Quest
             Scenario.Instance.PortalManager.RemoveAdditionalActionOnPortal(PortalEnum.Floor, PortalEnum.Library, EnterBookWall);
             Scenario.Instance.PortalManager.RemoveAdditionalActionOnPortal(PortalEnum.Library,PortalEnum.Floor, ExitBookWall);
             _bookObj.SetActive(true);
+            _handAura.SetActive(false);
         }
 
         protected override void SartQuestInnerActions(QuestItem item)
