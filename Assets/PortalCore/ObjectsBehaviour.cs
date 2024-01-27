@@ -46,7 +46,25 @@ namespace PuzzleGame.Core
         {
             Room currentRoom = _rooms.Find(x => x.room == _currentRoom);
 
+            foreach (Item item in currentRoom.items)
+            {
+                item.MakeUngrabble();
+            }
+
             Room nextRoom = _rooms.Find(x => x.room == room);
+
+            if (room != PortalEnum.Fireplace)
+            {
+                foreach (Item item in nextRoom.items)
+                {
+                    item.MakeGrabble();
+                }
+            }
+            else
+            {
+                Debug.LogError("test pictures");
+            }
+           
 
             SwapPhysics(currentRoom, nextRoom);
 

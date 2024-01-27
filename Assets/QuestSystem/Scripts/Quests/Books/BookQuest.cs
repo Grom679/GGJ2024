@@ -18,6 +18,9 @@ namespace PuzzleGame.Quest
         private List<QuestItem> _changingBooks;
         [SerializeField]
         private PlayableDirector _director;
+        [SerializeField] 
+        private GameObject _bookObj;
+        
 
         private QuestItem _book;
         private int _swapIndex;
@@ -62,6 +65,7 @@ namespace PuzzleGame.Quest
             DisabledNeededPortals();
             Scenario.Instance.PortalManager.RemoveAdditionalActionOnPortal(PortalEnum.Floor, PortalEnum.Library, EnterBookWall);
             Scenario.Instance.PortalManager.RemoveAdditionalActionOnPortal(PortalEnum.Library,PortalEnum.Floor, ExitBookWall);
+            _bookObj.SetActive(true);
         }
 
         protected override void SartQuestInnerActions(QuestItem item)
@@ -104,10 +108,10 @@ namespace PuzzleGame.Quest
             
             ChainManager.Instance.RegisterNewChain();
 
-            //ChainManager.Instance.PlayAudio(AudioManager.Instance.AudioData.MagicCloset);
-            //ChainManager.Instance.PlayAudio(AudioManager.Instance.AudioData.UseThisPortal);
-            //ChainManager.Instance.PlayTimeLine(_director);
-            //ChainManager.Instance.WaitUntil(1f);
+            ChainManager.Instance.PlayAudio(AudioManager.Instance.AudioData.MagicCloset);
+            ChainManager.Instance.PlayAudio(AudioManager.Instance.AudioData.UseThisPortal);
+            ChainManager.Instance.PlayTimeLine(_director);
+            ChainManager.Instance.WaitUntil(1f);
             ChainManager.Instance.PlayAudio(AudioManager.Instance.AudioData.GoodBoy);
             ChainManager.Instance.Do(() => { Scenario.Instance.PortalManager.EnablePortal(PortalEnum.Floor, PortalEnum.Library); });
 

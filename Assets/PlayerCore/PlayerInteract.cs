@@ -12,7 +12,6 @@ public class PlayerInteract : MonoBehaviour
     [SerializeField] private InteractPoint interactPoint;
     [SerializeField] private Portal _portal;
     [SerializeField] private TooltipObj _tooltip;
-    [SerializeField] private Vector3 _offset;
     
     private Player _player;
     private RaycastHit hit;
@@ -40,8 +39,6 @@ public class PlayerInteract : MonoBehaviour
             item = hit.transform.GetComponent<Item>();
             if (item != null)
             {
-                _tooltip.transform.position = item.transform.position + _offset;
-                _tooltip.transform.LookAt(_player.transform);
                 _tooltip.gameObject.SetActive(true);
                 _tooltip.SetText(item.name);
             }

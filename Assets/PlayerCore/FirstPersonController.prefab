@@ -186,6 +186,7 @@ MonoBehaviour:
   _pickedItem: {fileID: 0}
   _transformItem: {fileID: 3914217901825490540}
   _root: {fileID: 0}
+  _monochromeVolume: {fileID: 0}
 --- !u!114 &6460977920338464216
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -198,11 +199,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0ae15ec4092b22e479330329572e8bfa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _rayLenght: 2
+  _rayLenght: 2.1
   _rayMask:
     serializedVersion: 2
     m_Bits: 192
   _rayOrigin: {fileID: 0}
+  item: {fileID: 0}
+  interactPoint: {fileID: 0}
+  _portal: {fileID: 0}
+  _tooltip: {fileID: 0}
 --- !u!114 &7157410278596890392
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -225,6 +230,7 @@ MonoBehaviour:
   crosshair: 1
   crosshairImage: {fileID: 21300000, guid: be4ce60e2c9768c44b9b10b9c5258045, type: 3}
   crosshairColor: {r: 1, g: 1, b: 1, a: 1}
+  crosshairObject: {fileID: 0}
   enableZoom: 0
   holdToZoom: 1
   zoomKey: 324
@@ -498,7 +504,7 @@ Transform:
   m_GameObject: {fileID: 2154636018944534541}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.648, y: -0.294, z: 1.554}
+  m_LocalPosition: {x: 0.76, y: -0.5, z: 1.11}
   m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
   m_ConstrainProportionsScale: 0
   m_Children: []

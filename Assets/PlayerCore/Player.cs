@@ -57,9 +57,9 @@ public class Player : MonoBehaviour
         if (_pickedItem == null)
         {
             _pickedItem = item;
-            _pickedItem.OnActivateItem?.Invoke();
             _pickedItem.transform.position = _transformItem.position;
             _pickedItem.transform.SetParent(_transformItem);
+            _pickedItem.OnActivateItem?.Invoke();
         }
     }
     

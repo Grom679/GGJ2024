@@ -13,6 +13,8 @@ namespace PuzzleGame.Quest
         private Transform _bug;
         [SerializeField]
         private PlayableDirector _director;
+        [SerializeField] 
+        private Texture2D _texture2D;
 
         private void OnEnable()
         {
@@ -58,6 +60,7 @@ namespace PuzzleGame.Quest
 
         protected override void StartQuestIntroduction()
         {
+            Scenario.Instance.InstructionMat.SetTexture("_BaseMap",_texture2D);
             Scenario.Instance.PortalManager.ChangeMainPortal(PortalEnum.Ceiling);
 
             Scenario.Instance.PortalManager.SetAdditionalActionOnPortal(PortalEnum.Floor, PortalEnum.Ceiling, EnterCeiling);
@@ -108,7 +111,7 @@ namespace PuzzleGame.Quest
 
             rigidbody.useGravity = false;
 
-            while (_bug.localScale.x < 0.5f)
+            while (_bug.localScale.x < 1.5f)
             {
                 x += Time.deltaTime * 0.5f;
                 y += Time.deltaTime * 0.5f;

@@ -15,6 +15,14 @@ namespace PuzzleGame.Quest
         [SerializeField]
         private PlayableDirector _director;
 
+        [SerializeField] 
+        private Item _bucket;
+        
+        [SerializeField] 
+        private Item _dynamite;
+
+        [SerializeField] private GameObject _fireEffect;
+
         private bool _useDistance;
 
         private Transform _player;
@@ -39,6 +47,7 @@ namespace PuzzleGame.Quest
 
         protected override void StartQuestIntroduction()
         {
+            _bucket.MakeGrabble();
             ChainManager.Instance.RegisterNewChain();
 
             ChainManager.Instance.PlayTimeLine(_director);
@@ -59,6 +68,7 @@ namespace PuzzleGame.Quest
         protected override void FinishQuestInnerActions()
         {
             QuestPoint.DeactivatePoint();
+            _fireEffect.SetActive(true);
         }
 
         protected override void SartQuestInnerActions(QuestItem item)
@@ -87,7 +97,8 @@ namespace PuzzleGame.Quest
 
         protected override void PartlyFinishQuestInnerActions()
         {
-            
+            _dynamite.gameObject.SetActive(true);
+            _dynamite.MakeGrabble();
         }
     }
 }

@@ -49,12 +49,12 @@ namespace PuzzleGame.Quest
 
         public void MakeUngrabble()
         {
-            _item.CanBeGrabbed = false;
+            _item.MakeUngrabble();
         }
 
         public void MakeGrabble()
         {
-            _item.CanBeGrabbed = true;
+            _item.MakeGrabble();
         }
     }
 }

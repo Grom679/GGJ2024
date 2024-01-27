@@ -22,6 +22,8 @@ namespace PuzzleGame.Quest
         private Volume _volume;
         [SerializeField]
         private PlayableDirector _director;
+        [SerializeField] 
+        private Texture2D _texture2D;
 
         private QuestItem _plant;
 
@@ -139,6 +141,7 @@ namespace PuzzleGame.Quest
 
         protected override void StartQuestIntroduction()
         {
+            Scenario.Instance.InstructionMat.SetTexture("_BaseMap",_texture2D);
             Scenario.Instance.PortalManager.ChangeMainPortal(PortalEnum.GreenHouse);
 
             DisabledNeededPortals();
