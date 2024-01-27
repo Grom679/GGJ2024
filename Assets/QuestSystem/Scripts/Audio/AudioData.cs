@@ -68,6 +68,7 @@ namespace PuzzleGame.Audio
         public AudioClip DifferentAngle;
         public AudioClip OSmellsDilicious;
         public AudioClip MyGrandFather;
+        public AudioClip MurmaidScream;
 
 
         public List<DataEntity> audioDataSpecial;

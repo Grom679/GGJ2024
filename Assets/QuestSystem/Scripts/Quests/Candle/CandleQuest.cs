@@ -38,7 +38,7 @@ namespace PuzzleGame.Quest
 
         protected override void RemoveItem(QuestItem item)
         {
-            
+            item.ResetItem();
         }
 
         protected override void SartQuestInnerActions(QuestItem item)

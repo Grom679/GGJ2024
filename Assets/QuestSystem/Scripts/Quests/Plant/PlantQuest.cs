@@ -54,7 +54,7 @@ namespace PuzzleGame.Quest
                 
                 _currentTime += Time.deltaTime;
 
-                _volume.weight += _volumeValue * 0.0025f;
+                _volume.weight += _volumeValue * 0.015f;
 
                 Debug.Log(_currentTime);
 
@@ -82,6 +82,7 @@ namespace PuzzleGame.Quest
 
             _volume.enabled = false;
             _volume.weight = 0;
+            AudioManager.Instance.StopSFX();
         }
 
         protected override void SartQuestInnerActions(QuestItem item)
@@ -106,7 +107,7 @@ namespace PuzzleGame.Quest
                 _plant = item;
 
                 _activatedPlant = true;
-
+                AudioManager.Instance.PlaySFX(AudioManager.Instance.AudioData.MurmaidScream);
                 _volume.enabled = true;
                 _volume.weight = 0;
             }
@@ -122,9 +123,9 @@ namespace PuzzleGame.Quest
         protected override void StartErrorEffect()
         {
             //Teleport user turn off teleports
-
             Scenario.Instance.PortalManager.TeleportTo(PortalEnum.Floor, PortalEnum.GreenHouse);
-
+            AudioManager.Instance.StopSFX();
+            StartCoroutine(ErrorMurmaid());
             _physics.enabled = false;
 
             _physics.UseInverseGravity = false;
@@ -134,9 +135,6 @@ namespace PuzzleGame.Quest
             _plant.ResetItem();
 
             _plant = null;
-
-            _volume.enabled = false;
-            _volume.weight = 0;
         }
 
         protected override void StartQuestIntroduction()
@@ -210,6 +208,18 @@ namespace PuzzleGame.Quest
         protected override void PartlyFinishQuestInnerActions()
         {
             
+        }
+
+        private IEnumerator ErrorMurmaid()
+        {
+            while(_volume.weight > 0)
+            {
+                Debug.LogError(_volume.weight);
+                _volume.weight -= 0.015f;
+                yield return null;
+            }
+            _volume.enabled = false;
+            _volume.weight = 0;
         }
     }
 }
