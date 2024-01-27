@@ -51,6 +51,7 @@ namespace PuzzleGame.Quest
             _bucket.MakeGrabble();
             ChainManager.Instance.RegisterNewChain();
 
+            ChainManager.Instance.WaitUntil(2f);
             ChainManager.Instance.PlayTimeLine(_director);
             //ChainManager.Instance.PlayAudio(AudioManager.Instance.AudioData.WellWellWell);
             //ChainManager.Instance.WaitUntil(1f);

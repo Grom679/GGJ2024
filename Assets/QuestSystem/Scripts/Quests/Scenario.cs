@@ -18,6 +18,7 @@ namespace PuzzleGame.Quest
         
         public Material InstructionMat => _instructionMat;
 
+        public GameObject Explosion => _explosion;
         public Player Player => _player;
 
         [SerializeField]
@@ -32,6 +33,8 @@ namespace PuzzleGame.Quest
         private Material _instructionMat;
         [SerializeField]
         private PlayableDirector _director;
+        [SerializeField]
+        private GameObject _explosion;
 
         private SimpleQuest _currentQuest;
 
