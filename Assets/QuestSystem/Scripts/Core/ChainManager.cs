@@ -3,6 +3,8 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Playables;
+using UnityEngine.Timeline;
 
 namespace PuzzleGame.Core
 {
@@ -44,6 +46,11 @@ namespace PuzzleGame.Core
         public void Do(Action action, float delay = 0f)
         {
             _actions.Enqueue(DoAction(action, delay));
+        }
+
+        public void PlayTimeLine(PlayableDirector director)
+        {
+            _actions.Enqueue(DoTimeline(director));
         }
 
         public void WaitUntil(float time)
@@ -94,6 +101,13 @@ namespace PuzzleGame.Core
 
                 yield return null;
             }
+        }
+
+        private IEnumerator DoTimeline(PlayableDirector director)
+        {
+            director.Play();
+
+            yield return new WaitForSeconds((float)director.playableAsset.duration);
         }
 
         private IEnumerator DoAction(Action action, float delay)

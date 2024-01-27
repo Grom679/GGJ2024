@@ -4,6 +4,7 @@ using PuzzleGame.Core;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Playables;
 
 namespace PuzzleGame.Quest
 {
@@ -11,6 +12,8 @@ namespace PuzzleGame.Quest
     {
         [SerializeField]
         private float _middleFireDistance = 2f;
+        [SerializeField]
+        private PlayableDirector _director;
 
         private bool _useDistance;
 
@@ -38,6 +41,7 @@ namespace PuzzleGame.Quest
         {
             ChainManager.Instance.RegisterNewChain();
 
+            ChainManager.Instance.PlayTimeLine(_director);
             //ChainManager.Instance.PlayAudio(AudioManager.Instance.AudioData.WellWellWell);
             //ChainManager.Instance.WaitUntil(1f);
             //ChainManager.Instance.PlayAudio(AudioManager.Instance.AudioData.NeverLeave);

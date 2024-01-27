@@ -3,6 +3,7 @@ using PuzzleGame.Core;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Playables;
 
 namespace PuzzleGame.Quest
 {
@@ -10,6 +11,8 @@ namespace PuzzleGame.Quest
     {
         [SerializeField]
         private Transform _bug;
+        [SerializeField]
+        private PlayableDirector _director;
 
         private void OnEnable()
         {
@@ -69,7 +72,8 @@ namespace PuzzleGame.Quest
             // ChainManager.Instance.PlayAudio(AudioManager.Instance.AudioData.LikeThis);
             // ChainManager.Instance.WaitUntil(1f);
             // ChainManager.Instance.PlayAudio(AudioManager.Instance.AudioData.AdditionalFromTheBook);
-            // ChainManager.Instance.WaitUntil(1f);
+            ChainManager.Instance.PlayTimeLine(_director);
+            ChainManager.Instance.WaitUntil(1f);
             ChainManager.Instance.PlayAudio(AudioManager.Instance.AudioData.OneCandle);
             ChainManager.Instance.Do(() => { Scenario.Instance.PortalManager.EnablePortal(PortalEnum.Floor, PortalEnum.Ceiling); });
 

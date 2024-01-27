@@ -3,6 +3,7 @@ using PuzzleGame.Core;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Playables;
 
 namespace PuzzleGame.Quest
 {
@@ -12,6 +13,8 @@ namespace PuzzleGame.Quest
         private Transform _player;
         [SerializeField]
         private Vector3 _scaleValue;
+        [SerializeField]
+        private PlayableDirector _director;
 
         private QuestItem _flask;
 
@@ -73,6 +76,7 @@ namespace PuzzleGame.Quest
             // ChainManager.Instance.PlayAudio(AudioManager.Instance.AudioData.GoToLab);
             // ChainManager.Instance.WaitUntil(1f);
             // ChainManager.Instance.PlayAudio(AudioManager.Instance.AudioData.FindFlask);
+            // ChainManager.Instance.PlayTimeLine(_director);
             // ChainManager.Instance.WaitUntil(1f);
             ChainManager.Instance.PlayAudio(AudioManager.Instance.AudioData.GetItSorted);
             ChainManager.Instance.Do(() => { Scenario.Instance.PortalManager.EnablePortal(PortalEnum.Floor, PortalEnum.Laboratory); } );

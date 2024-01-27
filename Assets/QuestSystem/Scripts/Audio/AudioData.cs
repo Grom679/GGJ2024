@@ -39,6 +39,7 @@ namespace PuzzleGame.Audio
         public AudioClip PinkPonies;
         public AudioClip PrepareCauldron;
         public AudioClip UseThisPortal;
+        public AudioClip GoodBoy;
         public AudioClip MagicCloset;
         public AudioClip PlantMonologue;
         public AudioClip BookIllustration;
