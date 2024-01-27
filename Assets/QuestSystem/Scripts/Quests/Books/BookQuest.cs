@@ -4,6 +4,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.Collections.LowLevel.Unsafe;
 using UnityEngine;
+using UnityEngine.Playables;
 
 namespace PuzzleGame.Quest
 {
@@ -15,6 +16,8 @@ namespace PuzzleGame.Quest
 
         [SerializeField]
         private List<QuestItem> _changingBooks;
+        [SerializeField]
+        private PlayableDirector _director;
 
         private QuestItem _book;
         private int _swapIndex;
@@ -101,10 +104,12 @@ namespace PuzzleGame.Quest
             
             ChainManager.Instance.RegisterNewChain();
 
-            // ChainManager.Instance.PlayAudio(AudioManager.Instance.AudioData.UseThisPortal);
-            // ChainManager.Instance.WaitUntil(1f);
+            //ChainManager.Instance.PlayAudio(AudioManager.Instance.AudioData.MagicCloset);
+            //ChainManager.Instance.PlayAudio(AudioManager.Instance.AudioData.UseThisPortal);
+            //ChainManager.Instance.PlayTimeLine(_director);
+            //ChainManager.Instance.WaitUntil(1f);
+            ChainManager.Instance.PlayAudio(AudioManager.Instance.AudioData.GoodBoy);
             ChainManager.Instance.Do(() => { Scenario.Instance.PortalManager.EnablePortal(PortalEnum.Floor, PortalEnum.Library); });
-            ChainManager.Instance.PlayAudio(AudioManager.Instance.AudioData.MagicCloset);
 
             ChainManager.Instance.FinishActions();
         }

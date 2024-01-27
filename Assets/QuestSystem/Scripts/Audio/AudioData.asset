@@ -21,6 +21,7 @@ MonoBehaviour:
   PinkPonies: {fileID: 8300000, guid: 9e28f2bad748b7249aeaddedf112625b, type: 3}
   PrepareCauldron: {fileID: 8300000, guid: 8e3f68519464e6244bb38d3f51eb6f29, type: 3}
   UseThisPortal: {fileID: 8300000, guid: 2b43d00af4f3a704887d65c719d87ac3, type: 3}
+  GoodBoy: {fileID: 8300000, guid: 8adea78eb1cb1d74ca3ef2090788257c, type: 3}
   MagicCloset: {fileID: 8300000, guid: 21f699a275b7de04f93e51eb72632889, type: 3}
   PlantMonologue: {fileID: 8300000, guid: a7978084f78d6ce4dbd5cc520e4e3e23, type: 3}
   BookIllustration: {fileID: 8300000, guid: 7e9b26834c7765e41948bc31151991f0, type: 3}

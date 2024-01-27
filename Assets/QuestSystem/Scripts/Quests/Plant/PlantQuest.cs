@@ -3,6 +3,7 @@ using PuzzleGame.Core;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Playables;
 using UnityEngine.Rendering;
 
 namespace PuzzleGame.Quest
@@ -19,6 +20,8 @@ namespace PuzzleGame.Quest
         private InversePhysics _physics;
         [SerializeField]
         private Volume _volume;
+        [SerializeField]
+        private PlayableDirector _director;
 
         private QuestItem _plant;
 
@@ -145,10 +148,11 @@ namespace PuzzleGame.Quest
 
             ChainManager.Instance.RegisterNewChain();
 
-            // ChainManager.Instance.PlayAudio(AudioManager.Instance.AudioData.PlantMonologue);
-            // ChainManager.Instance.WaitUntil(1f);
-            // ChainManager.Instance.PlayAudio(AudioManager.Instance.AudioData.BookIllustration);
-            // ChainManager.Instance.WaitUntil(1f);
+            //ChainManager.Instance.PlayAudio(AudioManager.Instance.AudioData.PlantMonologue);
+            //ChainManager.Instance.WaitUntil(1f);
+            //ChainManager.Instance.PlayAudio(AudioManager.Instance.AudioData.BookIllustration);
+            //ChainManager.Instance.PlayTimeLine(_director);
+            //ChainManager.Instance.WaitUntil(1f);
             ChainManager.Instance.PlayAudio(AudioManager.Instance.AudioData.HaveFun);
 
             ChainManager.Instance.Do(() => {Scenario.Instance.PortalManager.EnablePortal(PortalEnum.Floor, PortalEnum.GreenHouse);});
