@@ -16564,7 +16564,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55d56c792a72c4a4eafa6f3724e70c06, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _correctItems: 00000000010000000c0000000a00000006000000070000000800000009000000
+  _correctItems: 00000000010000000c0000000a000000060000000700000008000000
 --- !u!1001 &708312260
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -32173,6 +32173,11 @@ PrefabInstance:
       propertyPath: _dynamite
       value: 
       objectReference: {fileID: 2237580963498046205}
+    - target: {fileID: 3301591315497741345, guid: c0ec57e3630f69c4996edc78cb619051,
+        type: 3}
+      propertyPath: _butterfly
+      value: 
+      objectReference: {fileID: 2012218276732641582}
     - target: {fileID: 3301591315497741345, guid: c0ec57e3630f69c4996edc78cb619051,
         type: 3}
       propertyPath: _fireEffect
@@ -56395,7 +56400,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0.14172232, y: 0.34138408, z: -0.53407794, w: 0.7603502}
   m_LocalPosition: {x: -0.642, y: 3.074, z: 1.278}
-  m_LocalScale: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2012218276732641570}

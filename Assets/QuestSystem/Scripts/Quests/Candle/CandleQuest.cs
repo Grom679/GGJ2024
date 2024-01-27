@@ -59,6 +59,7 @@ namespace PuzzleGame.Quest
         protected override void StartQuestIntroduction()
         {
             Scenario.Instance.InstructionMat.SetTexture("_BaseMap",_texture2D);
+            _bug.localScale = new Vector3(0f, 0f, 0f);
             Scenario.Instance.PortalManager.ChangeMainPortal(PortalEnum.Ceiling);
 
             Scenario.Instance.PortalManager.SetAdditionalActionOnPortal(PortalEnum.Floor, PortalEnum.Ceiling, EnterCeiling);

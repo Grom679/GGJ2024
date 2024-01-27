@@ -23,8 +23,9 @@ namespace PuzzleGame.Quest
         [SerializeField] 
         private GameObject _fireEffect;
         [SerializeField] 
-        
         private GameObject _sound;
+        [SerializeField] 
+        private Transform _butterfly;
 
         private bool _useDistance;
 
@@ -63,7 +64,7 @@ namespace PuzzleGame.Quest
             ChainManager.Instance.PlayAudio(AudioManager.Instance.AudioData.NeedPotion);
             ChainManager.Instance.WaitUntil(2f);
             ChainManager.Instance.PlayAudio(AudioManager.Instance.AudioData.PrepareCauldron);
-
+            ChainManager.Instance.Do(() => {_butterfly.localScale = new Vector3(0f, 0f, 0f);});
             ChainManager.Instance.FinishActions();
 
             Debug.Log("Started preporation quest");
