@@ -59,8 +59,6 @@ namespace PuzzleGame.Quest
 
         protected override void StartErrorEffect()
         {
-            _flask.ResetItem();
-
             _flask = null;
         }
 
