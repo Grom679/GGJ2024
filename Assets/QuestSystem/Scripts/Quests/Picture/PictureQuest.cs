@@ -4,6 +4,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Numerics;
 using UnityEngine;
+using UnityEngine.Playables;
 using static UnityEditor.Experimental.GraphView.GraphView;
 
 namespace PuzzleGame.Quest
@@ -14,6 +15,8 @@ namespace PuzzleGame.Quest
         private List<Picture> _pictures;
         [SerializeField] 
         private Texture2D _texture2D;
+        [SerializeField]
+        private PlayableDirector _director;
 
         protected override void FinishQuestInnerActions()
         {
@@ -70,7 +73,9 @@ namespace PuzzleGame.Quest
             ChainManager.Instance.PlayAudio(AudioManager.Instance.AudioData.AlmoustImpossible);
             ChainManager.Instance.WaitUntil(1f);
             ChainManager.Instance.PlayAudio(AudioManager.Instance.AudioData.Clean);
+            ChainManager.Instance.PlayTimeLine(_director);
             ChainManager.Instance.WaitUntil(1f);
+            ChainManager.Instance.PlayAudio(AudioManager.Instance.AudioData.Bat);
             ChainManager.Instance.PlayAudio(AudioManager.Instance.AudioData.DifferentAngle);
             ChainManager.Instance.Do(() => { Scenario.Instance.PortalManager.EnablePortal(PortalEnum.Floor, PortalEnum.Fireplace); });
 

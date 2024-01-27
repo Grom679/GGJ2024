@@ -22,6 +22,7 @@ namespace PuzzleGame.Quest
         private Item _dynamite;
 
         [SerializeField] private GameObject _fireEffect;
+        [SerializeField] private GameObject _sound;
 
         private bool _useDistance;
 
@@ -69,6 +70,7 @@ namespace PuzzleGame.Quest
         {
             QuestPoint.DeactivatePoint();
             _fireEffect.SetActive(true);
+            _sound.SetActive(true);
         }
 
         protected override void SartQuestInnerActions(QuestItem item)

@@ -4,6 +4,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Playables;
 
 namespace PuzzleGame.Quest
 {
@@ -29,6 +30,8 @@ namespace PuzzleGame.Quest
         private float _timeToStart;
         [SerializeField] 
         private Material _instructionMat;
+        [SerializeField]
+        private PlayableDirector _director;
 
         private SimpleQuest _currentQuest;
 
@@ -183,8 +186,19 @@ namespace PuzzleGame.Quest
             else
             {
                 _attemptsCount = 0;
-                Debug.Log("Sceenario Ends");
+
+                ChainManager.Instance.RegisterNewChain();
+
+                ChainManager.Instance.PlayTimeLine(_director);
+                ChainManager.Instance.Do(DoFinals);
+
+                ChainManager.Instance.FinishActions();
             }
+        }
+
+        private void DoFinals()
+        {
+
         }
     }
 }

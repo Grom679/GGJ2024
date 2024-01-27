@@ -43,6 +43,7 @@ namespace PuzzleGame.Audio
         public AudioClip MagicCloset;
         public AudioClip PlantMonologue;
         public AudioClip BookIllustration;
+        public AudioClip Bat;
         public AudioClip HaveFun;
         public AudioClip GetRidOfThis;
         public AudioClip UsePhysics;
