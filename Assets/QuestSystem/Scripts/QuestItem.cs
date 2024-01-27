@@ -74,21 +74,40 @@ namespace PuzzleGame.Quest
 
         public void ResetItem()
         {
-            StartCoroutine(StartHideEffect(ReturnItem));
+            StartCoroutine(StartHideEffect(ReturnItem, true));
         }
 
         public void UseItem()
         {
-            StartCoroutine(StartHideEffect(DeleItem));
+            StartCoroutine(StartHideEffect(DeleItem, false));
         }
 
-        private IEnumerator StartHideEffect(Action action)
+        private IEnumerator StartHideEffect(Action action, bool isReset)
         {
-            yield return new WaitForSeconds(1);
+            if(!isReset)
+            {
+                Scenario.Instance.Explosion.SetActive(false);
 
-            Debug.LogError("Hided item");
+                Scenario.Instance.Explosion.transform.position = transform.position;
 
-            action?.Invoke();
+                Scenario.Instance.Explosion.SetActive(true);
+
+                yield return new WaitForSeconds(0f);
+
+                action?.Invoke();
+            }
+            else
+            {
+                yield return new WaitForSeconds(1f);
+
+                Scenario.Instance.Explosion.SetActive(false);
+
+                Scenario.Instance.Explosion.transform.position = transform.position;
+
+                Scenario.Instance.Explosion.SetActive(true);
+
+                action?.Invoke();
+            }
         }
 
         private void ReturnItem()
