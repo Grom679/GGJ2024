@@ -25,6 +25,7 @@ MonoBehaviour:
   MagicCloset: {fileID: 8300000, guid: 21f699a275b7de04f93e51eb72632889, type: 3}
   PlantMonologue: {fileID: 8300000, guid: a7978084f78d6ce4dbd5cc520e4e3e23, type: 3}
   BookIllustration: {fileID: 8300000, guid: 7e9b26834c7765e41948bc31151991f0, type: 3}
+  Bat: {fileID: 8300000, guid: d8bd47156e290a3478a36221296d2cc6, type: 3}
   HaveFun: {fileID: 8300000, guid: 722af25d610909b4abc0d57399539e81, type: 3}
   GetRidOfThis: {fileID: 8300000, guid: 8fcaf576f631c0d4183b54dd224beaf7, type: 3}
   UsePhysics: {fileID: 8300000, guid: 48d7e9f4d3ca7414fb8a2fdc2bb1bc10, type: 3}
