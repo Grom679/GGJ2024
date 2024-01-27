@@ -207,8 +207,9 @@ namespace PuzzleGame.Quest
         private void DoFinals()
         {
             Cursor.lockState = CursorLockMode.None;
-            AudioManager.Instance.StopSFX();
-            AudioManager.Instance.StopVO();
+            Destroy(AudioManager.Instance.gameObject);
+            Destroy(GlobalEvents.Instance.gameObject);
+            Destroy(ChainManager.Instance.gameObject);
             SceneManager.LoadScene(0);
         }
     }

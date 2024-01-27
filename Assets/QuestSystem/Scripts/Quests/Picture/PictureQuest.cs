@@ -10,13 +10,16 @@ namespace PuzzleGame.Quest
 {
     public class PictureQuest : SimpleQuest
     {
+        public bool PutGlasses => _putGlasses;
+        
         [SerializeField]
         private List<Picture> _pictures;
         [SerializeField] 
         private Texture2D _texture2D;
         [SerializeField]
         private PlayableDirector _director;
-
+        
+        private bool _putGlasses = false;
         protected override void FinishQuestInnerActions()
         {
             QuestPoint.DeactivatePoint();
@@ -45,6 +48,7 @@ namespace PuzzleGame.Quest
             if(item.ItemType == QuestItemType.Glasses)
             {
                 QuestPoint.PutQuestItem(item);
+                _putGlasses = true;
             }
             else if(item.ItemType == QuestItemType.Picture)
             {

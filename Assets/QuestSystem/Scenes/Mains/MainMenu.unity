@@ -1558,6 +1558,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _playButton: {fileID: 805974380}
+  "_sui\u0441ideButton": {fileID: 1485885872}
 --- !u!1 &642922096
 GameObject:
   m_ObjectHideFlags: 0

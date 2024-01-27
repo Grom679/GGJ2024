@@ -22,6 +22,9 @@ namespace PuzzleGame.Core
         [SerializeField]
         private List<Room> _rooms;
 
+        [SerializeField] 
+        private PictureQuest _pictureQuest;
+        
         private PortalEnum _currentRoom;
 
         private void Start()
@@ -62,7 +65,13 @@ namespace PuzzleGame.Core
             }
             else
             {
-                Debug.LogError("test pictures");
+                if (_pictureQuest.PutGlasses)
+                {
+                    foreach (Item item in nextRoom.items)
+                    {
+                        item.MakeGrabble();
+                    }
+                }
             }
            
 
