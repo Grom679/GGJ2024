@@ -14,6 +14,8 @@ namespace PuzzleGame.Quest
         public SimpleQuest CurrentQuest => _currentQuest;
 
         public PortalManager PortalManager => _portalManager;
+        
+        public Material InstructionMat => _instructionMat;
 
         public Player Player => _player;
 
@@ -25,6 +27,8 @@ namespace PuzzleGame.Quest
         private Player _player;
         [SerializeField]
         private float _timeToStart;
+        [SerializeField] 
+        private Material _instructionMat;
 
         private SimpleQuest _currentQuest;
 

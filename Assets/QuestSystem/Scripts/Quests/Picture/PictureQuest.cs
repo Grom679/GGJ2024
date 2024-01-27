@@ -12,6 +12,8 @@ namespace PuzzleGame.Quest
     {
         [SerializeField]
         private List<Picture> _pictures;
+        [SerializeField] 
+        private Texture2D _texture2D;
 
         protected override void FinishQuestInnerActions()
         {
@@ -55,11 +57,7 @@ namespace PuzzleGame.Quest
 
         protected override void StartQuestIntroduction()
         {
-            foreach (var picture in _pictures)
-            {
-                picture.MakeUngrabble();
-            }
-
+            Scenario.Instance.InstructionMat.SetTexture("_BaseMap",_texture2D);
             Scenario.Instance.PortalManager.ChangeMainPortal(PortalEnum.Fireplace);
 
             Scenario.Instance.PortalManager.SetAdditionalActionOnPortal(PortalEnum.Floor, PortalEnum.Fireplace, EnterPicture);

@@ -15,6 +15,8 @@ namespace PuzzleGame.Quest
         private Vector3 _scaleValue;
         [SerializeField]
         private PlayableDirector _director;
+        [SerializeField] 
+        private Texture2D _texture2D;
 
         private QuestItem _flask;
 
@@ -65,7 +67,8 @@ namespace PuzzleGame.Quest
         protected override void StartQuestIntroduction()
         {
             Scenario.Instance.PortalManager.ChangeMainPortal(PortalEnum.Laboratory);
-
+            Scenario.Instance.InstructionMat.SetTexture("_BaseMap",_texture2D);
+            
             Scenario.Instance.PortalManager.SetAdditionalActionOnPortal(PortalEnum.Floor, PortalEnum.Laboratory, EnterLaboratory);
             Scenario.Instance.PortalManager.SetAdditionalActionOnPortal(PortalEnum.Laboratory, PortalEnum.Floor, ExitLaboratory);
 
