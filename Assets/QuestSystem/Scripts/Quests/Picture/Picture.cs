@@ -11,10 +11,9 @@ namespace PuzzleGame.Quest
         [SerializeField]
         private Texture _revealedTexture;
         [SerializeField]
-        private Material _material;
+        private MeshRenderer _meshRenderer;
 
         private bool _isRevealed;
-        private Renderer _renderer;
         private Material _createdMaterial;
 
         private Item _item;
@@ -22,16 +21,12 @@ namespace PuzzleGame.Quest
         private void Awake()
         {
             _item = GetComponent<Item>();
-            _createdMaterial = new Material(_material);
-            _renderer = GetComponent<Renderer>();
         }
 
         private void OnEnable()
         {
             _isRevealed = false;
-            _renderer.material = _createdMaterial;
-            //_renderer.material.mainTexture = _defaultTexture;
-            _renderer.material.color = Color.blue;
+            _meshRenderer.material.SetTexture("_BaseMap", _defaultTexture);
         }
 
         public void SwapImage()
@@ -39,17 +34,16 @@ namespace PuzzleGame.Quest
             _isRevealed = !_isRevealed;
 
             if (_isRevealed)
-            {
-                //_renderer.material.mainTexture = _revealedTexture;
-                _renderer.material.color = Color.red;
-
+            { 
+                _meshRenderer.material.SetTexture("_BaseMap", _revealedTexture);
+                _meshRenderer.material.DisableKeyword("_EMISSION");
                 MakeGrabble();
             }
             else
             {
                 MakeUngrabble();
-                //_renderer.material.mainTexture = _defaultTexture;
-                _renderer.material.color = Color.blue;
+                _meshRenderer.material.EnableKeyword("_EMISSION");
+                _meshRenderer.material.SetTexture("_BaseMap", _defaultTexture);
             }
         }
 
