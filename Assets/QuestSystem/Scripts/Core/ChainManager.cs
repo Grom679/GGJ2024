@@ -20,7 +20,15 @@ namespace PuzzleGame.Core
         private void Awake()
         {
             DontDestroyOnLoad(this);
-            Instance = this;
+            
+            if (Instance != null && Instance != this)
+            {
+                Destroy(this);
+            }
+            else
+            {
+                Instance = this;
+            }
         }
 
         public void RegisterNewChain()

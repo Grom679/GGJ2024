@@ -73,14 +73,14 @@ namespace PuzzleGame.Quest
             Scenario.Instance.PortalManager.SetAdditionalActionOnPortal(PortalEnum.Laboratory, PortalEnum.Floor, ExitLaboratory);
 
             ChainManager.Instance.RegisterNewChain();
-            //
-            // ChainManager.Instance.PlayAudio(AudioManager.Instance.AudioData.NextStone);
-            // ChainManager.Instance.WaitUntil(1f);
-            // ChainManager.Instance.PlayAudio(AudioManager.Instance.AudioData.GoToLab);
-            // ChainManager.Instance.WaitUntil(1f);
-            // ChainManager.Instance.PlayAudio(AudioManager.Instance.AudioData.FindFlask);
-            // ChainManager.Instance.PlayTimeLine(_director);
-            // ChainManager.Instance.WaitUntil(1f);
+            
+            ChainManager.Instance.PlayAudio(AudioManager.Instance.AudioData.NextStone);
+            ChainManager.Instance.WaitUntil(1f);
+            ChainManager.Instance.PlayAudio(AudioManager.Instance.AudioData.GoToLab);
+            ChainManager.Instance.WaitUntil(1f);
+            ChainManager.Instance.PlayAudio(AudioManager.Instance.AudioData.FindFlask);
+            ChainManager.Instance.PlayTimeLine(_director);
+            ChainManager.Instance.WaitUntil(1f);
             ChainManager.Instance.PlayAudio(AudioManager.Instance.AudioData.GetItSorted);
             ChainManager.Instance.Do(() => { Scenario.Instance.PortalManager.EnablePortal(PortalEnum.Floor, PortalEnum.Laboratory); } );
             

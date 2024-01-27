@@ -17,12 +17,7 @@ namespace PuzzleGame.Quest
         private Texture2D _texture2D;
         [SerializeField] 
         private GameObject _puttenChandelier;
-
-        private void OnEnable()
-        {
-            _bug.gameObject.SetActive(false);
-        }
-
+        
         protected override void FinishQuestInnerActions()
         {
             QuestPoint.DeactivatePoint();
@@ -107,8 +102,6 @@ namespace PuzzleGame.Quest
         private IEnumerator AppearBug()
         {
             float x = 0, y = 0, z = 0;
-
-            _bug.gameObject.SetActive(true);
 
             Rigidbody rigidbody = _bug.GetComponent<Rigidbody>();
 

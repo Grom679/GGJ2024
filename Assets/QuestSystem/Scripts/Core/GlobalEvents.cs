@@ -26,7 +26,14 @@ namespace PuzzleGame.Core
         {
             DontDestroyOnLoad(this);
 
-            Instance = this;
+            if (Instance != null && Instance != this)
+            {
+                Destroy(this);
+            }
+            else
+            {
+                Instance = this;
+            }
         }
     }
 }

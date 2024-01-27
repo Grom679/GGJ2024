@@ -91,15 +91,18 @@ namespace PuzzleGame.Core
             {
                 foreach(var item in room.items)
                 {
-                    if(room.room == PortalEnum.Floor)
+                    if (item != null)
                     {
-                        item.Rigidbody.isKinematic = true;
-                        item.Rigidbody.useGravity = true;
-                    }
-                    else
-                    {
-                        item.Rigidbody.isKinematic = true;
-                        item.Rigidbody.useGravity = false;
+                        if(room.room == PortalEnum.Floor)
+                        {
+                            item.Rigidbody.isKinematic = true;
+                            item.Rigidbody.useGravity = true;
+                        }
+                        else
+                        {
+                            item.Rigidbody.isKinematic = true;
+                            item.Rigidbody.useGravity = false;
+                        }
                     }
                 }
             }

@@ -50,7 +50,7 @@ namespace PuzzleGame.Quest
 
         protected override void StartQuestIntroduction()
         {
-            _dynamite.gameObject.SetActive(false);
+            
             _bucket.MakeGrabble();
             ChainManager.Instance.RegisterNewChain();
 

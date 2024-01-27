@@ -113,4 +113,9 @@ public class Player : MonoBehaviour
         _firstPersonController.crosshairObject.color = Color.white;
         _firstPersonController.crosshairObject.gameObject.transform.localScale = Vector2.one * 0.05f;
     }
+
+    public void EnableMouse()
+    {
+        _firstPersonController.lockCursor = false;
+    }
 }

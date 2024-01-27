@@ -5,6 +5,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Playables;
+using UnityEngine.SceneManagement;
 
 namespace PuzzleGame.Quest
 {
@@ -31,6 +32,8 @@ namespace PuzzleGame.Quest
         private float _timeToStart;
         [SerializeField] 
         private Material _instructionMat;
+        [SerializeField] 
+        private GameObject _instructionObj;
         [SerializeField]
         private PlayableDirector _director;
         [SerializeField]
@@ -135,7 +138,8 @@ namespace PuzzleGame.Quest
             StartCoroutine(WaitForNext(PlayQuest));
 
             _currentQuest.FinishQuest();
-
+            _instructionObj.SetActive(false);
+            
             Debug.Log("finished");
            //Play audio with chain manger
         }
@@ -199,9 +203,13 @@ namespace PuzzleGame.Quest
             }
         }
 
+        [ContextMenu("DoFinal")]
         private void DoFinals()
         {
-
+            Cursor.lockState = CursorLockMode.None;
+            AudioManager.Instance.StopSFX();
+            AudioManager.Instance.StopVO();
+            SceneManager.LoadScene(0);
         }
     }
 }
